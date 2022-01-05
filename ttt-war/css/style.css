@@ -1,0 +1,112 @@
+html,
+body 
+{
+  padding: 0;
+  background-color: #233142;
+  font-family: 'Futura PT', sans-serif;
+}
+
+/*START HTML*/
+
+
+.start{
+   display: block;
+   text-align: center;
+}
+.logo{
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+}
+.start-game{
+  text-decoration: none;
+  color: #fff;
+  border: 10px #FF5959 solid;
+  padding: 0px 60px;
+  border-radius: 40px;
+  background-color: #FACF5A;
+  font-family: baloo;
+  font-size: 50px;
+  color: #233142;
+  transition-duration: 0.4s;
+}
+.start-game:hover{
+  box-shadow: 1px 1px 40px #FACF5A;
+}
+.by{
+  margin-top: 80px;
+
+}
+.by p{
+  color: #182331;
+  display: inline;
+  font-family: courier;
+  font-size: 20px;
+  text-indent: 40px;
+  transition-duration: 0.4s;
+}
+.by p:hover{
+  background: -webkit-linear-gradient(180deg, #FF5959, #FACF5A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FACF5A;
+  font-size: 30px;
+}
+
+/*end START HTML*/
+.header{
+  
+  margin: 10px 250px;
+  border-radius: 30px;
+  background-color: #182331;
+  text-align: center;
+  font-size: 80px;
+  color: #FACF5A;
+  font-family: 'Futura PT', sans-serif;
+  -webkit-text-stroke-width: 3.5px;
+  -webkit-text-stroke-color: #FF5959;
+  transition-duration: 0.7s;
+}
+.header:hover{
+  box-shadow: 1px 1px 15px linear-gradient(#FACF5A, #FF5959);
+  letter-spacing: 15px;
+}
+.button {
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: white;
+  padding: 5px 25px;
+  
+  display: inline-block;
+  font-size: 35px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #FACF5A; 
+  font-family: baloo;
+  color: #233142; 
+  border: 8px solid #FF5959;
+  border-radius: 35px;
+}
+.button1:hover {
+  background-color: #FF5959;
+  color: #FACF5A;
+}
+
+canvas {
+  margin: auto;
+  border: 10px black solid;
+  box-shadow: 1px 1px 40px #FACF5A;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  display: block;
+}
