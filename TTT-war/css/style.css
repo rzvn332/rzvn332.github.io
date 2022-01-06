@@ -95,7 +95,7 @@ body
 }
 .button1 {
   background-color: #FACF5A; 
-  font-family: 'Baloo', sans-serif;
+  font-family: baloo;
   color: #233142; 
   border: 8px solid #FF5959;
   border-radius: 35px;
