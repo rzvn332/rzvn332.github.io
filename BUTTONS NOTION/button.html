@@ -8,11 +8,11 @@
 /* CSS */
 .button-32 {
   background-color: #7952B3;
-  border-radius: 12px;
+  border-radius: 25px;
   color: #FFC107;
   cursor: pointer;
   font-weight: bold;
-  padding: 20px 15px;
+  padding: 25px 15px;
   text-align: center;
   transition: 200ms;
   width: 100%;
@@ -42,8 +42,16 @@
 
 <body>
 
- <button onclick="location.href='https://rzvn.notion.site/CV-18ce346aa34c4278b9d956790f31c456','_blank'" class="button-32" role="button">~ CV ~</button>
+ <button onclick="navigate()" class="button-32" role="button">~ CV ~</button>
+
+ <script>
+    function navigate() {
+      window.open("https://rzvn.notion.site/CV-18ce346aa34c4278b9d956790f31c456", '_blank').focus();
+    }
+  </script>
 
 </body>
 
 </html>
+
+
