@@ -1,26 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Răzvan's Contact Card</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Răzvan Bou - Web Developer Intern</title>
+    <meta name="description" content="CV-ul lui Răzvan Bou, candidat pentru poziția de Web Developer Intern, cu abilități în HTML, CSS, JavaScript de bază, WordPress și unelte de design. Dornic să învețe și să contribuie într-un mediu dinamic.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#93C5FD',
+                            DEFAULT: '#3B82F6',
+                            dark: '#1E40AF',
+                        },
+                        secondary: {
+                            light: '#F3F4F6',
+                            DEFAULT: '#6B7280',
+                            dark: '#374151',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1f2937;
+        }
+        .cv-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .cv-header {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            color: #ffffff;
+            padding: 2rem 2.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .cv-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(30%, -30%);
+        }
+        .cv-header::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        .cv-section {
+            padding: 1.5rem 2.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .cv-section:last-child {
+            border-bottom: none;
+        }
+        .cv-section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1.25rem;
+        }
+        .cv-section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            height: 70%;
+            width: 5px;
+            background: linear-gradient(to bottom, #3b82f6, #1e40af);
+            border-radius: 3px;
+        }
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e0f2fe;
+            color: #0c4a6e;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.2s ease;
+        }
+        .skill-tag:hover {
+            background-color: #bae6fd;
+            color: #075985;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            transition: transform 0.2s ease;
+        }
+        .contact-item:hover {
+            transform: translateX(5px);
+        }
+        .contact-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 8px;
+            height: 100%;
+            width: 2px;
+            background-color: #93C5FD;
+        }
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background-color: #3B82F6;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+        .timeline-item:last-child::before {
+            display: none;
+        }
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px dashed #E5E7EB;
+        }
+        .language-level {
+            width: 60%;
+            height: 6px;
+            background-color: #E5E7EB;
+            border-radius: 3px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+        .language-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #3B82F6, #1E40AF);
+            border-radius: 3px;
+        }
+        @media (max-width: 640px) {
+            .cv-header {
+                padding: 1.5rem;
+            }
+            .cv-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="text">
-    <h1>Mă numesc<br><div class="textbig"> Răzvan ✌️</div></h1>
-</div>
-<div class="card">
-  <div class="header">
-  </div>
-  <div class="social-links">
-    <a href="tel:+37378082255" class="button instagram">+373 (78) 082255</a>
-    <a href="https://www.instagram.com/rzvn.332/" class="button instagram">Instagram</a>
-    <a href="https://t.me/rzvn332" class="button telegram">Telegram</a>
-    <a href="https://www.facebook.com/rzvn.332" class="button facebook">Facebook</a>
-    <a href="https://m.me/rzvn.332" class="button messenger">Messenger</a>
-    <a href="https://www.tiktok.com/@rzvn332?_t=8lYWhbolBw5&_r=1" class="button tiktok">TikTok</a>
-  </div>
-</div>
+    <div class="cv-container">
+        <header class="cv-header text-center md:text-left">
+            <div class="relative z-10">
+                <h1 class="text-3xl md:text-4xl font-bold mb-1">Bou Răzvan</h1>
+                <h2 class="text-xl md:text-2xl font-light text-blue-100">Intern Web Developer</h2>
+                <div class="mt-4">
+                    <span class="inline-block px-3 py-1 rounded-full bg-white bg-opacity-20 text-sm">Disponibil pentru Internship</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="cv-section grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1">
+                <h3 class="cv-section-title">Contact</h3>
+                <ul class="space-y-2">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500">Email</div>
+                            <a href="mailto:rzvn332@gmail.com" class="font-medium">rzvn332@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500">Locatie</div>
+                            <span>Sîngera, Chișinău</span>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500">Limbi</div>
+                            <span>Română (Nativă), Rusă, Engleză</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2">
+                <h3 class="cv-section-title">Profil Profesional</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Absolvent recent al Facultății Calculatoare, Informatică și Microelectronică (UTM), extrem de motivat să încep o carieră în dezvoltarea web. Posed cunoștințe fundamentale în HTML și CSS, JavaScript și experiență cu WordPress. Cu abilități analitice dezvoltate și capacitate rapidă de învățare.
+                </p>
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h4 class="font-semibold text-blue-800 mb-2 flex items-center">
+                        <i class="fas fa-bullseye mr-2 text-blue-600"></i>
+                        Obiective Profesionale
+                    </h4>
+                    <p class="text-blue-700">
+                        Să capăt experiență practică în cadrul unui mediu profesional, să îmi dezvolt abilitățile de programare și să contribui la proiecte reale.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h3 class="cv-section-title">
+                <i class="fas fa-graduation-cap mr-2"></i>
+                Educație
+            </h3>
+            <div class="timeline-item">
+                <p class="font-semibold text-lg text-gray-800 mb-1">Licență în Calculatoare, Informatică și Microelectronică</p>
+                <p class="text-gray-600 mb-1">Universitatea Tehnică a Moldovei, Chișinău</p>
+                <p class="text-sm text-gray-500">2020 - 2024</p>
+            </div>
+            <div class="timeline-item">
+                <p class="font-semibold text-lg text-gray-800 mb-1">Profil Real (Bacalaureat)</p>
+                <p class="text-gray-600 mb-1">Liceul Teoretic "Alexandru cel Bun", Sîngera</p>
+                <p class="text-sm text-gray-500">2019</p>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h3 class="cv-section-title">
+                <i class="fas fa-code mr-2"></i>
+                Competențe Tehnice
+            </h3>
+            <div class="mb-6">
+                <h4 class="font-medium text-gray-700 mb-2">Limbaje de Programare</h4>
+                <div class="flex flex-wrap">
+                    <span class="skill-tag">
+                        <i class="fab fa-html5 mr-1"></i> HTML5
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fab fa-css3-alt mr-1"></i> CSS3
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fab fa-js mr-1"></i> JavaScript (Bază)
+                    </span>
+                </div>
+            </div>
+            <div class="mb-6">
+                <h4 class="font-medium text-gray-700 mb-2">Framework-uri & Platforme</h4>
+                <div class="flex flex-wrap">
+                    <span class="skill-tag">
+                        <i class="fab fa-wordpress mr-1"></i> WordPress
+                    </span>
+                </div>
+            </div>
+            <div class="mb-6">
+                <h4 class="font-medium text-gray-700 mb-2">Unelte & Design</h4>
+                <div class="flex flex-wrap">
+                    <span class="skill-tag">
+                        <i class="fab fa-figma mr-1"></i> Figma
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fas fa-paint-brush mr-1"></i> Adobe Photoshop
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fas fa-pen-fancy mr-1"></i> Adobe Illustrator
+                    </span>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-medium text-gray-700 mb-2">Alte Abilități</h4>
+                <div class="flex flex-wrap">
+                    <span class="skill-tag">
+                        <i class="fas fa-laptop-code mr-1"></i> VS Code
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fas fa-robot mr-1"></i> Utilizare AI în workflow
+                    </span>
+                    <span class="skill-tag">
+                        <i class="fas fa-mobile-alt mr-1"></i> Responsive Design
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h3 class="cv-section-title">
+                <i class="fas fa-brain mr-2"></i>
+                Abilități Personale
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-medium text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                        Analitice & Creative
+                    </h4>
+                    <ul class="space-y-1 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1 text-sm"></i>
+                            <span>Abilități de rezolvare probleme</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1 text-sm"></i>
+                            <span>Gândire analitică și logică</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1 text-sm"></i>
+                            <span>Atenție la detalii</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h4 class="font-medium text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-users text-blue-500 mr-2"></i>
+                        Sociale & Profesionale
+                    </h4>
+                    <ul class="space-y-1 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1 text-sm"></i>
+                            <span>Comunicare eficientă</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1 text-sm"></i>
+                            <span>Colaborare în echipă</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1 text-sm"></i>
+                            <span>Adaptabilitate la schimbări</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h3 class="cv-section-title">
+                <i class="fas fa-calendar-alt mr-2"></i>
+                Disponibilitate
+            </h3>
+            <div class="flex items-start">
+                <div class="bg-green-50 text-green-800 p-3 rounded-lg mr=4">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-800 mb-1">Disponibil pentru Internship</p>
+                    <p class="text-gray-600">Program flexibil, conform cerințelor postului (Luni-Vineri sau Miercuri-Duminică)</p>
+                    <div class="mt=2">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Preferințe: Remote</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript for animations -->
+    <script>
+        // Add animation to skills on hover
+        document.querySelectorAll('.skill-tag').forEach(tag => {
+            tag.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            });
+            tag.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+    </script>
 </body>
 </html>
