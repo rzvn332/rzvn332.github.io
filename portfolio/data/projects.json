@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "E-commerce Platform",
+        "category": "ui",
+        "description": "Modern UI/UX design for an online store",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "link": "https://example.com/ecommerce-project"
+    },
+    {
+        "id": 2,
+        "title": "Tech Startup Logo",
+        "category": "logo",
+        "description": "Minimalist logo for a blockchain startup",
+        "image": "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "link": "https://example.com/logo-project"
+    },
+    {
+        "id": 3,
+        "title": "Digital Marketing Banner",
+        "category": "banner",
+        "description": "Series of promotional banners for social media",
+        "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "link": "https://example.com/banner-project"
+    },
+    {
+        "id": 4,
+        "title": "Mobile Banking App",
+        "category": "ui",
+        "description": "Redesigned banking app focusing on usability",
+        "image": "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "link": "https://example.com/banking-app"
+    }
+]

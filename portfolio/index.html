@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZVN | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-black">
+        <div class="container mx-auto px-10 py-4 flex justify-between items-center">
+            <a href="#home" target="_self" class="text-2xl font-bold tracking-wider ml-8">RZVN</a>
+            <button id="menuBtn" class="text-2xl font-bold tracking-wider focus:outline-none transition-all duration-300 hover:text-white/70 mr-8">
+                <span>MENU</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay">
+        <div class="text-center">
+            <nav class="space-y-12">
+                <div class="menu-link"><a href="#work" class="text-5xl md:text-7xl font-bold hover:text-white transition duration-500">Work</a></div>
+                <div class="menu-link"><a href="#about" class="text-5xl md:text-7xl font-bold hover:text-white transition duration-500">About</a></div>
+                <div class="menu-link"><a href="#contact" class="text-5xl md:text-7xl font-bold hover:text-white transition duration-500">Contact</a></div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center hero">
+        <!-- Particle container -->
+        <div id="tsparticles"></div>
+
+        <!-- Original Hero Content - wrapped for z-index control -->
+        <div class="hero-content text-center px-6">
+            <h1 class="text-4xl md:text-7xl font-bold mb-4 tracking-tight hero-title">
+                <span class="inline-block">WELCOME</span>
+                <span class="inline-block">TO</span>
+                <span class="inline-block">MY</span>
+                <span class="inline-block">PORTFOLIO</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/80 mb-12 hero-subtitle">Here you will see the world through my eyes.</p>
+            
+            <!-- Structura revizuita a butonului -->
+            <div class="hero-button-wrapper">
+                <a href="#work" class="glow-button">
+                    <span class="btn-content">EXPLORE WORK</span>
+                    <span class="btn-glow"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-content absolute bottom-10 left-0 right-0 text-center">
+            <a href="#work" class="inline-block floating hero-scroll-icon">
+                <i class="fas fa-chevron-down text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 content-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold mb-12">MY WORK</h2>
+
+                <div class="flex justify-center mb-12">
+                    <div class="inline-flex flex-wrap justify-center gap-x-4 md:gap-x-8 gap-y-2 text-lg">
+                        <button class="category-filter active" data-category="all">ALL PROJECT</button>
+                        <span class="hidden md:inline">/</span>
+                        <button class="category-filter" data-category="ui">UI/UX DESIGN</button>
+                        <span class="hidden md:inline">/</span>
+                        <button class="category-filter" data-category="logo">LOGO DESIGN</button>
+                        <span class="hidden md:inline">/</span>
+                        <button class="category-filter" data-category="banner">BANNER DESIGN</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16" id="projectsContainer">
+                    <!-- Projects will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about", class="py-20 content-section bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold mb-12">ABOUT ME</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">WHO AM I</h3>
+                        <p class="text-lg mb-6 leading-relaxed">
+                            I'm RZVN, a creative designer specializing in digital experiences with a focus on
+                            user-centered design. With over 5 years in the industry, I've helped brands
+                            transform their visions into meaningful digital products.
+                        </p>
+                        <p class="text-lg mb-6 leading-relaxed">
+                            My approach combines aesthetics with functionality, creating designs that are
+                            as beautiful as they are intuitive. I believe good design should solve problems
+                            before people even notice they exist.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">WHAT I DO</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1"><i class="fas fa-pen-fancy"></i></div>
+                                <div>
+                                    <h4 class="font-bold">UI/UX Design</h4>
+                                    <p class="text-white/80">Creating intuitive digital experiences that users love.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1"><i class="fas fa-paint-brush"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Brand Identity</h4>
+                                    <p class="text-white/80">Developing visual identities that tell your brand's story.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1"><i class="fas fa-code"></i></div>
+                                <div>
+                                    <h4 class="font-bold">Prototyping</h4>
+                                    <p class="text-white/80">Bringing designs to life with interactive prototypes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold mb-6">SKILLS</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="skillsContainer">
+                        <!-- Skills will be added by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 content-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold mb-12">GET IN TOUCH</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Contact Info Card -->
+                    <div class="contact-card">
+                        <h3 class="text-2xl font-bold mb-6">CONTACT INFO</h3>
+                        <div class="space-y-5">
+                            <div class="contact-info-group flex items-start">
+                                <div class="mr-4 mt-1 text-white/80 contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <a href="mailto:rzvn332@gmail.com" class="text-white/70 hover:text-white transition duration-300">rzvn332@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-group flex items-start">
+                                <div class="mr-4 mt-1 text-white/80 contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <a href="tel:+37378082255" class="text-white/70 hover:text-white transition duration-300">+(373)78082255</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-group flex items-start">
+                                <div class="mr-4 mt-1 text-white/80 contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Location</h4>
+                                    <p class="text-white/70">Moldova, Chișinău</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold mt-10 mb-6">SOCIAL MEDIA</h3>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-card">
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label for="name" class="block mb-2 font-medium text-white/80">Your Name</label>
+                                <input type="text" id="name" name="from_name" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50" required>
+                            </div>
+                        
+                            <div>
+                                <label for="email" class="block mb-2 font-medium text-white/80">Your Email</label>
+                                <input type="email" id="email" name="from_email" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50" required>
+                            </div>
+                        
+                            <div>
+                                <label for="subject" class="block mb-2 font-medium text-white/80">Subject</label>
+                                <input type="text" id="subject" name="subject" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50">
+                            </div>
+                        
+                            <div>
+                                <label for="message" class="block mb-2 font-medium text-white/80">Message</label>
+                                <textarea id="message" name="message" rows="4" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
+                            </div>
+                        
+                            <div class="pt-2 flex justify-end">
+                                <button type="submit" class="submit-btn px-8 py-3 bg-white text-black font-bold tracking-wider rounded-lg">
+                                    SEND MESSAGE
+                                </button>
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-xl font-bold mb-4 md:mb-0">RZVN</div>
+                <div class="text-white/80 text-sm">
+                    &copy; 2025 All Rights Reserved. Designed by RZVN
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Adaugă acest script în head sau înainte de contact-form.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>

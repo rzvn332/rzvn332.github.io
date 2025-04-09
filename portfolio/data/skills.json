@@ -1,0 +1,10 @@
+[
+    { "id": 1, "name": "Figma", "icon": "fab fa-figma" },
+    { "id": 2, "name": "Photoshop", "icon": "fas fa-layer-group" },
+    { "id": 3, "name": "Illustrator", "icon": "fas fa-palette" },
+    { "id": 4, "name": "Responsive Design", "icon": "fas fa-mobile-alt" },
+    { "id": 5, "name": "HTML5", "icon": "fab fa-html5" },
+    { "id": 6, "name": "CSS3", "icon": "fab fa-css3-alt" },
+    { "id": 7, "name": "JavaScript", "icon": "fab fa-js" },
+    { "id": 8, "name": "React", "icon": "fab fa-react" }
+]
