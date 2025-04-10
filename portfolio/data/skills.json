@@ -1,0 +1,10 @@
+[
+    { "id": 1, "name": "Figma", "icon": "https://www.svgrepo.com/show/532271/figma.svg" },
+    { "id": 2, "name": "Photoshop", "icon": "https://www.svgrepo.com/show/305663/adobe-photoshop.svg" },
+    { "id": 3, "name": "Illustrator", "icon": "https://www.svgrepo.com/show/473509/adobeillustrator.svg" },
+    { "id": 4, "name": "Responsive Design", "icon": "https://www.svgrepo.com/show/153781/responsive-design-symbol.svg" },
+    { "id": 5, "name": "HTML5", "icon": "https://www.svgrepo.com/show/512355/html-124.svg" },
+    { "id": 6, "name": "CSS3", "icon": "https://www.svgrepo.com/show/508795/css3-02.svg" },
+    { "id": 7, "name": "JavaScript", "icon": "https://www.svgrepo.com/show/473670/javascript.svg" },
+    { "id": 8, "name": "Notion", "icon": "https://www.svgrepo.com/show/342071/notion.svg" }
+]
