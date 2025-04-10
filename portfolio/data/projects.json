@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "title": "E-commerce Platform",
-        "category": "ui",
+        "title": "Banner CarRent",
+        "category": "banner",
         "description": "Modern UI/UX design for an online store",
-        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-        "link": "https://example.com/ecommerce-project"
+        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/20263f223412263.67f809b818437.jpg",
+        "link": "https://www.behance.net/gallery/223412263/Banner-CarRent-in-2-size"
     },
     {
         "id": 2,
