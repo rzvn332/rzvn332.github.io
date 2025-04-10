@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             skillCard.className = 'skill-card';
             skillCard.innerHTML = `
                 <div class="skill-icon">
-                    <i class="${skill.icon}"></i>
+                    <img src="${skill.icon}" alt="${skill.name}" class="w-full h-full object-contain" />
                 </div>
                 <h4 class="font-bold">${skill.name}</h4>
             `;
