@@ -6,5 +6,5 @@
     { "id": 5, "name": "HTML5", "icon": "fab fa-html5" },
     { "id": 6, "name": "CSS3", "icon": "fab fa-css3-alt" },
     { "id": 7, "name": "JavaScript", "icon": "fab fa-js" },
-    { "id": 8, "name": "React", "icon": "fab fa-react" }
+    { "id": 8, "name": "Notion", "icon": "https://www.svgrepo.com/show/532271/figma.svg" }
 ]
