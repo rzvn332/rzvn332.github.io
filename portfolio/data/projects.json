@@ -25,6 +25,14 @@
     },
     {
         "id": 4,
+        "title": "Build X",
+        "category": "logo",
+        "description": "Redesigned banking app focusing on usability",
+        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/38664a223422391.67f8315f85b78.jpg",
+        "link": "https://www.behance.net/gallery/223422391/BuildX"
+    },
+    {
+        "id": 5,
         "title": "Mobile Banking App",
         "category": "ui",
         "description": "Redesigned banking app focusing on usability",
