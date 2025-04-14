@@ -395,3 +395,28 @@ button[type="submit"] .fa-spinner {
     object-fit: contain;
 }
 
+/* Projects Toggle Buttons - Compact */
+.projects-toggle-btn {
+    margin: 0 0.4rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 100px;
+    font-size: 0.8rem;
+}
+
+.projects-toggle-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+@media (max-width: 768px) {
+    .projects-toggle-btn {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+        min-width: 90px;
+    }
+}
+

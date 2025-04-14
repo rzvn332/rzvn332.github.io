@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render projects
     async function renderProjects(category = 'all') {
         const projectsContainer = document.getElementById('projectsContainer');
+        const showMoreBtn = document.getElementById('showMoreBtn');
+        const showLessBtn = document.getElementById('showLessBtn');
         if (!projectsContainer) return;
 
         const projects = await fetchData('data/projects.json');
@@ -87,38 +89,71 @@ document.addEventListener('DOMContentLoaded', () => {
             ? projects
             : projects.filter(project => project.category === category);
 
-        filteredProjects.forEach((project, index) => {
-            const projectCard = document.createElement('a');
-            projectCard.href = project.link;
-            projectCard.target = "_blank";
-            projectCard.rel = "noopener noreferrer";
-            projectCard.className = 'project-card project-card-link bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300';
-            projectCard.innerHTML = `
-                <div class="project-image-container">
-                    <img src="${project.image}" alt="${project.title}" class="project-image">
-                    <div class="project-image-overlay"></div>
-                    <div class="project-link-icon">
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
+        // Show only first 4 projects initially
+        const initialProjects = filteredProjects.slice(0, 4);
+        const remainingProjects = filteredProjects.slice(4);
+
+        initialProjects.forEach((project, index) => {
+            createProjectCard(projectsContainer, project, index);
+        });
+
+        // Toggle buttons based on project count
+        if (remainingProjects.length > 0) {
+            showMoreBtn.style.display = 'block';
+            showLessBtn.style.display = 'none';
+            
+            showMoreBtn.onclick = () => {
+                remainingProjects.forEach((project, index) => {
+                    createProjectCard(projectsContainer, project, index + initialProjects.length);
+                });
+                showMoreBtn.style.display = 'none';
+                showLessBtn.style.display = 'block';
+            };
+
+            showLessBtn.onclick = () => {
+                projectsContainer.innerHTML = '';
+                initialProjects.forEach((project, index) => {
+                    createProjectCard(projectsContainer, project, index);
+                });
+                showMoreBtn.style.display = 'block';
+                showLessBtn.style.display = 'none';
+            };
+        } else {
+            showMoreBtn.style.display = 'none';
+            showLessBtn.style.display = 'none';
+        }
+    }
+
+    function createProjectCard(container, project, index) {
+        const projectCard = document.createElement('a');
+        projectCard.href = project.link;
+        projectCard.target = "_blank";
+        projectCard.rel = "noopener noreferrer";
+        projectCard.className = 'project-card project-card-link bg-white/5 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-300';
+        projectCard.innerHTML = `
+            <div class="project-image-container">
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-image-overlay"></div>
+                <div class="project-link-icon">
+                    <i class="fas fa-external-link-alt"></i>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">${project.title}</h3>
-                    <p class="text-white/80 mb-4">${project.description}</p>
-                    <span class="inline-block px-3 py-1 bg-white/10 text-white rounded-full text-xs font-medium">
-                        ${project.category.toUpperCase()}
-                    </span>
-                </div>
-            `;
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">${project.title}</h3>
+                <p class="text-white/80 mb-4">${project.description}</p>
+                <span class="inline-block px-3 py-1 bg-white/10 text-white rounded-full text-xs font-medium">
+                    ${project.category.toUpperCase()}
+                </span>
+            </div>
+        `;
 
-            projectCard.style.setProperty('--animate-delay', `${index * 0.15}s`);
+        projectCard.style.setProperty('--animate-delay', `${index * 0.15}s`);
+        container.appendChild(projectCard);
 
-            projectsContainer.appendChild(projectCard);
-
-            requestAnimationFrame(() => {
-                setTimeout(() => {
-                    projectCard.classList.add('visible');
-                }, 10);
-            });
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                projectCard.classList.add('visible');
+            }, 10);
         });
     }
 
