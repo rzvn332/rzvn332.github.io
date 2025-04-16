@@ -265,6 +265,21 @@ body {
     user-select: none;
 }
 
+@media (max-width: 768px) {
+    .category-filter + span {
+        display: inline !important;
+        margin: 0 0.25rem;
+    }
+    
+    .category-filter {
+        font-size: 0.9rem;
+    }
+    
+    .flex-wrap.justify-center {
+        gap: 0.25rem !important;
+    }
+}
+
 .skill-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
