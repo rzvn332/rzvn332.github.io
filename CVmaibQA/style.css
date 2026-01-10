@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    color: #222;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+    font-size: 0.95em;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555;
+}
+
+.contact-item a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.contact-item a:hover {
+    color: #333;
+}
+
+.main-content {
+    padding: 0;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #1a1a1a;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 i {
+    color: #333;
+}
+
+.education-item, .experience-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.edu-title, .exp-title {
+    font-weight: 600;
+    color: #222;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.edu-subtitle, .exp-subtitle {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.edu-date, .exp-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.skill-category {
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 25px;
+    }
+    
+    .main-content {
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .skills-grid {
+        gap: 20px;
+    }
+    
+    .contact-info {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
