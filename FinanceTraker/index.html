@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%234A90E2'/%3E%3Cpath d='M20 70 L40 50 L60 65 L80 30' fill='none' stroke='white' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <title>Finance Tracker</title>
     
+    <!-- Setări pentru Aplicație (PWA) -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Finance Tracker">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <!-- Iconiță pentru tab browser (favicon) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%234A90E2'/%3E%3Cpath d='M20 70 L40 50 L60 65 L80 30' fill='none' stroke='white' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    
     <style>
-        /* Resetare completă pentru a ocupa tot ecranul */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden; /* Ascunde scrollbar-ul paginii părinte */
-            background-color: #f4f6f8; /* Culoarea de fundal a aplicației tale */
+            overflow: hidden; 
+            background-color: #f4f6f8;
         }
-
-        /* Iframe-ul care ocupă tot spațiul */
         iframe {
             border: none;
             width: 100%;
             height: 100%;
-            display: block; /* Elimină spațiile mici de jos */
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <!-- Înlocuiește LINKUL_TAU_AICI cu link-ul tău de la Web App -->
     <iframe src="https://script.google.com/macros/s/AKfycbxvl4O0EOG5TpQsYE3KlZhTJk2jlrZLb0m076OVSDJ2aXwct7M_bK_BDAq-0chTBmMB/exec" allow="camera; microphone; geolocation"></iframe>
 
+    <!-- Script pentru activarea modului Aplicație -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('App ready!', reg.scope))
+                    .catch(err => console.log('App error:', err));
+            });
+        }
+    </script>
 </body>
 </html>
