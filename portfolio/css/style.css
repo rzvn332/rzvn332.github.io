@@ -435,3 +435,539 @@ button[type="submit"] .fa-spinner {
     }
 }
 
+/* ==================== PROJECT MODAL ==================== */
+
+.project-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-modal.active {
+    display: flex;
+}
+
+.project-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    animation: modalFadeIn 0.3s ease;
+}
+
+.project-modal-content {
+    position: relative;
+    z-index: 1;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 920px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 2rem;
+    animation: modalScaleIn 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.project-modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.project-modal-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+/* Modal Header */
+.project-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-modal-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.project-modal-close {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s ease;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-modal-close:hover {
+    color: white;
+}
+
+/* Modal Title */
+.project-modal-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+/* Carousel Stack */
+.project-modal-carousel {
+    margin-bottom: 1.5rem;
+}
+
+.carousel-stack-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.carousel-stack {
+    flex: 1;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #111;
+}
+
+.carousel-slide[data-status="active"] {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+/* Scroll Hint - Desktop hidden */
+.carousel-scroll-hint {
+    display: none;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 15;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Thumbnails */
+.carousel-thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.carousel-thumb {
+    width: 48px;
+    height: 32px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    padding: 0;
+    background: none;
+}
+
+.carousel-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-thumb.active {
+    border-color: white;
+    opacity: 1;
+}
+
+.carousel-thumb:hover {
+    opacity: 0.8;
+}
+
+/* Modal Info */
+.project-modal-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.25rem;
+}
+
+.project-modal-description {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.project-modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-modal-tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes modalFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalScaleIn {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ==================== IMAGE VIEWER ==================== */
+
+.image-viewer {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-viewer.active {
+    display: flex;
+}
+
+.image-viewer-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    animation: modalFadeIn 0.25s ease;
+}
+
+.image-viewer-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.image-viewer-close:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.image-viewer-img {
+    position: relative;
+    z-index: 1;
+    max-width: 92vw;
+    max-height: 88vh;
+    object-fit: contain;
+    border-radius: 4px;
+    animation: viewerFadeIn 0.3s ease;
+}
+
+.image-viewer-counter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    z-index: 2;
+}
+
+@keyframes viewerFadeIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* ==================== LANGUAGE SWITCHER ==================== */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 2rem;
+}
+
+.header-divider {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.25rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+.lang-wrapper {
+    position: relative;
+}
+
+#langToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.4rem 0;
+    min-width: 140px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.lang-dropdown.active {
+    display: block;
+    animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.lang-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Chakra Petch', sans-serif;
+    transition: all 0.15s ease;
+}
+
+.lang-dropdown button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.lang-dropdown button.active {
+    color: white;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Bottom Sheet */
+    .project-modal {
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .project-modal-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.75rem 1rem 1.5rem;
+        max-height: 88vh;
+        border-radius: 16px 16px 0 0;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        animation: sheetSlideUp 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+        overflow-y: auto;
+    }
+
+    @keyframes sheetSlideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+
+    .project-modal-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-modal-category {
+        font-size: 0.65rem;
+    }
+
+    /* Carousel → horizontal scroll on mobile */
+    .carousel-stack-wrapper {
+        gap: 0;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .carousel-stack {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        touch-action: pan-x;
+        height: auto;
+        gap: 0.75rem;
+        padding: 0 0.25rem;
+        position: relative;
+    }
+
+    .carousel-stack::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-slide {
+        position: relative;
+        flex-shrink: 0;
+        width: calc(100% - 0.5rem);
+        scroll-snap-align: center;
+        opacity: 1;
+        pointer-events: auto;
+        border-radius: 8px;
+        background: #111;
+        max-height: 55vh;
+        overflow: hidden;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Scroll Hint */
+    .carousel-scroll-hint {
+        display: block;
+        text-align: center;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.35);
+        letter-spacing: 0.05em;
+        padding: 0.6rem 0 0.25rem;
+        user-select: none;
+    }
+
+    .carousel-scroll-hint span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .carousel-scroll-hint .scroll-arrow {
+        display: inline-block;
+        animation: scrollHintPulse 1.8s ease-in-out infinite;
+    }
+
+    .carousel-scroll-hint .scroll-arrow:last-child {
+        animation-delay: 0.9s;
+    }
+
+    @keyframes scrollHintPulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.8; }
+    }
+
+    /* Thumbnails */
+    .carousel-thumbs {
+        margin-top: 0.75rem;
+        gap: 0.4rem;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 0.25rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel-thumbs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-thumb {
+        width: 40px;
+        height: 28px;
+        flex-shrink: 0;
+    }
+
+    /* Modal Info */
+    .project-modal-info {
+        padding-top: 1rem;
+    }
+
+    .project-modal-description {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .project-modal-tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.6rem;
+    }
+}
+

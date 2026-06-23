@@ -1,34 +1,73 @@
-[
+window.projectsData = [
     {
         "id": 1,
         "title": "CarRent",
+        "title_ro": "CarRent",
+        "title_ru": "CarRent",
         "category": "banner",
         "description": "Eye-catching banner for RentCar, blending clean design and compelling messaging to promote SUV rentals. Perfect for digital or print campaigns.",
-        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/504f53223412263.67f809b817cda.jpg",
-        "link": "https://www.behance.net/gallery/223412263/Banner-CarRent-in-2-size"
+        "description_ro": "Banner atrăgător pentru RentCur, combinând designul curat și mesajul convingător pentru a promova închirierea SUV-urilor. Perfect pentru campanii digitale sau tipărite.",
+        "description_ru": "Привлекающий внимание баннер для RentCar, сочетающий чистый дизайн и убедительное сообщение для продвижения аренды внедорожников. Идеален для цифровых или печатных кампаний.",
+        "technologies": ["Photoshop", "Illustrator"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/504f53223412263.67f809b817cda.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/20263f223412263.67f809b818437.jpg"
+        ]
     },
     {
         "id": 2,
         "title": "Hex Mobile",
+        "title_ro": "Hex Mobile",
+        "title_ru": "Hex Mobile",
         "category": "logo",
-        "description": "A modern logo for HexMobile, combining a hexagon symbol and the letter “M” to represent technology, connectivity, and mobile innovation.",
-        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e50200223419245.67f82890ed1f8.jpg",
-        "link": "https://www.behance.net/gallery/223419245/Hex-Mobile"
+        "description": "A modern logo for HexMobile, combining a hexagon symbol and the letter \"M\" to represent technology, connectivity, and mobile innovation.",
+        "description_ro": "Un logo modern pentru HexMobile, combinând simbolul hexagonal și litera \"M\" pentru a reprezenta tehnologia, conectivitatea și inovația mobilă.",
+        "description_ru": "Современный логотип для HexMobile,.combineующий символ шестиугольника и букву «M» для представления технологий, связности и мобильных инноваций.",
+        "technologies": ["Illustrator"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/e50200223419245.67f82890ed1f8.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a7f1fb223419245.67f82890ec313.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/f602d5223419245.67f82890ec8e4.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c4022223419245.67f82890ebb7c.jpg"
+        ]
     },
     {
         "id": 3,
         "title": "Build X",
+        "title_ro": "Build X",
+        "title_ru": "Build X",
         "category": "logo",
         "description": "Build X logo represents power, speed, and precision, for a company that builds custom, high-performance PCs from scratch.",
-        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/38664a223422391.67f8315f85b78.jpg",
-        "link": "https://www.behance.net/gallery/223422391/BuildX"
+        "description_ro": "Logo-ul Build X reprezintă puterea, viteza și precizia, pentru o companie care construiește PC-uri personalizate de înaltă performanță de la zero.",
+        "description_ru": "Логотип Build X представляет мощность, скорость и точность для компании, которая собирает пользовательские высокопроизводительные ПК с нуля.",
+        "technologies": ["Illustrator"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/38664a223422391.67f8315f85b78.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b51174223422391.67f8315f8646a.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bf959c223422391.67f8315ed0da3.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ecb69d223422391.67f8315ed145a.jpg"
+        ]
     },
     {
         "id": 4,
         "title": "Just Recycle",
+        "title_ro": "Just Recycle",
+        "title_ru": "Just Recycle",
         "category": "ui",
         "description": "JustRecycle is a smart UI/UX app that identifies objects from images and recommends the right, eco-friendly recycling methods.",
-        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/39d0aa223423125.67f834de9ee8e.jpg",
-        "link": "https://www.behance.net/gallery/223423125/Just-Recycle-UI"
+        "description_ro": "JustRecycle este o aplicație UI/UX inteligentă care identifică obiecte din imagini și recomandă metodele corecte de reciclare ecologică.",
+        "description_ru": "JustRecycle — это умное приложение UI/UX, которое определяет объекты по изображениям и рекомендует правильные экологичные методы переработки.",
+        "technologies": ["Figma", "Photoshop"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/39d0aa223423125.67f834de9ee8e.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/351487223423125.6a3b009554ae3.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/e104e7223423125.6a3b009551ed9.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/f76916223423125.6a3b009552c6f.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/8e18d3223423125.6a3b00955252a.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4453d223423125.6a3b009553ea6.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd3091223423125.6a3b0095538ba.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/72d43f223423125.6a3b0095544be.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2b7065223423125.6a3b00955327e.jpg",
+        ]
     }
-]
+];
