@@ -1,6 +1,20 @@
 window.projectsData = [
     {
         "id": 1,
+        "title": "Cricova",
+        "title_ro": "Cricova",
+        "title_ru": "Cricova",
+        "category": "banner",
+        "description": "Advertising banner - Cricova. A visual concept that combines the vintage look of the bottle with the illustration of underground cellars, reflecting the tradition and premium quality of the wine.",
+        "description_ro": "Banner publicitar - Cricova. Un concept vizual ce îmbină aspectul vintage al sticlei cu ilustrația cramelor subterane, reflectând tradiția și calitatea premium a vinului.",
+        "description_ru": "Рекламный баннер - Cricova. Визуальная концепция, сочетающая винтажный вид бутылки с изображением подземных погребов, отражающая традиции и высокое качество вина.",
+        "technologies": ["Figma", "AI"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ede68d253630489.6a6de75c5528b.jpg"
+        ]
+    },
+    {
+        "id": 2,
         "title": "CarRent",
         "title_ro": "CarRent",
         "title_ru": "CarRent",
@@ -15,7 +29,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Hex Mobile",
         "title_ro": "Hex Mobile",
         "title_ru": "Hex Mobile",
@@ -32,7 +46,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Build X",
         "title_ro": "Build X",
         "title_ru": "Build X",
@@ -49,7 +63,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Just Recycle",
         "title_ro": "Just Recycle",
         "title_ru": "Just Recycle",
