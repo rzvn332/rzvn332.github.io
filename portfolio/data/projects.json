@@ -15,6 +15,23 @@ window.projectsData = [
     },
     {
         "id": 2,
+        "title": "Darwin iPhone 17 PRO",
+        "title_ro": "Darwin iPhone 17 PRO",
+        "title_ru": "Darwin iPhone 17 PRO",
+        "category": "banner",
+        "description": "iPhone 17 Pro Launch at Darwin. A series of premium banners blending modern aesthetics with a clear message of peak performance.",
+        "description_ro": "Lansare iPhone 17 Pro la Darwin. O serie de bannere premium care îmbină estetica modernă cu mesajul clar al performanței de vârf.",
+        "description_ru": "Запуск iPhone 17 Pro в Darwin. Серия баннеров премиум-класса, сочетающая современную эстетику и четкий посыл о максимальной производительности.",
+        "technologies": ["Figma"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/7ef7ee253649117.6a6e7a1ba81a4.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/1f8964253649117.6a6e7a1ba8e27.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/859d1c253649117.6a6e7a1ba8999.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/39bd25253649117.6a6e7a1ba85c5.jpg",
+        ]
+    },
+    {
+        "id": 3,
         "title": "CarRent",
         "title_ro": "CarRent",
         "title_ru": "CarRent",
@@ -29,7 +46,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Hex Mobile",
         "title_ro": "Hex Mobile",
         "title_ru": "Hex Mobile",
@@ -46,7 +63,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Build X",
         "title_ro": "Build X",
         "title_ru": "Build X",
@@ -63,7 +80,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Just Recycle",
         "title_ro": "Just Recycle",
         "title_ru": "Just Recycle",
