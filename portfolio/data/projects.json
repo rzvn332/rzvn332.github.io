@@ -1,20 +1,6 @@
 window.projectsData = [
     {
         "id": 1,
-        "title": "Cricova",
-        "title_ro": "Cricova",
-        "title_ru": "Cricova",
-        "category": "banner",
-        "description": "Advertising banner - Cricova. A visual concept that combines the vintage look of the bottle with the illustration of underground cellars, reflecting the tradition and premium quality of the wine.",
-        "description_ro": "Banner publicitar - Cricova. Un concept vizual ce îmbină aspectul vintage al sticlei cu ilustrația cramelor subterane, reflectând tradiția și calitatea premium a vinului.",
-        "description_ru": "Рекламный баннер - Cricova. Визуальная концепция, сочетающая винтажный вид бутылки с изображением подземных погребов, отражающая традиции и высокое качество вина.",
-        "technologies": ["Figma", "AI"],
-        "images": [
-            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ede68d253630489.6a6de75c5528b.jpg"
-        ]
-    },
-    {
-        "id": 2,
         "title": "Darwin iPhone 17 PRO",
         "title_ro": "Darwin iPhone 17 PRO",
         "title_ru": "Darwin iPhone 17 PRO",
@@ -31,22 +17,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 3,
-        "title": "CarRent",
-        "title_ro": "CarRent",
-        "title_ru": "CarRent",
-        "category": "banner",
-        "description": "Eye-catching banner for RentCar, blending clean design and compelling messaging to promote SUV rentals. Perfect for digital or print campaigns.",
-        "description_ro": "Banner atrăgător pentru RentCur, combinând designul curat și mesajul convingător pentru a promova închirierea SUV-urilor. Perfect pentru campanii digitale sau tipărite.",
-        "description_ru": "Привлекающий внимание баннер для RentCar, сочетающий чистый дизайн и убедительное сообщение для продвижения аренды внедорожников. Идеален для цифровых или печатных кампаний.",
-        "technologies": ["Photoshop", "Illustrator"],
-        "images": [
-            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/504f53223412263.67f809b817cda.jpg",
-            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/20263f223412263.67f809b818437.jpg"
-        ]
-    },
-{
-    "id": 4,
+    "id": 2,
     "title": "Zoo Tîrgul Mureș",
     "title_ro": "Zoo Tîrgul Mureș",
     "title_ru": "Zoo Tîrgul Mureș",
@@ -59,6 +30,35 @@ window.projectsData = [
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs/492afd253661243.6a6f16d7aa781.jpg",
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6a22fb253661243.6a6f159256e48.jpg"
     ]
+    },
+    {
+        "id": 3,
+        "title": "Cricova",
+        "title_ro": "Cricova",
+        "title_ru": "Cricova",
+        "category": "banner",
+        "description": "Advertising banner - Cricova. A visual concept that combines the vintage look of the bottle with the illustration of underground cellars, reflecting the tradition and premium quality of the wine.",
+        "description_ro": "Banner publicitar - Cricova. Un concept vizual ce îmbină aspectul vintage al sticlei cu ilustrația cramelor subterane, reflectând tradiția și calitatea premium a vinului.",
+        "description_ru": "Рекламный баннер - Cricova. Визуальная концепция, сочетающая винтажный вид бутылки с изображением подземных погребов, отражающая традиции и высокое качество вина.",
+        "technologies": ["Figma", "AI"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ede68d253630489.6a6de75c5528b.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "CarRent",
+        "title_ro": "CarRent",
+        "title_ru": "CarRent",
+        "category": "banner",
+        "description": "Eye-catching banner for RentCar, blending clean design and compelling messaging to promote SUV rentals. Perfect for digital or print campaigns.",
+        "description_ro": "Banner atrăgător pentru RentCur, combinând designul curat și mesajul convingător pentru a promova închirierea SUV-urilor. Perfect pentru campanii digitale sau tipărite.",
+        "description_ru": "Привлекающий внимание баннер для RentCar, сочетающий чистый дизайн и убедительное сообщение для продвижения аренды внедорожников. Идеален для цифровых или печатных кампаний.",
+        "technologies": ["Photoshop", "Illustrator"],
+        "images": [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/504f53223412263.67f809b817cda.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/20263f223412263.67f809b818437.jpg"
+        ]
     },
     {
         "id": 5,
