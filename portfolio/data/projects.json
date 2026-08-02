@@ -45,8 +45,23 @@ window.projectsData = [
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/20263f223412263.67f809b818437.jpg"
         ]
     },
+{
+    "id": 4,
+    "title": "Zoo Tîrgul Mureș",
+    "title_ro": "Zoo Tîrgul Mureș",
+    "title_ru": "Zoo Tîrgul Mureș",
+    "category": "banner",
+    "description": "Promotional poster for Zoo Tîrgul Mureș. A modern collage composition combining a black-and-white giraffe portrait with bold botanical shapes, creating an elegant visual identity.",
+    "description_ro": "Poster promoțional pentru Zoo Tîrgul Mureș. O compoziție modernă de tip colaj ce combină portretul alb-negru al unei girafe cu forme botanice stilizate, creând o identitate vizuală elegantă.",
+    "description_ru": "Рекламный постер для Zoo Tîrgul Mureș. Современная коллажная композиция, сочетающая черно-белый портрет жирафа со стилизованными ботаническими формами, создающая элегантную визуальную айдентику.",
+    "technologies": ["Figma"],
+    "images": [
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs/492afd253661243.6a6f16d7aa781.jpg",
+        "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6a22fb253661243.6a6f159256e48.jpg"
+    ]
+    },
     {
-        "id": 4,
+        "id": 5,
         "title": "Hex Mobile",
         "title_ro": "Hex Mobile",
         "title_ru": "Hex Mobile",
@@ -63,7 +78,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Build X",
         "title_ro": "Build X",
         "title_ru": "Build X",
@@ -80,7 +95,7 @@ window.projectsData = [
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Just Recycle",
         "title_ro": "Just Recycle",
         "title_ru": "Just Recycle",
