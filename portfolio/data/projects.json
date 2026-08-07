@@ -6,6 +6,7 @@ window.projectsData = [
         "title_ru": "Darwin iPhone 17 PRO",
         "category": "banner",
         "description": "iPhone 17 Pro Launch at Darwin. A series of premium banners blending modern aesthetics with a clear message of peak performance.",
+        "alt": "iPhone 17 Pro banner design for Darwin - premium advertising banner by RZVN",
         "description_ro": "Lansare iPhone 17 Pro la Darwin. O serie de bannere premium care îmbină estetica modernă cu mesajul clar al performanței de vârf.",
         "description_ru": "Запуск iPhone 17 Pro в Darwin. Серия баннеров премиум-класса, сочетающая современную эстетику и четкий посыл о максимальной производительности.",
         "technologies": ["Figma"],
@@ -13,7 +14,7 @@ window.projectsData = [
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/7ef7ee253649117.6a6e7a1ba81a4.jpg",
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/1f8964253649117.6a6e7a1ba8e27.jpg",
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/859d1c253649117.6a6e7a1ba8999.jpg",
-            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/39bd25253649117.6a6e7a1ba85c5.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/39bd25253649117.6a6e7a1ba85c5.jpg"
         ]
     },
     {
@@ -23,6 +24,7 @@ window.projectsData = [
     "title_ru": "Zoo Tîrgul Mureș",
     "category": "banner",
     "description": "Promotional poster for Zoo Tîrgul Mureș. A modern collage composition combining a black-and-white giraffe portrait with bold botanical shapes, creating an elegant visual identity.",
+    "alt": "Zoo Tîrgul Mureș promotional poster design - giraffe collage banner by RZVN",
     "description_ro": "Poster promoțional pentru Zoo Tîrgul Mureș. O compoziție modernă de tip colaj ce combină portretul alb-negru al unei girafe cu forme botanice stilizate, creând o identitate vizuală elegantă.",
     "description_ru": "Рекламный постер для Zoo Tîrgul Mureș. Современная коллажная композиция, сочетающая черно-белый портрет жирафа со стилизованными ботаническими формами, создающая элегантную визуальную айдентику.",
     "technologies": ["Figma"],
@@ -38,6 +40,7 @@ window.projectsData = [
         "title_ru": "Cricova",
         "category": "banner",
         "description": "Advertising banner - Cricova. A visual concept that combines the vintage look of the bottle with the illustration of underground cellars, reflecting the tradition and premium quality of the wine.",
+        "alt": "Cricova wine advertising banner design - vintage bottle illustration by RZVN",
         "description_ro": "Banner publicitar - Cricova. Un concept vizual ce îmbină aspectul vintage al sticlei cu ilustrația cramelor subterane, reflectând tradiția și calitatea premium a vinului.",
         "description_ru": "Рекламный баннер - Cricova. Визуальная концепция, сочетающая винтажный вид бутылки с изображением подземных погребов, отражающая традиции и высокое качество вина.",
         "technologies": ["Figma", "AI"],
@@ -52,6 +55,7 @@ window.projectsData = [
         "title_ru": "CarRent",
         "category": "banner",
         "description": "Eye-catching banner for RentCar, blending clean design and compelling messaging to promote SUV rentals. Perfect for digital or print campaigns.",
+        "alt": "CarRent SUV rental banner design - advertising banner by RZVN",
         "description_ro": "Banner atrăgător pentru RentCur, combinând designul curat și mesajul convingător pentru a promova închirierea SUV-urilor. Perfect pentru campanii digitale sau tipărite.",
         "description_ru": "Привлекающий внимание баннер для RentCar, сочетающий чистый дизайн и убедительное сообщение для продвижения аренды внедорожников. Идеален для цифровых или печатных кампаний.",
         "technologies": ["Photoshop", "Illustrator"],
@@ -67,6 +71,7 @@ window.projectsData = [
         "title_ru": "Hex Mobile",
         "category": "logo",
         "description": "A modern logo for HexMobile, combining a hexagon symbol and the letter \"M\" to represent technology, connectivity, and mobile innovation.",
+        "alt": "HexMobile logo design - hexagon M technology logo by RZVN",
         "description_ro": "Un logo modern pentru HexMobile, combinând simbolul hexagonal și litera \"M\" pentru a reprezenta tehnologia, conectivitatea și inovația mobilă.",
         "description_ru": "Современный логотип для HexMobile,.combineующий символ шестиугольника и букву «M» для представления технологий, связности и мобильных инноваций.",
         "technologies": ["Illustrator"],
@@ -84,6 +89,7 @@ window.projectsData = [
         "title_ru": "Build X",
         "category": "logo",
         "description": "Build X logo represents power, speed, and precision, for a company that builds custom, high-performance PCs from scratch.",
+        "alt": "Build X logo design - high-performance custom PC brand logo by RZVN",
         "description_ro": "Logo-ul Build X reprezintă puterea, viteza și precizia, pentru o companie care construiește PC-uri personalizate de înaltă performanță de la zero.",
         "description_ru": "Логотип Build X представляет мощность, скорость и точность для компании, которая собирает пользовательские высокопроизводительные ПК с нуля.",
         "technologies": ["Illustrator"],
@@ -101,6 +107,7 @@ window.projectsData = [
         "title_ru": "Just Recycle",
         "category": "ui",
         "description": "JustRecycle is a smart UI/UX app that identifies objects from images and recommends the right, eco-friendly recycling methods.",
+        "alt": "JustRecycle mobile app UI/UX design - eco recycling app interface by RZVN",
         "description_ro": "JustRecycle este o aplicație UI/UX inteligentă care identifică obiecte din imagini și recomandă metodele corecte de reciclare ecologică.",
         "description_ru": "JustRecycle — это умное приложение UI/UX, которое определяет объекты по изображениям и рекомендует правильные экологичные методы переработки.",
         "technologies": ["Figma", "Photoshop"],
@@ -113,7 +120,7 @@ window.projectsData = [
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b4453d223423125.6a3b009553ea6.jpg",
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd3091223423125.6a3b0095538ba.jpg",
             "https://mir-s3-cdn-cf.behance.net/project_modules/fs/72d43f223423125.6a3b0095544be.jpg",
-            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2b7065223423125.6a3b00955327e.jpg",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2b7065223423125.6a3b00955327e.jpg"
         ]
     }
 ];

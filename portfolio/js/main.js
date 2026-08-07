@@ -212,12 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Build stacked slides
         carouselStack.innerHTML = '';
         const title = getProjectField(project, 'title');
+        const alt = project.alt || title;
         if (project.images && project.images.length > 0) {
             project.images.forEach((src, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'carousel-slide';
                 slide.dataset.status = 'hidden';
-                slide.innerHTML = `<img src="${src}" alt="${title} - ${index + 1}">`;
+                slide.innerHTML = `<img src="${src}" alt="${alt} - view ${index + 1}" loading="lazy" decoding="async">`;
                 slide.addEventListener('click', () => {
                     openImageViewer(project.images, index);
                 });
@@ -304,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentProject.images.forEach((src, index) => {
             const thumb = document.createElement('button');
             thumb.className = 'carousel-thumb' + (index === 0 ? ' active' : '');
-            thumb.innerHTML = `<img src="${src}" alt="Thumb ${index + 1}">`;
+            thumb.innerHTML = `<img src="${src}" alt="${currentProject.alt || currentProject.title} - thumbnail ${index + 1}" loading="lazy" decoding="async">`;
             thumb.addEventListener('click', () => {
                 currentImageIndex = index;
                 if (isMobile()) {
@@ -444,10 +445,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const thumbnail = project.images && project.images.length > 0 ? project.images[0] : '';
         const title = getProjectField(project, 'title');
         const description = getProjectField(project, 'description');
+        const alt = project.alt || title;
 
         projectCard.innerHTML = `
             <div class="project-image-container">
-                <img src="${thumbnail}" alt="${title}" class="project-image">
+                <img src="${thumbnail}" alt="${alt}" loading="lazy" decoding="async" class="project-image">
                 <div class="project-image-overlay"></div>
                 <div class="project-link-icon">
                     <i class="fas fa-expand"></i>
