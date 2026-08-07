@@ -1,6 +1,5 @@
 window.translationsData = {
     "en": {
-        "role": "ServiceNow Specialist",
         "exp_title": "Professional Experience",
         "job_title": "ServiceNow Specialist Intern",
         "job_company": "Endava, Chișinău",
@@ -50,7 +49,6 @@ window.translationsData = {
         "footer": "© 2025 All Rights Reserved. Designed by RZVN"
     },
     "ro": {
-        "role": "Specialist ServiceNow",
         "exp_title": "Experiență Profesională",
         "job_title": "Practicant Specialist ServiceNow",
         "job_company": "Endava, Chișinău",
@@ -100,7 +98,6 @@ window.translationsData = {
         "footer": "© 2025 Toate drepturile rezervate. Proiectat de RZVN"
     },
     "ru": {
-        "role": "Специалист ServiceNow",
         "exp_title": "Опыт работы",
         "job_title": "Стажёр по ServiceNow",
         "job_company": "Endava, Кишинёв",
