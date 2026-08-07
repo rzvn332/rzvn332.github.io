@@ -334,25 +334,57 @@ body {
     color: white;
 }
 
-.contact-input {
+/* ==================== CONTACT SECTION REFINEMENTS ==================== */
+
+/* Bordered glass icon container - mirrors the project's card language
+   (white/5 fill + white/15 border + soft radius, like .contact-card). */
+.contact-icon-box {
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
 
-.contact-input:focus {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: white;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+/* Hover brightens the border - same interaction cue as .project-card:hover */
+.contact-info-group:hover .contact-icon-box {
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
-.submit-btn {
+/* Contact links: subtle underline for clear clickability affordance,
+   brightening to white on hover. Base white/70 ≈ 11.6:1 contrast (WCAG AAA). */
+.contact-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
 }
 
-.submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+.contact-link:hover {
+    color: white;
+    text-decoration-color: white;
+}
+
+/* Keyboard accessibility: visible focus ring for all interactive elements
+   inside the contact card */
+.contact-card a:focus-visible,
+.contact-card button:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* Mobile: slightly smaller icon boxes */
+@media (max-width: 768px) {
+    .contact-icon-box {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
 .social-icon {
@@ -362,38 +394,6 @@ body {
 .social-icon:hover {
     transform: translateY(-3px);
     color: white !important;
-}
-
-
-
-
-/* Animații pentru mesaje */
-@keyframes fade-in {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fade-out {
-    from { opacity: 1; transform: translateY(0); }
-    to { opacity: 0; transform: translateY(-20px); }
-}
-
-.animate-fade-in {
-    animation: fade-in 0.3s ease-out forwards;
-}
-
-.animate-fade-out {
-    animation: fade-out 0.3s ease-out forwards;
-}
-
-/* Stiluri pentru butonul de trimitere */
-button[type="submit"] .fa-spinner {
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }
 
 .skill-icon {

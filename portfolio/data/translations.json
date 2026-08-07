@@ -36,11 +36,6 @@ window.translationsData = {
         "location_label": "Location",
         "location_value": "Moldova, Chișinău",
         "social_media": "SOCIAL MEDIA",
-        "form_name": "Your Name",
-        "form_email": "Your Email",
-        "form_subject": "Subject",
-        "form_message": "Message",
-        "form_submit": "SEND MESSAGE",
         "footer": "© 2025 All Rights Reserved. Designed by RZVN",
         "swipe_hint": "Swipe to browse"
     },
@@ -81,11 +76,6 @@ window.translationsData = {
         "location_label": "Locație",
         "location_value": "Moldova, Chișinău",
         "social_media": "MEDIILE SOCIALE",
-        "form_name": "Numele tău",
-        "form_email": "Email-ul tău",
-        "form_subject": "Subiect",
-        "form_message": "Mesaj",
-        "form_submit": "TRIMITE MESAJ",
         "footer": "© 2025 Toate drepturile rezervate. Proiectat de RZVN",
         "swipe_hint": "Derulează pentru a naviga"
     },
@@ -126,11 +116,6 @@ window.translationsData = {
         "location_label": "Местоположение",
         "location_value": "Молдова, Кишинёв",
         "social_media": "СОЦИАЛЬНЫЕ СЕТИ",
-        "form_name": "Ваше имя",
-        "form_email": "Ваш email",
-        "form_subject": "Тема",
-        "form_message": "Сообщение",
-        "form_submit": "ОТПРАВИТЬ",
         "footer": "© 2025 Все права защищены. Разработано RZVN",
         "swipe_hint": "Листайте для просмотра"
     }

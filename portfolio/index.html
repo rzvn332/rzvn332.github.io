@@ -200,88 +200,61 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-4xl md:text-6xl font-bold mb-12" data-i18n="contact_title">GET IN TOUCH</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 gap-8">
                     <!-- Contact Info Card -->
                     <div class="contact-card">
-                        <h3 class="text-2xl font-bold mb-6" data-i18n="contact_info">CONTACT INFO</h3>
-                        <div class="space-y-5">
-                            <div class="contact-info-group flex items-start">
-                                <div class="mr-4 mt-1 text-white/80 contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold" data-i18n="email_label">Email</h4>
-                                    <a href="mailto:rzvn332@gmail.com" class="text-white/70 hover:text-white transition duration-300">rzvn332@gmail.com</a>
+                        <!-- 2-column inner grid: mirrors the About section's md:grid-cols-2 pattern
+                             to balance the full-width card on desktop and stack on mobile.
+                             Both h3 headings are first children of their grid cells,
+                             so CSS Grid places them on the same line at md+. -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
+                            <!-- Column 1: contact details -->
+                            <div>
+                                <h3 class="text-2xl font-bold mb-6" data-i18n="contact_info">CONTACT INFO</h3>
+                                <div class="space-y-6">
+                                    <div class="contact-info-group flex items-start">
+                                        <!-- Bordered glass icon box: matches .contact-card styling language -->
+                                        <div class="contact-icon-box mr-4">
+                                            <i class="fas fa-envelope contact-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold" data-i18n="email_label">Email</h4>
+                                            <a href="mailto:rzvn332@gmail.com" class="contact-link" aria-label="Email rzvn332@gmail.com">rzvn332@gmail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-info-group flex items-start">
+                                        <div class="contact-icon-box mr-4">
+                                            <i class="fas fa-phone contact-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold" data-i18n="phone_label">Phone</h4>
+                                            <a href="tel:+37378082255" class="contact-link" aria-label="Phone plus 373 78 08 22 55">+(373)78082255</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-info-group flex items-start">
+                                        <div class="contact-icon-box mr-4">
+                                            <i class="fas fa-map-marker-alt contact-icon" aria-hidden="true"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold" data-i18n="location_label">Location</h4>
+                                            <p class="text-white/70" data-i18n="location_value">Moldova, Chișinău</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="contact-info-group flex items-start">
-                                <div class="mr-4 mt-1 text-white/80 contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold" data-i18n="phone_label">Phone</h4>
-                                    <a href="tel:+37378082255" class="text-white/70 hover:text-white transition duration-300">+(373)78082255</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-group flex items-start">
-                                <div class="mr-4 mt-1 text-white/80 contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold" data-i18n="location_label">Location</h4>
-                                    <p class="text-white/70" data-i18n="location_value">Moldova, Chișinău</p>
+                            <!-- Column 2: social media -->
+                            <div>
+                                <h3 class="text-2xl font-bold mb-6" data-i18n="social_media">SOCIAL MEDIA</h3>
+                                <div class="flex space-x-6">
+                                    <a href="https://www.behance.net/rzvn332" target="_blank" rel="noopener noreferrer" aria-label="Behance profile" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
+                                        <i class="fab fa-behance" aria-hidden="true"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
-                        <h3 class="text-2xl font-bold mt-10 mb-6" data-i18n="social_media">SOCIAL MEDIA</h3>
-                        <div class="flex space-x-6">
-                            <a href="https://www.behance.net/rzvn332" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
-                                <i class="fab fa-behance"></i>
-                            </a>
-<!--                             <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                            <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="text-2xl text-white/80 social-icon hover:-translate-y-1">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a> -->
-                        </div>
-                    </div>
-
-                    <!-- Contact Form Card -->
-                    <div class="contact-card">
-                        <form id="contactForm" class="space-y-5">
-                            <div>
-                                <label for="name" class="block mb-2 font-medium text-white/80" data-i18n="form_name">Your Name</label>
-                                <input type="text" id="name" name="from_name" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50" required>
-                            </div>
-                        
-                            <div>
-                                <label for="email" class="block mb-2 font-medium text-white/80" data-i18n="form_email">Your Email</label>
-                                <input type="email" id="email" name="from_email" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50" required>
-                            </div>
-                        
-                            <div>
-                                <label for="subject" class="block mb-2 font-medium text-white/80" data-i18n="form_subject">Subject</label>
-                                <input type="text" id="subject" name="subject" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50">
-                            </div>
-                        
-                            <div>
-                                <label for="message" class="block mb-2 font-medium text-white/80" data-i18n="form_message">Message</label>
-                                <textarea id="message" name="message" rows="4" class="contact-input w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
-                            </div>
-                        
-                            <div class="pt-2 flex justify-end">
-                                <button type="submit" class="submit-btn px-8 py-3 bg-white text-black font-bold tracking-wider rounded-lg" data-i18n="form_submit">
-                                    SEND MESSAGE
-                                </button>
-                            </div>
-                        </form>                        
                     </div>
                 </div>
             </div>
@@ -343,8 +316,5 @@
     <script src="data/projects.json"></script>
     <script src="data/translations.json"></script>
     <script src="js/main.js"></script>
-    <!-- Adaugă acest script în head sau înainte de contact-form.js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/contact-form.js"></script>
 </body>
 </html>
