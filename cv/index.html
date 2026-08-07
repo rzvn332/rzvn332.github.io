@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZVN | CV</title>
+    <link rel="icon" type="image/x-icon" href="../portfolio/img/R.png">
+    <meta name="description" content="Răzvan's CV - ServiceNow Specialist. Explore my experience, skills, and projects.">
+    <link rel="canonical" href="https://rzvn332.github.io/cv/">
+
+    <script>
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="cv-header fixed w-full z-50">
+        <div class="container mx-auto px-10 py-4 flex justify-between items-center">
+            <a href="../portfolio/" class="text-2xl font-bold tracking-wider ml-8 hover:opacity-70 transition-all duration-300">RZVN</a>
+            <div class="header-right">
+                <div class="theme-toggle" role="group" aria-label="Theme switcher">
+                    <button id="themeDark" class="theme-btn active" data-theme="dark" aria-label="Dark theme" title="Dark theme"><i class="fas fa-moon"></i></button>
+                    <button id="themeLight" class="theme-btn" data-theme="light" aria-label="Light theme" title="Light theme"><i class="fas fa-sun"></i></button>
+                </div>
+                <span class="header-divider">/</span>
+                <div class="lang-wrapper">
+                    <button id="langToggle" class="focus:outline-none transition-all duration-300">EN</button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button data-lang="en" class="active">English</button>
+                        <button data-lang="ro">Română</button>
+                        <button data-lang="ru">Русский</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="top" class="container mx-auto px-6 pt-36 pb-16 max-w-4xl">
+        <!-- CV Header -->
+        <section class="content-section text-center cv-divider-bottom pb-10 mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-tight">Bou Răzvan</h1>
+            <p class="mt-3 text-lg md:text-xl cv-secondary" data-i18n="role">ServiceNow Specialist</p>
+            <div class="cv-contact mt-6">
+                <span class="cv-contact-item"><i class="fas fa-map-marker-alt"></i> Chișinău, Moldova</span>
+                <span class="cv-contact-sep">/</span>
+                <span class="cv-contact-item"><a href="tel:+37378082255"><i class="fas fa-phone"></i> +37378082255</a></span>
+                <span class="cv-contact-sep">/</span>
+                <span class="cv-contact-item"><a href="mailto:rzvn332@gmail.com"><i class="fas fa-envelope"></i> rzvn332@gmail.com</a></span>
+                <span class="cv-contact-sep">/</span>
+                <span class="cv-contact-item"><a href="https://linkedin.com/in/rzvn332" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> linkedin.com/in/rzvn332</a></span>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="content-section mb-16">
+            <h2 class="cv-section-title" data-i18n="exp_title">Professional Experience</h2>
+            <div class="cv-card">
+                <div class="flex flex-wrap justify-between items-start gap-3">
+                    <h3 class="cv-item-title" data-i18n="job_title">ServiceNow Specialist Intern</h3>
+                    <span class="cv-dates" data-i18n="job_dates">Sep – Dec 2025</span>
+                </div>
+                <p class="cv-sub mt-1" data-i18n="job_company">Endava, Chișinău</p>
+                <ul class="cv-list mt-4">
+                    <li><span data-i18n="exp_1_a">Customized ServiceNow instances using </span><strong class="bold" data-i18n="exp_1_b">JavaScript</strong><span data-i18n="exp_1_c"> (Business Rules, Script Includes, Client Scripts).</span></li>
+                    <li><span data-i18n="exp_2_a">Implemented </span><strong class="bold" data-i18n="exp_2_b">REST API</strong><span data-i18n="exp_2_c"> integrations for automated data exchange (JSON/XML).</span></li>
+                    <li><span data-i18n="exp_3_a">Designed automated flows in </span><strong class="bold" data-i18n="exp_3_b">Flow Designer</strong><span data-i18n="exp_3_c">, optimizing ITSM business processes.</span></li>
+                    <li data-i18n="exp_4">Configured core modules (Incident, Problem, Change) and administered development instances.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="content-section mb-16">
+            <h2 class="cv-section-title" data-i18n="skills_title">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="cv-card">
+                    <h3 class="cv-group-title" data-i18n="skills_group_1">ServiceNow & Web Development</h3>
+                    <div class="cv-tags mt-4">
+                        <span class="skill-tag" data-i18n="skill_itsm">ITSM Architecture</span>
+                        <span class="skill-tag">Flow Designer</span>
+                        <span class="skill-tag">IntegrationHub</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">HTML / CSS</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">REST Web Services</span>
+                    </div>
+                </div>
+                <div class="cv-card">
+                    <h3 class="cv-group-title" data-i18n="skills_group_2">AI Productivity & Tools</h3>
+                    <div class="cv-tags mt-4">
+                        <span class="skill-tag">Claude Code</span>
+                        <span class="skill-tag">Open Code</span>
+                        <span class="skill-tag">Gemini CLI</span>
+                        <span class="skill-tag">MCPs</span>
+                        <span class="skill-tag" data-i18n="skill_agents">AI Agent Skills</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Postman / Bruno</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="content-section mb-16">
+            <h2 class="cv-section-title" data-i18n="projects_title">ServiceNow Projects & Architecture</h2>
+            <div class="cv-card cv-project-card">
+                <h3 class="cv-item-title text-xl md:text-2xl" data-i18n="project_title">Financial Accreditation System (End-to-End Custom Application)</h3>
+                <p class="cv-text mt-3" data-i18n="project_desc">Developed a fully integrated application to digitize the lending process and asset management, ensuring end-to-end automation of the business workflow (request, verification, approvals, and inventory management).</p>
+                <ul class="cv-list mt-5">
+                    <li><strong class="bold" data-i18n="proj_b1_label">Data Structure: </strong><span data-i18n="proj_b1_text">Designed three interrelated tables (u_loan_request, u_assets, u_countries) linked by referential integrity, with auto-numbering configured for each request.</span></li>
+                    <li><strong class="bold" data-i18n="proj_b2_label">REST Integrations: </strong><span data-i18n="proj_b2_text">Used IntegrationHub to fetch data from external APIs, for example pulling country info (including flag images) and saving it directly into the database.</span></li>
+                    <li><strong class="bold" data-i18n="proj_b3_label">Flow Automation (Flow Designer): </strong><span data-i18n="proj_b3_text">Automated the full approval lifecycle: stock validation on submission, manager + committee routing, automatic sys_user account creation for new clients, and self-updating statuses.</span></li>
+                    <li><strong class="bold" data-i18n="proj_b4_label">Smart Rules: </strong><span data-i18n="proj_b4_text">Built warning scripts triggered when a ticket's priority escalates to "urgent", and created UI Actions that save the form without navigating away.</span></li>
+                    <li><strong class="bold" data-i18n="proj_b5_label">Service Portal UX: </strong><span data-i18n="proj_b5_text">Built two dedicated Service Portal pages ("Loan Request" and "Asset Request") where users submit forms that trigger the full verification-to-approval pipeline.</span></li>
+                    <li><strong class="bold" data-i18n="proj_b6_label">Data & Security: </strong><span data-i18n="proj_b6_text">Imported thousands of records from Excel via Import Sets, configured ACLs to enforce data security, and set up inbound email actions to auto-create requests or incidents.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="content-section mb-16">
+            <h2 class="cv-section-title" data-i18n="cert_title">Certifications & Training</h2>
+            <div class="cv-card">
+                <div class="flex flex-wrap justify-between items-start gap-3">
+                    <h3 class="cv-item-title" data-i18n="cert_name">Comprehensive QA Manual & Automation Specialist</h3>
+                    <span class="cv-dates" data-i18n="cert_year">2025</span>
+                </div>
+                <p class="cv-sub mt-1" data-i18n="cert_sub">Independent Coursework (CypressJS, API Testing, Agile)</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="content-section mb-16">
+            <h2 class="cv-section-title" data-i18n="edu_title">Education</h2>
+            <div class="cv-card">
+                <div class="flex flex-wrap justify-between items-start gap-3">
+                    <h3 class="cv-item-title" data-i18n="edu_name">Licensed Engineer in Information Technology</h3>
+                    <span class="cv-dates" data-i18n="edu_dates">2020 – 2024</span>
+                </div>
+                <p class="cv-sub mt-1" data-i18n="edu_sub">Technical University of Moldova (TUM)</p>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="content-section">
+            <h2 class="cv-section-title" data-i18n="lang_title">Languages</h2>
+            <div class="cv-tags">
+                <span class="skill-tag" data-i18n="lang_ro">Romanian (Native)</span>
+                <span class="skill-tag" data-i18n="lang_en">English (Intermediate)</span>
+                <span class="skill-tag" data-i18n="lang_ru">Russian (Conversational)</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-xl font-bold">RZVN</div>
+                <div class="text-sm cv-secondary" data-i18n="footer">© 2025 All Rights Reserved. Designed by RZVN</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data/translations.json"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
