@@ -381,7 +381,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ==================== RENDER PROJECTS ====================
 
-    function renderProjects(category = 'all') {
+    let activeCategory = 'all';
+
+    function renderProjects(category = activeCategory) {
+        activeCategory = category;
         const projectsContainer = document.getElementById('projectsContainer');
         const showMoreBtn = document.getElementById('showMoreBtn');
         const showLessBtn = document.getElementById('showLessBtn');
@@ -548,6 +551,10 @@ document.addEventListener('DOMContentLoaded', () => {
         initIntersectionObserver();
         preloadProjectImages();
     }
+
+    // Expose renderers so applyTranslations() can re-render on language change
+    window.renderProjects = renderProjects;
+    window.renderSkills = renderSkills;
 
     // Language switcher dropdown
     function initLanguageSwitcher() {
