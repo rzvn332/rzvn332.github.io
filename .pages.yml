@@ -1,0 +1,317 @@
+# Pages CMS — Muzeul Virtual (Harta Muzeelor Scolare)
+# Docs: https://pagescms.org/docs/
+# Surse editabile: content/obiecte, content/sali, content/raioane
+# Artefacte generate (NU se editeaza manual): data/obiecte.json, data/raioane.json, js/data.js, js/raioane.js
+# Regenerare: node tools/build-data.js (local) sau automat via .github/workflows/build-data.yml
+
+media:
+  - name: images
+    label: Imagini muzeu
+    input: images
+    output: /images
+    categories: [image]
+    extensions: [jpg, jpeg, png, webp, gif]
+    rename: safe
+
+content:
+  - name: muzeu
+    label: ⚙️ Muzeu — setări
+    type: file
+    path: data/muzeu.json
+    format: json
+    fields:
+      - name: nume
+        label: Nume muzeu
+        type: string
+        required: true
+      - name: subtitlu
+        label: Subtitlu
+        type: string
+      - name: sunet
+        label: Sunet arhivă activ implicit
+        type: boolean
+
+  - name: sali
+    label: 🏛️ Săli
+    type: collection
+    path: content/sali
+    format: json
+    filename: "{fields.id}.json"
+    view:
+      primary: nume
+      fields: [nume, id]
+      sort: [nume]
+      search: [nume, descriere]
+    fields:
+      - name: id
+        label: ID sală (fix — nu schimba după publicare)
+        type: string
+        required: true
+        pattern:
+          regex: "^sala-[a-z-]+$"
+          message: "ex: sala-scolii"
+      - name: nume
+        label: Nume sală
+        type: string
+        required: true
+      - name: icon
+        label: Icon (emoji)
+        type: string
+      - name: perete
+        label: Culoare perete (hex)
+        type: string
+        description: "ex: #2a3a62"
+        pattern:
+          regex: "^#[0-9a-fA-F]{6}$"
+          message: "Format hex: #rrggbb"
+      - name: lambriu
+        label: Culoare podea / lambriu (hex)
+        type: string
+        description: "ex: #633917"
+        pattern:
+          regex: "^#[0-9a-fA-F]{6}$"
+          message: "Format hex: #rrggbb"
+      - name: descriere
+        label: Descriere sală
+        type: text
+        required: true
+      - name: imagine
+        label: Imagine sală
+        type: image
+        options:
+          media: images
+      - name: obiecte_tipice
+        label: Ce obiecte pot fi aici
+        type: string
+        list: true
+      - name: invitatie
+        label: Invitație contribuire
+        type: text
+
+  - name: raioane
+    label: 🗺️ Raioane și sate
+    type: collection
+    path: content/raioane
+    format: json
+    filename: "{fields.id}.json"
+    view:
+      primary: nume
+      fields: [nume, tip, stare]
+      sort: [nume]
+      search: [nume]
+    fields:
+      - name: id
+        label: ID raion (fix)
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: nume
+        label: Nume
+        type: string
+        required: true
+      - name: tip
+        label: Tip
+        type: select
+        options:
+          values:
+            - name: raion
+              label: Raion
+            - name: municipiu
+              label: Municipiu
+            - name: autonomie
+              label: Autonomie
+      - name: stare
+        label: Stare pe hartă
+        type: select
+        options:
+          values:
+            - name: pilot
+              label: Pilot (vizibil, intră în muzeu)
+            - name: curand
+              label: În curând
+      - name: sate
+        label: Sate / localități
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{nume}"
+        fields:
+          - name: id
+            label: ID sat
+            type: string
+            required: true
+            pattern: "^[a-z0-9-]+$"
+          - name: nume
+            label: Nume sat
+            type: string
+            required: true
+
+  - name: obiecte
+    label: 🏺 Obiecte / exponate
+    type: collection
+    path: content/obiecte
+    format: json
+    filename: "{fields.id}.json"
+    view:
+      primary: titlu
+      fields: [titlu, sala, raion, sat]
+      sort: [ordine, titlu, sala, raion]
+      search: [titlu, descriere_scurta, poveste, donator, sat]
+    fields:
+      - name: id
+        label: ID (unic, fără spații/diacritice)
+        type: string
+        required: true
+        description: "ex: clopotel-arama. Devine nume de fișier și ?obiect=..."
+        pattern: "^[a-z0-9-]+$"
+      - name: titlu
+        label: Titlu
+        type: string
+        required: true
+      - name: ordine
+        label: Ordine în muzeu (numărul #0000x)
+        type: number
+        description: "1 = #00001. Obiectele noi primesc următorul număr liber."
+      - name: sala
+        label: Sala
+        type: select
+        required: true
+        options:
+          values:
+            - name: sala-documentelor
+              label: "Sala Documentelor 📜"
+            - name: sala-scolii
+              label: "Sala Școlii 🎓"
+            - name: sala-naturii
+              label: "Sala Naturii 🌿"
+            - name: sala-mestesugurilor
+              label: "Sala Meșteșugurilor ⚒️"
+            - name: sala-gospodariei
+              label: "Sala Gospodăriei 🏺"
+            - name: sala-marturiilor
+              label: "Sala Mărturiilor 🕊️"
+      - name: raion
+        label: Raion / municipiu
+        type: reference
+        required: true
+        options:
+          collection: raioane
+          search: "nume"
+          value: "{fields.id}"
+          label: "{fields.nume}"
+      - name: sat
+        label: Sat (gol = tot raionul)
+        type: string
+        required: false
+        description: "ID-ul din lista satelor raionului (ex: truseni). Lasă gol pentru exponat al întregului raion."
+        pattern: "^([a-z0-9-]+)?$"
+      - name: locatie_fizica
+        label: 📍 Locația fizică în muzeu
+        type: string
+        description: "ex: Sala 2, Vitrina D"
+      - name: perioada
+        label: Perioada
+        type: select
+        options:
+          values: [Interbelic, Război, Comunism, "Anii 90", "Anii 2000", Contemporan]
+      - name: an
+        label: An
+        type: string
+      - name: material
+        label: Material
+        type: string
+      - name: dimensiuni
+        label: Dimensiuni
+        type: string
+      - name: donator
+        label: Donator
+        type: string
+      - name: autor
+        label: Autor fișă (cine a scris povestea)
+        type: string
+      - name: descriere_scurta
+        label: Descriere scurtă (carusel)
+        type: text
+        required: true
+        options:
+          maxlength: 280
+      - name: poveste
+        label: Povestea (persoana I, dosar)
+        type: text
+        required: true
+        options:
+          minlength: 20
+      - name: imagine
+        label: Imagine copertă (carusel)
+        type: image
+        required: true
+        description: "Poți păstra URL extern (picsum) sau urca fișier nou în images/."
+        options:
+          media: images
+      - name: imagini
+        label: Galerie poze (max 5, prima = coperta)
+        type: image
+        options:
+          media: images
+          multiple:
+            max: 5
+      - name: etichete
+        label: Etichete
+        type: string
+        list: true
+      - name: expunere
+        label: Expunere
+        type: select
+        options:
+          values:
+            - name: rama
+              label: Ramă
+            - name: soclu
+              label: Soclu
+      - name: vedeta
+        label: ⭐ Vedetă (sună clopotul la deschidere)
+        type: boolean
+
+  - name: trasee
+    label: 🧭 Trasee de vizitare
+    type: file
+    path: data/trasee.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID traseu
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: nume
+        label: Nume traseu
+        type: string
+        required: true
+      - name: obiecte
+        label: Obiecte din traseu (ID-uri)
+        type: string
+        list: true
+
+  - name: quiz
+    label: ❓ Quiz
+    type: file
+    path: data/quiz.json
+    format: json
+    list: true
+    fields:
+      - name: intrebare
+        label: Întrebare
+        type: string
+        required: true
+      - name: optiuni
+        label: Opțiuni
+        type: string
+        list: true
+      - name: corect
+        label: Index răspuns corect (0, 1, 2…)
+        type: number
+      - name: obiectId
+        label: Obiect legat (ID)
+        type: string
