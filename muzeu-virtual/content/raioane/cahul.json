@@ -1,0 +1,228 @@
+{
+  "id": "cahul",
+  "nume": "Cahul",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "cahul",
+      "nume": "Cahul"
+    },
+    {
+      "id": "alexanderfeld",
+      "nume": "Alexanderfeld"
+    },
+    {
+      "id": "alexandru-ioan-cuza",
+      "nume": "Alexandru Ioan Cuza"
+    },
+    {
+      "id": "andrusul-de-jos",
+      "nume": "Andrușul de Jos"
+    },
+    {
+      "id": "andrusul-de-sus",
+      "nume": "Andrușul de Sus"
+    },
+    {
+      "id": "badicul-moldovenesc",
+      "nume": "Badicul Moldovenesc"
+    },
+    {
+      "id": "baurci-moldoveni",
+      "nume": "Baurci-Moldoveni"
+    },
+    {
+      "id": "borceag",
+      "nume": "Borceag"
+    },
+    {
+      "id": "brinza",
+      "nume": "Brînza"
+    },
+    {
+      "id": "bucuria",
+      "nume": "Bucuria"
+    },
+    {
+      "id": "burlaceni",
+      "nume": "Burlăceni"
+    },
+    {
+      "id": "burlacu",
+      "nume": "Burlacu"
+    },
+    {
+      "id": "chioselia-mare",
+      "nume": "Chioselia Mare"
+    },
+    {
+      "id": "chircani",
+      "nume": "Chircani"
+    },
+    {
+      "id": "cislita-prut",
+      "nume": "Cîșlița-Prut"
+    },
+    {
+      "id": "colibasi",
+      "nume": "Colibași"
+    },
+    {
+      "id": "cotihana",
+      "nume": "Cotihana"
+    },
+    {
+      "id": "crihana-veche",
+      "nume": "Crihana Veche"
+    },
+    {
+      "id": "cucoara",
+      "nume": "Cucoara"
+    },
+    {
+      "id": "doina",
+      "nume": "Doina"
+    },
+    {
+      "id": "frumusica",
+      "nume": "Frumușica"
+    },
+    {
+      "id": "gavanoasa",
+      "nume": "Găvănoasa"
+    },
+    {
+      "id": "giurgiulesti",
+      "nume": "Giurgiulești"
+    },
+    {
+      "id": "greceni",
+      "nume": "Greceni"
+    },
+    {
+      "id": "huluboaia",
+      "nume": "Huluboaia"
+    },
+    {
+      "id": "hutulu",
+      "nume": "Hutulu"
+    },
+    {
+      "id": "iasnaia-poleana",
+      "nume": "Iasnaia Poleana"
+    },
+    {
+      "id": "iujnoe",
+      "nume": "Iujnoe"
+    },
+    {
+      "id": "larga-noua",
+      "nume": "Larga Nouă"
+    },
+    {
+      "id": "larga-veche",
+      "nume": "Larga Veche"
+    },
+    {
+      "id": "lebedenco",
+      "nume": "Lebedenco"
+    },
+    {
+      "id": "lopatica",
+      "nume": "Lopățica"
+    },
+    {
+      "id": "lucesti",
+      "nume": "Lucești"
+    },
+    {
+      "id": "manta",
+      "nume": "Manta"
+    },
+    {
+      "id": "moscovei",
+      "nume": "Moscovei"
+    },
+    {
+      "id": "nicolaevca",
+      "nume": "Nicolaevca"
+    },
+    {
+      "id": "paicu",
+      "nume": "Paicu"
+    },
+    {
+      "id": "pascani",
+      "nume": "Pașcani"
+    },
+    {
+      "id": "pelinei",
+      "nume": "Pelinei"
+    },
+    {
+      "id": "rosu",
+      "nume": "Roșu"
+    },
+    {
+      "id": "rumeantev",
+      "nume": "Rumeanțev"
+    },
+    {
+      "id": "satuc",
+      "nume": "Sătuc"
+    },
+    {
+      "id": "slobozia-mare",
+      "nume": "Slobozia Mare"
+    },
+    {
+      "id": "spicoasa",
+      "nume": "Spicoasa"
+    },
+    {
+      "id": "taraclia-de-salcie",
+      "nume": "Taraclia de Salcie"
+    },
+    {
+      "id": "tartaul-de-salcie",
+      "nume": "Tartaul de Salcie"
+    },
+    {
+      "id": "tataresti",
+      "nume": "Tătărești"
+    },
+    {
+      "id": "tretesti",
+      "nume": "Tretești"
+    },
+    {
+      "id": "trifestii-noi",
+      "nume": "Trifeștii Noi"
+    },
+    {
+      "id": "tudoresti",
+      "nume": "Tudorești"
+    },
+    {
+      "id": "ursoaia",
+      "nume": "Ursoaia"
+    },
+    {
+      "id": "vadul-lui-isac",
+      "nume": "Vadul lui Isac"
+    },
+    {
+      "id": "valeni",
+      "nume": "Văleni"
+    },
+    {
+      "id": "vladimirovca",
+      "nume": "Vladimirovca"
+    },
+    {
+      "id": "zirnesti",
+      "nume": "Zîrnești"
+    }
+  ],
+  "tip": "raion"
+}

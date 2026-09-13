@@ -1,0 +1,29 @@
+{
+  "id": "abac-rigla",
+  "titlu": "Abac și riglă de calcul",
+  "ordine": 15,
+  "sala": "sala-scolii",
+  "perioada": "Comunism",
+  "an": "1972",
+  "material": "Lemn+Plastic",
+  "dimensiuni": "Diverse",
+  "donator": "Cab. matematică",
+  "autor": "",
+  "locatie_fizica": "Sala 2, Vitrina D",
+  "descriere_scurta": "Calculatoarele de dinainte de calculatoare.",
+  "poveste": "Noi suntem abacul și rigla. Cu noi s-au proiectat poduri. Provocare: fă 7x8 pe abac mai repede decât colegul pe telefon!",
+  "imagine": "https://picsum.photos/seed/muzeu-abac/800/600",
+  "etichete": [
+    "matematică",
+    "provocare"
+  ],
+  "expunere": "rama",
+  "vedeta": false,
+  "imagini": [
+    "https://picsum.photos/seed/muzeu-abac-1/800/600",
+    "https://picsum.photos/seed/muzeu-abac-2/800/600",
+    "https://picsum.photos/seed/muzeu-abac-3/800/600"
+  ],
+  "raion": "chisinau",
+  "sat": null
+}

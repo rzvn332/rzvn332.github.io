@@ -1,0 +1,172 @@
+{
+  "id": "rezina",
+  "nume": "Rezina",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "rezina",
+      "nume": "Rezina"
+    },
+    {
+      "id": "bosernita",
+      "nume": "Boșernița"
+    },
+    {
+      "id": "buciusca",
+      "nume": "Buciușca"
+    },
+    {
+      "id": "busauca",
+      "nume": "Bușăuca"
+    },
+    {
+      "id": "ciniseuti",
+      "nume": "Cinișeuți"
+    },
+    {
+      "id": "ciorna",
+      "nume": "Ciorna"
+    },
+    {
+      "id": "cogilniceni",
+      "nume": "Cogîlniceni"
+    },
+    {
+      "id": "cuizauca",
+      "nume": "Cuizăuca"
+    },
+    {
+      "id": "echimauti",
+      "nume": "Echimăuți"
+    },
+    {
+      "id": "ghiduleni",
+      "nume": "Ghiduleni"
+    },
+    {
+      "id": "gordinesti",
+      "nume": "Gordinești"
+    },
+    {
+      "id": "horodiste",
+      "nume": "Horodiște"
+    },
+    {
+      "id": "ignatei",
+      "nume": "Ignăței"
+    },
+    {
+      "id": "lalova",
+      "nume": "Lalova"
+    },
+    {
+      "id": "lipceni",
+      "nume": "Lipceni"
+    },
+    {
+      "id": "mateuti",
+      "nume": "Mateuți"
+    },
+    {
+      "id": "meseni",
+      "nume": "Meșeni"
+    },
+    {
+      "id": "mincenii-de-jos",
+      "nume": "Mincenii de Jos"
+    },
+    {
+      "id": "mincenii-de-sus",
+      "nume": "Mincenii de Sus"
+    },
+    {
+      "id": "nistreni",
+      "nume": "Nistreni"
+    },
+    {
+      "id": "otac",
+      "nume": "Otac"
+    },
+    {
+      "id": "papauti",
+      "nume": "Păpăuți"
+    },
+    {
+      "id": "peciste",
+      "nume": "Peciște"
+    },
+    {
+      "id": "pereni",
+      "nume": "Pereni"
+    },
+    {
+      "id": "piscaresti",
+      "nume": "Piscărești"
+    },
+    {
+      "id": "pripiceni-curchi",
+      "nume": "Pripiceni-Curchi"
+    },
+    {
+      "id": "pripiceni-razesi",
+      "nume": "Pripiceni-Răzeși"
+    },
+    {
+      "id": "roscani",
+      "nume": "Roșcani"
+    },
+    {
+      "id": "roscanii-de-jos",
+      "nume": "Roșcanii de Jos"
+    },
+    {
+      "id": "roscanii-de-sus",
+      "nume": "Roșcanii de Sus"
+    },
+    {
+      "id": "saharna",
+      "nume": "Saharna"
+    },
+    {
+      "id": "saharna-noua",
+      "nume": "Saharna Nouă"
+    },
+    {
+      "id": "sircova",
+      "nume": "Sîrcova"
+    },
+    {
+      "id": "slobozia-horodiste",
+      "nume": "Slobozia-Horodiște"
+    },
+    {
+      "id": "solonceni",
+      "nume": "Solonceni"
+    },
+    {
+      "id": "stohnaia",
+      "nume": "Stohnaia"
+    },
+    {
+      "id": "tahnauti",
+      "nume": "Țahnăuți"
+    },
+    {
+      "id": "tarasova",
+      "nume": "Tarasova"
+    },
+    {
+      "id": "tareuca",
+      "nume": "Țareuca"
+    },
+    {
+      "id": "tipova",
+      "nume": "Țipova"
+    },
+    {
+      "id": "trifesti",
+      "nume": "Trifești"
+    }
+  ],
+  "tip": "raion"
+}

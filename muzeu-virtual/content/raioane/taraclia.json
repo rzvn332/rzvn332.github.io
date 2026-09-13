@@ -1,0 +1,112 @@
+{
+  "id": "taraclia",
+  "nume": "Taraclia",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "taraclia",
+      "nume": "Taraclia"
+    },
+    {
+      "id": "tvardita",
+      "nume": "Tvardița"
+    },
+    {
+      "id": "albota-de-jos",
+      "nume": "Albota de Jos"
+    },
+    {
+      "id": "albota-de-sus",
+      "nume": "Albota de Sus"
+    },
+    {
+      "id": "aluatu",
+      "nume": "Aluatu"
+    },
+    {
+      "id": "balabanu",
+      "nume": "Balabanu"
+    },
+    {
+      "id": "budai",
+      "nume": "Budăi"
+    },
+    {
+      "id": "cairaclia",
+      "nume": "Cairaclia"
+    },
+    {
+      "id": "cealic",
+      "nume": "Cealîc"
+    },
+    {
+      "id": "chirilovca",
+      "nume": "Chirilovca"
+    },
+    {
+      "id": "ciumai",
+      "nume": "Ciumai"
+    },
+    {
+      "id": "corten",
+      "nume": "Corten"
+    },
+    {
+      "id": "cortenul-nou",
+      "nume": "Cortenul Nou"
+    },
+    {
+      "id": "dermengi",
+      "nume": "Dermengi"
+    },
+    {
+      "id": "hagichioi",
+      "nume": "Hagichioi"
+    },
+    {
+      "id": "hirtop",
+      "nume": "Hîrtop"
+    },
+    {
+      "id": "mirnoe",
+      "nume": "Mirnoe"
+    },
+    {
+      "id": "musaitu",
+      "nume": "Musaitu"
+    },
+    {
+      "id": "novosiolovca",
+      "nume": "Novosiolovca"
+    },
+    {
+      "id": "orehovca",
+      "nume": "Orehovca"
+    },
+    {
+      "id": "rosita",
+      "nume": "Roșița"
+    },
+    {
+      "id": "salcia",
+      "nume": "Salcia"
+    },
+    {
+      "id": "samurza",
+      "nume": "Samurza"
+    },
+    {
+      "id": "sofievca",
+      "nume": "Sofievca"
+    },
+    {
+      "id": "valea-perjei",
+      "nume": "Valea Perjei"
+    },
+    {
+      "id": "vinogradovca",
+      "nume": "Vinogradovca"
+    }
+  ],
+  "tip": "raion"
+}

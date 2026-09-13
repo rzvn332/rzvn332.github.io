@@ -1,0 +1,28 @@
+{
+  "id": "catalog-1974",
+  "titlu": "Catalog 1974",
+  "ordine": 2,
+  "sala": "sala-documentelor",
+  "perioada": "Comunism",
+  "an": "1974",
+  "material": "Hârtie",
+  "dimensiuni": "A4, 48 pag.",
+  "donator": "Arhiva școlii",
+  "autor": "",
+  "locatie_fizica": "Sala 1, Vitrina B",
+  "descriere_scurta": "Note cu penița și o pagină ruptă misterios.",
+  "poveste": "Eu sunt catalogul din '74. La pagina 21 lipsește un colț — legenda zice că un elev l-a rupt ca să scape de un 4. Am 32 de nume, trei au ajuns profesori aici.",
+  "imagine": "https://picsum.photos/seed/muzeu-catalog/800/600",
+  "etichete": [
+    "document"
+  ],
+  "expunere": "rama",
+  "vedeta": false,
+  "imagini": [
+    "https://picsum.photos/seed/muzeu-catalog-1/800/600",
+    "https://picsum.photos/seed/muzeu-catalog-2/800/600",
+    "https://picsum.photos/seed/muzeu-catalog-3/800/600"
+  ],
+  "raion": "chisinau",
+  "sat": null
+}

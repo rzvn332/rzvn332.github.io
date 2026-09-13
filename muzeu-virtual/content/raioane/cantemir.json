@@ -1,0 +1,212 @@
+{
+  "id": "cantemir",
+  "nume": "Cantemir",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "cantemir",
+      "nume": "Cantemir"
+    },
+    {
+      "id": "acui",
+      "nume": "Acui"
+    },
+    {
+      "id": "alexandrovca",
+      "nume": "Alexandrovca"
+    },
+    {
+      "id": "antonesti",
+      "nume": "Antonești"
+    },
+    {
+      "id": "baimaclia",
+      "nume": "Baimaclia"
+    },
+    {
+      "id": "bobocica",
+      "nume": "Bobocica"
+    },
+    {
+      "id": "cania",
+      "nume": "Cania"
+    },
+    {
+      "id": "capaclia",
+      "nume": "Capaclia"
+    },
+    {
+      "id": "chioselia",
+      "nume": "Chioselia"
+    },
+    {
+      "id": "ciietu",
+      "nume": "Cîietu"
+    },
+    {
+      "id": "ciobalaccia",
+      "nume": "Ciobalaccia"
+    },
+    {
+      "id": "cirpesti",
+      "nume": "Cîrpești"
+    },
+    {
+      "id": "cisla",
+      "nume": "Cîșla"
+    },
+    {
+      "id": "cociulia",
+      "nume": "Cociulia"
+    },
+    {
+      "id": "constantinesti",
+      "nume": "Constantinești"
+    },
+    {
+      "id": "costangalia",
+      "nume": "Coștangalia"
+    },
+    {
+      "id": "craciun",
+      "nume": "Crăciun"
+    },
+    {
+      "id": "dimitrova",
+      "nume": "Dimitrova"
+    },
+    {
+      "id": "enichioi",
+      "nume": "Enichioi"
+    },
+    {
+      "id": "flocoasa",
+      "nume": "Flocoasa"
+    },
+    {
+      "id": "floricica",
+      "nume": "Floricica"
+    },
+    {
+      "id": "ghioltosu",
+      "nume": "Ghioltosu"
+    },
+    {
+      "id": "gotesti",
+      "nume": "Gotești"
+    },
+    {
+      "id": "hanaseni",
+      "nume": "Hănăseni"
+    },
+    {
+      "id": "haragis",
+      "nume": "Haragîș"
+    },
+    {
+      "id": "hirtop",
+      "nume": "Hîrtop"
+    },
+    {
+      "id": "iepureni",
+      "nume": "Iepureni"
+    },
+    {
+      "id": "larguta",
+      "nume": "Lărguța"
+    },
+    {
+      "id": "leca",
+      "nume": "Leca"
+    },
+    {
+      "id": "lingura",
+      "nume": "Lingura"
+    },
+    {
+      "id": "pleseni",
+      "nume": "Pleșeni"
+    },
+    {
+      "id": "plopi",
+      "nume": "Plopi"
+    },
+    {
+      "id": "popovca",
+      "nume": "Popovca"
+    },
+    {
+      "id": "porumbesti",
+      "nume": "Porumbești"
+    },
+    {
+      "id": "sadic",
+      "nume": "Sadîc"
+    },
+    {
+      "id": "samalia",
+      "nume": "Șamalia"
+    },
+    {
+      "id": "sofranovca",
+      "nume": "Șofranovca"
+    },
+    {
+      "id": "stoianovca",
+      "nume": "Stoianovca"
+    },
+    {
+      "id": "suhat",
+      "nume": "Suhat"
+    },
+    {
+      "id": "taraclia-sadic",
+      "nume": "Taraclia"
+    },
+    {
+      "id": "taraclia-plopi",
+      "nume": "Taraclia"
+    },
+    {
+      "id": "tarancuta",
+      "nume": "Țărăncuța"
+    },
+    {
+      "id": "tartaul",
+      "nume": "Tartaul"
+    },
+    {
+      "id": "tataraseni",
+      "nume": "Tătărășeni"
+    },
+    {
+      "id": "tiganca",
+      "nume": "Țiganca"
+    },
+    {
+      "id": "tiganca-noua",
+      "nume": "Țiganca Nouă"
+    },
+    {
+      "id": "toceni",
+      "nume": "Toceni"
+    },
+    {
+      "id": "tolica",
+      "nume": "Țolica"
+    },
+    {
+      "id": "victorovca",
+      "nume": "Victorovca"
+    },
+    {
+      "id": "vilcele",
+      "nume": "Vîlcele"
+    },
+    {
+      "id": "visniovca",
+      "nume": "Vișniovca"
+    }
+  ],
+  "tip": "raion"
+}

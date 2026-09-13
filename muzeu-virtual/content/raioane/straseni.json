@@ -1,0 +1,164 @@
+{
+  "id": "straseni",
+  "nume": "Strășeni",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "bucovat",
+      "nume": "Bucovăț"
+    },
+    {
+      "id": "straseni",
+      "nume": "Strășeni"
+    },
+    {
+      "id": "capriana",
+      "nume": "Căpriana"
+    },
+    {
+      "id": "chirianca",
+      "nume": "Chirianca"
+    },
+    {
+      "id": "ciobanca",
+      "nume": "Ciobanca"
+    },
+    {
+      "id": "codreanca",
+      "nume": "Codreanca"
+    },
+    {
+      "id": "cojusna",
+      "nume": "Cojușna"
+    },
+    {
+      "id": "dolna",
+      "nume": "Dolna"
+    },
+    {
+      "id": "draguseni",
+      "nume": "Drăgușeni"
+    },
+    {
+      "id": "fagureni",
+      "nume": "Făgureni"
+    },
+    {
+      "id": "galesti",
+      "nume": "Gălești"
+    },
+    {
+      "id": "galestii-noi",
+      "nume": "Găleștii Noi"
+    },
+    {
+      "id": "ghelauza",
+      "nume": "Ghelăuza"
+    },
+    {
+      "id": "gornoe",
+      "nume": "Gornoe"
+    },
+    {
+      "id": "greblesti",
+      "nume": "Greblești"
+    },
+    {
+      "id": "huzun",
+      "nume": "Huzun"
+    },
+    {
+      "id": "lozova",
+      "nume": "Lozova"
+    },
+    {
+      "id": "lupa-recea",
+      "nume": "Lupa-Recea"
+    },
+    {
+      "id": "martinesti",
+      "nume": "Mărtinești"
+    },
+    {
+      "id": "micauti",
+      "nume": "Micăuți"
+    },
+    {
+      "id": "micleuseni",
+      "nume": "Micleușeni"
+    },
+    {
+      "id": "negresti",
+      "nume": "Negrești"
+    },
+    {
+      "id": "onesti",
+      "nume": "Onești"
+    },
+    {
+      "id": "panasesti",
+      "nume": "Pănășești"
+    },
+    {
+      "id": "radeni",
+      "nume": "Rădeni"
+    },
+    {
+      "id": "rassvet",
+      "nume": "Rassvet"
+    },
+    {
+      "id": "recea",
+      "nume": "Recea"
+    },
+    {
+      "id": "romanesti",
+      "nume": "Romănești"
+    },
+    {
+      "id": "roscani",
+      "nume": "Roșcani"
+    },
+    {
+      "id": "saca",
+      "nume": "Saca"
+    },
+    {
+      "id": "scoreni",
+      "nume": "Scoreni"
+    },
+    {
+      "id": "sireti",
+      "nume": "Sireți"
+    },
+    {
+      "id": "stejareni",
+      "nume": "Stejăreni"
+    },
+    {
+      "id": "tataresti",
+      "nume": "Tătărești"
+    },
+    {
+      "id": "tiganesti",
+      "nume": "Țigănești"
+    },
+    {
+      "id": "voinova",
+      "nume": "Voinova"
+    },
+    {
+      "id": "vorniceni",
+      "nume": "Vorniceni"
+    },
+    {
+      "id": "zamcioji",
+      "nume": "Zamcioji"
+    },
+    {
+      "id": "zubresti",
+      "nume": "Zubrești"
+    }
+  ],
+  "tip": "raion"
+}
