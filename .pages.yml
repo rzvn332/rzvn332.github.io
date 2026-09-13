@@ -31,6 +31,132 @@ content:
         label: Sunet arhivă activ implicit
         type: boolean
 
+  - name: texte
+    label: 🔤 Textele site-ului
+    type: file
+    path: data/texte.json
+    format: json
+    fields:
+      - name: pagina_principala
+        label: 1. Pagina principală cu hartă
+        type: object
+        fields:
+          - { name: titlu_harta, label: Titlu hartă, type: string }
+          - { name: subtitlu_harta, label: Subtitlu hartă, type: string }
+          - { name: text_buton_contribuie, label: Text buton contribuire, type: string }
+          - { name: mesaj_contribuie, label: Mesaj toast contribuire, type: text }
+          - name: template_mesaj_curand
+            label: Mesaj „în curând” (șablon)
+            type: string
+            description: "Variabile: {tip} {nume}"
+          - { name: titlu_pagina, label: Titlu pagină (tab browser), type: string }
+          - { name: descriere_meta, label: Descriere meta (SEO), type: text }
+      - name: navigare
+        label: 2. Navigare săli
+        type: object
+        fields:
+          - { name: inapoi_harta, label: Buton înapoi la hartă, type: string }
+          - { name: titlu_inapoi, label: Tooltip buton hartă, type: string }
+      - name: carusel
+        label: 3. Carusel
+        type: object
+        fields:
+          - { name: prefix_fila, label: Prefix etichetă („FILA"), type: string }
+          - { name: conector_din, label: Conector („DIN"), type: string }
+          - { name: gol_titlu, label: Titlu carusel gol, type: text }
+          - { name: gol_subtitlu, label: Subtitlu carusel gol, type: text }
+          - { name: gol_contor, label: Contor carusel gol, type: string }
+      - name: dosar
+        label: 4. Dosar exponat
+        type: object
+        fields:
+          - { name: deschide, label: Buton deschide dosarul, type: string }
+          - { name: inchide, label: Buton închide dosarul, type: string }
+          - { name: inchide_aria, label: Etichetă accesibilitate închidere, type: string }
+          - { name: inchide_titlu, label: Tooltip închidere („Sigilează dosarul"), type: string }
+          - { name: fila_anterioara, label: Buton fila anterioară, type: string }
+          - { name: fila_urmatoare, label: Buton fila următoare, type: string }
+          - { name: mareste, label: Buton mărește dosarul, type: string }
+          - { name: revino, label: Buton revino la panoul lateral, type: string }
+          - { name: citeste_tot, label: Buton „citește toată descrierea", type: string }
+          - { name: arata_putin, label: Buton „arată mai puțin", type: string }
+          - { name: et_material, label: Etichetă fișă — material, type: string }
+          - { name: et_dimensiuni, label: Etichetă fișă — dimensiuni, type: string }
+          - { name: et_autor, label: Etichetă fișă — autor, type: string }
+          - { name: et_locatie, label: Etichetă fișă — locație, type: string }
+          - { name: valoare_lipsa, label: Valoare când lipsește („-"), type: string }
+          - { name: conector_an, label: Conector an („ · Anul "), type: string }
+          - { name: prefix_imagine, label: Prefix etichetă imagine, type: string }
+          - name: template_caption
+            label: Caption imagine mărită (șablon)
+            type: string
+            description: "Variabile: {titlu} {k} {n}"
+          - { name: alt_obiect, label: Text alternativ imagine obiect, type: string }
+          - { name: hint_fullscreen, label: Sugestie fullscreen, type: string }
+          - { name: alt_marita, label: Text alternativ imagine mărită, type: string }
+          - { name: vizor_inchide, label: Vizor — închide imaginea, type: string }
+          - { name: vizor_anterioara, label: Vizor — imaginea anterioară, type: string }
+          - { name: vizor_urmatoare, label: Vizor — imaginea următoare, type: string }
+      - name: panou_sate
+        label: 5. Panoul satelor
+        type: object
+        fields:
+          - { name: eticheta_selecteaza, label: Etichetă „selectează satul", type: string }
+          - { name: toate_satele, label: Opțiunea „toate satele", type: string }
+          - { name: vezi_satele, label: Tooltip „vezi satele raionului", type: string }
+          - name: template_schimba_satul
+            label: Tooltip schimbare sat (șablon)
+            type: string
+            description: "Variabilă: {sat}"
+          - { name: inchide_lista, label: Tooltip închide lista, type: string }
+      - name: cartus_sala
+        label: 6. Cartuș sală (#cartus-sala)
+        type: object
+        fields:
+          - { name: eticheta_detalii, label: Etichetă „ⓘ DETALII", type: string }
+          - { name: prefix_sala, label: Prefix număr sală („SALA "), type: string }
+          - { name: antet_muzeu, label: Antet modal („MUZEUL ȘCOLAR"), type: string }
+          - { name: titlu_tipice, label: Titlu „ce obiecte pot fi aici", type: string }
+          - { name: titlu_acum, label: Titlu „în sală acum", type: string }
+          - { name: text_un_obiect, label: Text un singur obiect, type: string }
+          - name: template_mai_multe
+            label: Text mai multe obiecte (șablon)
+            type: string
+            description: "Variabilă: {n}"
+          - { name: gol_sala, label: Text sală goală, type: text }
+          - { name: adauga_primul, label: Text „adaugă primul obiect", type: text }
+      - name: footer
+        label: 7. Subsol
+        type: object
+        fields:
+          - { name: nume_implicit, label: Nume muzeu implicit, type: string }
+          - { name: sunet_da, label: Etichetă sunet pornit, type: string }
+          - { name: sunet_nu, label: Etichetă sunet oprit, type: string }
+          - { name: titlu_buton_sunet, label: Tooltip buton sunet, type: string }
+          - { name: semnatura, label: Semnătură („arhiva Bou Elena"), type: string }
+          - name: template_titlu_pagina
+            label: Titlu pagină raion (șablon)
+            type: string
+            description: "Variabilă: {raion}"
+          - name: template_titlu_pagina_sat
+            label: Titlu pagină sat (șablon)
+            type: string
+            description: "Variabile: {sat} {raion}"
+      - name: tipuri
+        label: 8. Tipuri raion
+        type: object
+        fields:
+          - { name: tip_municipiu, label: Prefix municipiu, type: string }
+          - { name: tip_autonomie, label: Prefix autonomie, type: string }
+          - { name: tip_raion, label: Prefix raion, type: string }
+          - { name: fallback_nume_raion, label: Nume raion implicit, type: string }
+      - name: erori
+        label: 9. Mesaje eroare
+        type: object
+        fields:
+          - { name: titlu_date, label: Titlu eroare date, type: text }
+          - { name: subtitlu_date, label: Subtitlu eroare date, type: text }
+
   - name: sali
     label: 🏛️ Săli
     type: collection
@@ -89,7 +215,7 @@ content:
         type: text
 
   - name: raioane
-    label: 🗺️ Raioane și sate
+    label: 🗺️ Raioane, municipii și sate
     type: collection
     path: content/raioane
     format: json
@@ -130,8 +256,9 @@ content:
             - name: curand
               label: În curând
       - name: sate
-        label: Sate / localități
+        label: Sate / localități ale raionului
         type: object
+        description: "Toate satele raionului curent: vezi lista, adaugă sau șterge. ID-urile se folosesc la câmpul Sat din dosare."
         list:
           collapsible:
             collapsed: true
@@ -174,23 +301,15 @@ content:
         type: number
         description: "1 = #00001. Obiectele noi primesc următorul număr liber."
       - name: sala
-        label: Sala
-        type: select
+        label: Sala (toate sălile din muzeu)
+        type: reference
         required: true
+        description: "Alege sala din lista completă. Săli noi apar automat aici după ce le creezi la 🏛️ Săli."
         options:
-          values:
-            - name: sala-documentelor
-              label: "Sala Documentelor 📜"
-            - name: sala-scolii
-              label: "Sala Școlii 🎓"
-            - name: sala-naturii
-              label: "Sala Naturii 🌿"
-            - name: sala-mestesugurilor
-              label: "Sala Meșteșugurilor ⚒️"
-            - name: sala-gospodariei
-              label: "Sala Gospodăriei 🏺"
-            - name: sala-marturiilor
-              label: "Sala Mărturiilor 🕊️"
+          collection: sali
+          search: "nume"
+          value: "{fields.id}"
+          label: "{fields.nume}"
       - name: raion
         label: Raion / municipiu
         type: reference
@@ -204,7 +323,7 @@ content:
         label: Sat (gol = tot raionul)
         type: string
         required: false
-        description: "ID-ul din lista satelor raionului (ex: truseni). Lasă gol pentru exponat al întregului raion."
+        description: "PAS 1: alege mai sus raionul. PAS 2: deschide în CMS 🗺️ Raioane → raionul ales și copiază ID-ul satului (ex: truseni). La build se verifică automat că satul există în raion."
         pattern: "^([a-z0-9-]+)?$"
       - name: locatie_fizica
         label: 📍 Locația fizică în muzeu
