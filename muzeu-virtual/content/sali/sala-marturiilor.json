@@ -1,0 +1,18 @@
+{
+  "id": "sala-marturiilor",
+  "nume": "Sala Mărturiilor",
+  "icon": "🕊️",
+  "perete": "#4c2650",
+  "lambriu": "#3a1f33",
+  "descriere": "Scrisori de pe front, daruri și povești trăite.",
+  "imagine": "https://picsum.photos/seed/sala-marturii/800/500",
+  "obiecte_tipice": [
+    "Scrisori de pe front",
+    "Fotografii de război",
+    "Medalii și insigne",
+    "Jucării vechi",
+    "Trofee și mingi",
+    "Daruri de la absolvenți"
+  ],
+  "invitatie": "O scrisoare, o medalie, un trofeu — mărturiile trăite merită să fie auzite. Trimite-ne povestea ta."
+}

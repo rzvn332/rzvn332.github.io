@@ -1,0 +1,204 @@
+{
+  "id": "edinet",
+  "nume": "Edineț",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "cupcini",
+      "nume": "Cupcini"
+    },
+    {
+      "id": "edinet",
+      "nume": "Edineț"
+    },
+    {
+      "id": "alexandreni",
+      "nume": "Alexăndreni"
+    },
+    {
+      "id": "alexeevca",
+      "nume": "Alexeevca"
+    },
+    {
+      "id": "badragii-noi",
+      "nume": "Bădragii Noi"
+    },
+    {
+      "id": "badragii-vechi",
+      "nume": "Bădragii Vechi"
+    },
+    {
+      "id": "blesteni",
+      "nume": "Bleșteni"
+    },
+    {
+      "id": "bratuseni",
+      "nume": "Brătușeni"
+    },
+    {
+      "id": "bratusenii-noi",
+      "nume": "Brătușenii Noi"
+    },
+    {
+      "id": "brinzeni",
+      "nume": "Brînzeni"
+    },
+    {
+      "id": "burlanesti",
+      "nume": "Burlănești"
+    },
+    {
+      "id": "buzdugeni",
+      "nume": "Buzdugeni"
+    },
+    {
+      "id": "cepeleuti",
+      "nume": "Cepeleuți"
+    },
+    {
+      "id": "chetrosica-noua",
+      "nume": "Chetroșica Nouă"
+    },
+    {
+      "id": "chetrosica-veche",
+      "nume": "Chetroșica Veche"
+    },
+    {
+      "id": "chiurt",
+      "nume": "Chiurt"
+    },
+    {
+      "id": "cliscauti",
+      "nume": "Clișcăuți"
+    },
+    {
+      "id": "constantinovca",
+      "nume": "Constantinovca"
+    },
+    {
+      "id": "corpaci",
+      "nume": "Corpaci"
+    },
+    {
+      "id": "cuconestii-noi",
+      "nume": "Cuconeștii Noi"
+    },
+    {
+      "id": "cuconestii-vechi",
+      "nume": "Cuconeștii Vechi"
+    },
+    {
+      "id": "fetesti",
+      "nume": "Fetești"
+    },
+    {
+      "id": "fintina-alba",
+      "nume": "Fîntîna Albă"
+    },
+    {
+      "id": "gaspar",
+      "nume": "Gașpar"
+    },
+    {
+      "id": "goleni",
+      "nume": "Goleni"
+    },
+    {
+      "id": "gordinesti",
+      "nume": "Gordinești"
+    },
+    {
+      "id": "gordinestii-noi",
+      "nume": "Gordineștii Noi"
+    },
+    {
+      "id": "hancauti",
+      "nume": "Hancăuți"
+    },
+    {
+      "id": "hincauti",
+      "nume": "Hincăuți"
+    },
+    {
+      "id": "hlinaia",
+      "nume": "Hlinaia"
+    },
+    {
+      "id": "hlinaia-mica",
+      "nume": "Hlinaia Mică"
+    },
+    {
+      "id": "iachimeni",
+      "nume": "Iachimeni"
+    },
+    {
+      "id": "lopatnic",
+      "nume": "Lopatnic"
+    },
+    {
+      "id": "onesti",
+      "nume": "Onești"
+    },
+    {
+      "id": "parcova",
+      "nume": "Parcova"
+    },
+    {
+      "id": "poiana",
+      "nume": "Poiana"
+    },
+    {
+      "id": "ringaci",
+      "nume": "Rîngaci"
+    },
+    {
+      "id": "rotunda",
+      "nume": "Rotunda"
+    },
+    {
+      "id": "ruseni",
+      "nume": "Ruseni"
+    },
+    {
+      "id": "slobodca",
+      "nume": "Slobodca"
+    },
+    {
+      "id": "sofrincani",
+      "nume": "Șofrîncani"
+    },
+    {
+      "id": "stolniceni",
+      "nume": "Stolniceni"
+    },
+    {
+      "id": "terebna",
+      "nume": "Terebna"
+    },
+    {
+      "id": "tirnova",
+      "nume": "Tîrnova"
+    },
+    {
+      "id": "trinca",
+      "nume": "Trinca"
+    },
+    {
+      "id": "vancicauti",
+      "nume": "Vancicăuți"
+    },
+    {
+      "id": "viisoara",
+      "nume": "Viișoara"
+    },
+    {
+      "id": "volodeni",
+      "nume": "Volodeni"
+    },
+    {
+      "id": "zabriceni",
+      "nume": "Zăbriceni"
+    }
+  ],
+  "tip": "raion"
+}

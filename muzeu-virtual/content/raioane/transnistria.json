@@ -1,0 +1,596 @@
+{
+  "id": "transnistria",
+  "nume": "Transnistria",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "camenca",
+      "nume": "Camenca"
+    },
+    {
+      "id": "crasnoe",
+      "nume": "Crasnoe"
+    },
+    {
+      "id": "dnestrovsc",
+      "nume": "Dnestrovsc"
+    },
+    {
+      "id": "dubasari",
+      "nume": "Dubăsari"
+    },
+    {
+      "id": "grigoriopol",
+      "nume": "Grigoriopol"
+    },
+    {
+      "id": "maiac",
+      "nume": "Maiac"
+    },
+    {
+      "id": "ribnita",
+      "nume": "Rîbnița"
+    },
+    {
+      "id": "slobozia",
+      "nume": "Slobozia"
+    },
+    {
+      "id": "tiraspol",
+      "nume": "Tiraspol"
+    },
+    {
+      "id": "tiraspolul-nou",
+      "nume": "Tiraspolul Nou"
+    },
+    {
+      "id": "afanasievca",
+      "nume": "Afanasievca"
+    },
+    {
+      "id": "alexandrovca",
+      "nume": "Alexandrovca"
+    },
+    {
+      "id": "alexandrovca-noua",
+      "nume": "Alexandrovca Nouă"
+    },
+    {
+      "id": "andreevca",
+      "nume": "Andreevca"
+    },
+    {
+      "id": "andriasevca-noua",
+      "nume": "Andriașevca Nouă"
+    },
+    {
+      "id": "andriasevca-veche",
+      "nume": "Andriașevca Veche"
+    },
+    {
+      "id": "basarabca",
+      "nume": "Basarabca"
+    },
+    {
+      "id": "beloci",
+      "nume": "Beloci"
+    },
+    {
+      "id": "bicioc",
+      "nume": "Bîcioc"
+    },
+    {
+      "id": "blijnii-hutor",
+      "nume": "Blijnii Hutor"
+    },
+    {
+      "id": "bodeni",
+      "nume": "Bodeni"
+    },
+    {
+      "id": "bosca",
+      "nume": "Bosca"
+    },
+    {
+      "id": "brosteni",
+      "nume": "Broșteni"
+    },
+    {
+      "id": "bruslachi",
+      "nume": "Bruslachi"
+    },
+    {
+      "id": "buschi",
+      "nume": "Buschi"
+    },
+    {
+      "id": "butor",
+      "nume": "Butor"
+    },
+    {
+      "id": "butuceni",
+      "nume": "Butuceni"
+    },
+    {
+      "id": "calinovca",
+      "nume": "Calinovca"
+    },
+    {
+      "id": "caragas",
+      "nume": "Caragaș"
+    },
+    {
+      "id": "carmanova",
+      "nume": "Carmanova"
+    },
+    {
+      "id": "caterinovca",
+      "nume": "Caterinovca"
+    },
+    {
+      "id": "cernita",
+      "nume": "Cernița"
+    },
+    {
+      "id": "chirov",
+      "nume": "Chirov"
+    },
+    {
+      "id": "cioburciu",
+      "nume": "Cioburciu"
+    },
+    {
+      "id": "cobasna",
+      "nume": "Cobasna"
+    },
+    {
+      "id": "cobasna-statia-cf",
+      "nume": "Cobasna (stație c.f.)"
+    },
+    {
+      "id": "coicova",
+      "nume": "Coicova"
+    },
+    {
+      "id": "colosova",
+      "nume": "Colosova"
+    },
+    {
+      "id": "comisarovca-noua",
+      "nume": "Comisarovca Nouă"
+    },
+    {
+      "id": "constantinovca-vladimirovca",
+      "nume": "Constantinovca"
+    },
+    {
+      "id": "constantinovca-valea-adinca",
+      "nume": "Constantinovca"
+    },
+    {
+      "id": "corotna",
+      "nume": "Corotna"
+    },
+    {
+      "id": "cosnita-noua",
+      "nume": "Coșnița Nouă"
+    },
+    {
+      "id": "cotovca",
+      "nume": "Cotovca"
+    },
+    {
+      "id": "crasnaia-besarabia",
+      "nume": "Crasnaia Besarabia"
+    },
+    {
+      "id": "crasnaia-gorca",
+      "nume": "Crasnaia Gorca"
+    },
+    {
+      "id": "crasnencoe",
+      "nume": "Crasnencoe"
+    },
+    {
+      "id": "crasnii-octeabri",
+      "nume": "Crasnîi Octeabri"
+    },
+    {
+      "id": "crasnii-vinogradari",
+      "nume": "Crasnîi Vinogradari"
+    },
+    {
+      "id": "crasnoe-grigoriopol",
+      "nume": "Crasnoe"
+    },
+    {
+      "id": "crasnogorca",
+      "nume": "Crasnogorca"
+    },
+    {
+      "id": "cuzmin",
+      "nume": "Cuzmin"
+    },
+    {
+      "id": "delacau",
+      "nume": "Delacău"
+    },
+    {
+      "id": "dimitrova",
+      "nume": "Dimitrova"
+    },
+    {
+      "id": "doibani-i",
+      "nume": "Doibani I"
+    },
+    {
+      "id": "doibani-ii",
+      "nume": "Doibani II"
+    },
+    {
+      "id": "dubau",
+      "nume": "Dubău"
+    },
+    {
+      "id": "dzerjinscoe",
+      "nume": "Dzerjinscoe"
+    },
+    {
+      "id": "fedoseevca",
+      "nume": "Fedoseevca"
+    },
+    {
+      "id": "frunza",
+      "nume": "Frunză"
+    },
+    {
+      "id": "frunzauca",
+      "nume": "Frunzăuca"
+    },
+    {
+      "id": "ghersunovca",
+      "nume": "Gherșunovca"
+    },
+    {
+      "id": "ghidirim",
+      "nume": "Ghidirim"
+    },
+    {
+      "id": "goian",
+      "nume": "Goian"
+    },
+    {
+      "id": "goianul-nou",
+      "nume": "Goianul Nou"
+    },
+    {
+      "id": "haraba",
+      "nume": "Haraba"
+    },
+    {
+      "id": "harmatca",
+      "nume": "Harmațca"
+    },
+    {
+      "id": "hirjau",
+      "nume": "Hîrjău"
+    },
+    {
+      "id": "hirtop",
+      "nume": "Hîrtop"
+    },
+    {
+      "id": "hlinaia-slobozia",
+      "nume": "Hlinaia"
+    },
+    {
+      "id": "hlinaia-grigoriopol",
+      "nume": "Hlinaia"
+    },
+    {
+      "id": "hristovaia",
+      "nume": "Hristovaia"
+    },
+    {
+      "id": "hrusca",
+      "nume": "Hrușca"
+    },
+    {
+      "id": "iagorlic",
+      "nume": "Iagorlîc"
+    },
+    {
+      "id": "iantarnoe",
+      "nume": "Iantarnoe"
+    },
+    {
+      "id": "india",
+      "nume": "India"
+    },
+    {
+      "id": "ivanovca",
+      "nume": "Ivanovca"
+    },
+    {
+      "id": "jura",
+      "nume": "Jura"
+    },
+    {
+      "id": "lenin",
+      "nume": "Lenin"
+    },
+    {
+      "id": "lisaia-gora",
+      "nume": "Lîsaia Gora"
+    },
+    {
+      "id": "lunga",
+      "nume": "Lunga"
+    },
+    {
+      "id": "lunga-noua",
+      "nume": "Lunga Nouă"
+    },
+    {
+      "id": "malaiesti",
+      "nume": "Mălăiești"
+    },
+    {
+      "id": "marian",
+      "nume": "Marian"
+    },
+    {
+      "id": "mihailovca",
+      "nume": "Mihailovca"
+    },
+    {
+      "id": "mihailovca-noua",
+      "nume": "Mihailovca Nouă"
+    },
+    {
+      "id": "mocearovca",
+      "nume": "Mocearovca"
+    },
+    {
+      "id": "mocra",
+      "nume": "Mocra"
+    },
+    {
+      "id": "mocreachi",
+      "nume": "Mocreachi"
+    },
+    {
+      "id": "molochisul-mare",
+      "nume": "Molochișul Mare"
+    },
+    {
+      "id": "molochisul-mic",
+      "nume": "Molochișul Mic"
+    },
+    {
+      "id": "nezavertailovca",
+      "nume": "Nezavertailovca"
+    },
+    {
+      "id": "nicolscoe",
+      "nume": "Nicolscoe"
+    },
+    {
+      "id": "novaia-jizni",
+      "nume": "Novaia Jizni"
+    },
+    {
+      "id": "novocotovsc",
+      "nume": "Novocotovsc"
+    },
+    {
+      "id": "novosavitcaia-statia-cf",
+      "nume": "Novosavițcaia (stație c.f.)"
+    },
+    {
+      "id": "novovladimirovca",
+      "nume": "Novovladimirovca"
+    },
+    {
+      "id": "ocnita",
+      "nume": "Ocnița"
+    },
+    {
+      "id": "ofatinti",
+      "nume": "Ofatinți"
+    },
+    {
+      "id": "parcani",
+      "nume": "Parcani"
+    },
+    {
+      "id": "pervomaisc",
+      "nume": "Pervomaisc"
+    },
+    {
+      "id": "pervomaisc-lenin",
+      "nume": "Pervomaisc"
+    },
+    {
+      "id": "picalova",
+      "nume": "Pîcalova"
+    },
+    {
+      "id": "plopi",
+      "nume": "Plopi"
+    },
+    {
+      "id": "pobeda-lenin",
+      "nume": "Pobeda"
+    },
+    {
+      "id": "pobeda-colosova",
+      "nume": "Pobeda"
+    },
+    {
+      "id": "podoima",
+      "nume": "Podoima"
+    },
+    {
+      "id": "podoimita",
+      "nume": "Podoimița"
+    },
+    {
+      "id": "pohrebea-noua",
+      "nume": "Pohrebea Nouă"
+    },
+    {
+      "id": "popencu",
+      "nume": "Popencu"
+    },
+    {
+      "id": "prioziornoe",
+      "nume": "Prioziornoe"
+    },
+    {
+      "id": "rascov",
+      "nume": "Rașcov"
+    },
+    {
+      "id": "rotari",
+      "nume": "Rotari"
+    },
+    {
+      "id": "sadchi",
+      "nume": "Sadchi"
+    },
+    {
+      "id": "saratei",
+      "nume": "Sărăței"
+    },
+    {
+      "id": "sevcenco",
+      "nume": "Șevcenco"
+    },
+    {
+      "id": "severinovca",
+      "nume": "Severinovca"
+    },
+    {
+      "id": "sipca",
+      "nume": "Șipca"
+    },
+    {
+      "id": "slobozia-rascov",
+      "nume": "Slobozia-Rașcov"
+    },
+    {
+      "id": "smalena",
+      "nume": "Șmalena"
+    },
+    {
+      "id": "socolovca",
+      "nume": "Socolovca"
+    },
+    {
+      "id": "solnecinoe",
+      "nume": "Solnecinoe"
+    },
+    {
+      "id": "sovietscoe",
+      "nume": "Sovietscoe"
+    },
+    {
+      "id": "speia",
+      "nume": "Speia"
+    },
+    {
+      "id": "stanislavca",
+      "nume": "Stanislavca"
+    },
+    {
+      "id": "stroiesti",
+      "nume": "Stroiești"
+    },
+    {
+      "id": "sucleia",
+      "nume": "Sucleia"
+    },
+    {
+      "id": "suhaia-ribnita",
+      "nume": "Suhaia Rîbnița"
+    },
+    {
+      "id": "taslic",
+      "nume": "Tașlîc"
+    },
+    {
+      "id": "teiu",
+      "nume": "Teiu"
+    },
+    {
+      "id": "tibuleuca",
+      "nume": "Țîbuleuca"
+    },
+    {
+      "id": "tirnauca",
+      "nume": "Tîrnauca"
+    },
+    {
+      "id": "tocmagiu",
+      "nume": "Tocmagiu"
+    },
+    {
+      "id": "uiutnoe",
+      "nume": "Uiutnoe"
+    },
+    {
+      "id": "ulmu",
+      "nume": "Ulmu"
+    },
+    {
+      "id": "ulmul-mic",
+      "nume": "Ulmul Mic"
+    },
+    {
+      "id": "vadul-turcului",
+      "nume": "Vadul Turcului"
+    },
+    {
+      "id": "valea-adinca",
+      "nume": "Valea Adîncă"
+    },
+    {
+      "id": "varancau",
+      "nume": "Vărăncău"
+    },
+    {
+      "id": "vasilievca",
+      "nume": "Vasilievca"
+    },
+    {
+      "id": "vesioloe",
+      "nume": "Vesioloe"
+    },
+    {
+      "id": "vinogradnoe",
+      "nume": "Vinogradnoe"
+    },
+    {
+      "id": "vladimirovca",
+      "nume": "Vladimirovca"
+    },
+    {
+      "id": "vladimirovca-popencu",
+      "nume": "Vladimirovca"
+    },
+    {
+      "id": "voitovca",
+      "nume": "Voitovca"
+    },
+    {
+      "id": "zaporojet",
+      "nume": "Zaporojeț"
+    },
+    {
+      "id": "zazuleni",
+      "nume": "Zăzuleni"
+    }
+  ],
+  "tip": "autonomie"
+}

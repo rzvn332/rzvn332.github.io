@@ -1,0 +1,164 @@
+{
+  "id": "nisporeni",
+  "nume": "Nisporeni",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "nisporeni",
+      "nume": "Nisporeni"
+    },
+    {
+      "id": "bacseni",
+      "nume": "Băcșeni"
+    },
+    {
+      "id": "balanesti",
+      "nume": "Bălănești"
+    },
+    {
+      "id": "balauresti",
+      "nume": "Bălăurești"
+    },
+    {
+      "id": "barboieni",
+      "nume": "Bărboieni"
+    },
+    {
+      "id": "bolduresti",
+      "nume": "Boldurești"
+    },
+    {
+      "id": "boltun",
+      "nume": "Bolțun"
+    },
+    {
+      "id": "bratuleni",
+      "nume": "Brătuleni"
+    },
+    {
+      "id": "bursuc",
+      "nume": "Bursuc"
+    },
+    {
+      "id": "calimanesti",
+      "nume": "Călimănești"
+    },
+    {
+      "id": "chilisoaia",
+      "nume": "Chilișoaia"
+    },
+    {
+      "id": "cioresti",
+      "nume": "Ciorești"
+    },
+    {
+      "id": "cirnesti",
+      "nume": "Cîrnești"
+    },
+    {
+      "id": "ciutesti",
+      "nume": "Ciutești"
+    },
+    {
+      "id": "cristesti",
+      "nume": "Cristești"
+    },
+    {
+      "id": "drojdieni",
+      "nume": "Drojdieni"
+    },
+    {
+      "id": "gaureni",
+      "nume": "Găureni"
+    },
+    {
+      "id": "grozesti",
+      "nume": "Grozești"
+    },
+    {
+      "id": "helesteni",
+      "nume": "Heleșteni"
+    },
+    {
+      "id": "isaicani",
+      "nume": "Isăicani"
+    },
+    {
+      "id": "iurceni",
+      "nume": "Iurceni"
+    },
+    {
+      "id": "luminita",
+      "nume": "Luminița"
+    },
+    {
+      "id": "marinici",
+      "nume": "Marinici"
+    },
+    {
+      "id": "milesti",
+      "nume": "Milești"
+    },
+    {
+      "id": "mirzoaia",
+      "nume": "Mîrzoaia"
+    },
+    {
+      "id": "odaia",
+      "nume": "Odaia"
+    },
+    {
+      "id": "odobesti",
+      "nume": "Odobești"
+    },
+    {
+      "id": "paruceni",
+      "nume": "Păruceni"
+    },
+    {
+      "id": "seliste",
+      "nume": "Seliște"
+    },
+    {
+      "id": "selisteni",
+      "nume": "Selișteni"
+    },
+    {
+      "id": "sendreni",
+      "nume": "Șendreni"
+    },
+    {
+      "id": "siscani",
+      "nume": "Șișcani"
+    },
+    {
+      "id": "soltanesti",
+      "nume": "Soltănești"
+    },
+    {
+      "id": "valea-nirnovei",
+      "nume": "Valea Nîrnovei"
+    },
+    {
+      "id": "valea-trestieni",
+      "nume": "Valea-Trestieni"
+    },
+    {
+      "id": "varzaresti",
+      "nume": "Vărzărești"
+    },
+    {
+      "id": "vinatori",
+      "nume": "Vînători"
+    },
+    {
+      "id": "vulcanesti",
+      "nume": "Vulcănești"
+    },
+    {
+      "id": "zberoaia",
+      "nume": "Zberoaia"
+    }
+  ],
+  "tip": "raion"
+}

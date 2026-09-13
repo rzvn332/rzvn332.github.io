@@ -1,0 +1,18 @@
+{
+  "id": "sala-documentelor",
+  "nume": "Sala Documentelor",
+  "icon": "📜",
+  "perete": "#2b4f46",
+  "lambriu": "#4f3d22",
+  "descriere": "Acte, cataloage, hărți și fotografii. Amintiri pe hârtie.",
+  "imagine": "https://picsum.photos/seed/sala-documente/800/500",
+  "obiecte_tipice": [
+    "Acte și adeverințe vechi",
+    "Cataloage școlare",
+    "Fotografii de familie",
+    "Hărți și planuri",
+    "Ziare și reviste de epocă",
+    "Diplome și certificate"
+  ],
+  "invitatie": "Ai un act vechi, o fotografie de familie sau un catalog de la școala ta? Poveștește-ne despre el — devine filă în sala asta."
+}

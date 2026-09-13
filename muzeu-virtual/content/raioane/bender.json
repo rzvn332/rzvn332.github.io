@@ -1,0 +1,16 @@
+{
+  "id": "bender",
+  "nume": "Bender",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "bender",
+      "nume": "Bender"
+    },
+    {
+      "id": "proteagailovca",
+      "nume": "Proteagailovca"
+    }
+  ],
+  "tip": "municipiu"
+}

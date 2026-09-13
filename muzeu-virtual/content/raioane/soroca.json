@@ -1,0 +1,280 @@
+{
+  "id": "soroca",
+  "nume": "Soroca",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "soroca",
+      "nume": "Soroca"
+    },
+    {
+      "id": "alexandru-cel-bun",
+      "nume": "Alexandru cel Bun"
+    },
+    {
+      "id": "badiceni",
+      "nume": "Bădiceni"
+    },
+    {
+      "id": "balinti",
+      "nume": "Balinți"
+    },
+    {
+      "id": "balintii-noi",
+      "nume": "Balinții Noi"
+    },
+    {
+      "id": "baxani",
+      "nume": "Băxani"
+    },
+    {
+      "id": "bulboci",
+      "nume": "Bulboci"
+    },
+    {
+      "id": "bulbocii-noi",
+      "nume": "Bulbocii Noi"
+    },
+    {
+      "id": "cainarii-vechi",
+      "nume": "Căinarii Vechi"
+    },
+    {
+      "id": "cerlina",
+      "nume": "Cerlina"
+    },
+    {
+      "id": "cosauti",
+      "nume": "Cosăuți"
+    },
+    {
+      "id": "cremenciug",
+      "nume": "Cremenciug"
+    },
+    {
+      "id": "curesnita",
+      "nume": "Cureșnița"
+    },
+    {
+      "id": "curesnita-noua",
+      "nume": "Cureșnița Nouă"
+    },
+    {
+      "id": "darcauti",
+      "nume": "Dărcăuți"
+    },
+    {
+      "id": "darcautii-noi",
+      "nume": "Dărcăuții Noi"
+    },
+    {
+      "id": "decebal",
+      "nume": "Decebal"
+    },
+    {
+      "id": "dubna",
+      "nume": "Dubna"
+    },
+    {
+      "id": "dumbraveni",
+      "nume": "Dumbrăveni"
+    },
+    {
+      "id": "egoreni",
+      "nume": "Egoreni"
+    },
+    {
+      "id": "floriceni",
+      "nume": "Floriceni"
+    },
+    {
+      "id": "grigorauca",
+      "nume": "Grigorăuca"
+    },
+    {
+      "id": "holosnita",
+      "nume": "Holoșnița"
+    },
+    {
+      "id": "hristici",
+      "nume": "Hristici"
+    },
+    {
+      "id": "iarova",
+      "nume": "Iarova"
+    },
+    {
+      "id": "inundeni",
+      "nume": "Inundeni"
+    },
+    {
+      "id": "iorjnita",
+      "nume": "Iorjnița"
+    },
+    {
+      "id": "livezi",
+      "nume": "Livezi"
+    },
+    {
+      "id": "lugovoe",
+      "nume": "Lugovoe"
+    },
+    {
+      "id": "malcauti",
+      "nume": "Mălcăuți"
+    },
+    {
+      "id": "nimereuca",
+      "nume": "Nimereuca"
+    },
+    {
+      "id": "niorcani",
+      "nume": "Niorcani"
+    },
+    {
+      "id": "oclanda",
+      "nume": "Oclanda"
+    },
+    {
+      "id": "ocolina",
+      "nume": "Ocolina"
+    },
+    {
+      "id": "parcani",
+      "nume": "Parcani"
+    },
+    {
+      "id": "pirlita",
+      "nume": "Pîrlița"
+    },
+    {
+      "id": "racovat",
+      "nume": "Racovăț"
+    },
+    {
+      "id": "redi-ceresnovat",
+      "nume": "Redi-Cereșnovăț"
+    },
+    {
+      "id": "regina-maria",
+      "nume": "Regina Maria"
+    },
+    {
+      "id": "rublenita",
+      "nume": "Rublenița"
+    },
+    {
+      "id": "rublenita-noua",
+      "nume": "Rublenița Nouă"
+    },
+    {
+      "id": "rudi",
+      "nume": "Rudi"
+    },
+    {
+      "id": "ruslanovca",
+      "nume": "Ruslanovca"
+    },
+    {
+      "id": "schineni",
+      "nume": "Schineni"
+    },
+    {
+      "id": "schinenii-noi",
+      "nume": "Schinenii Noi"
+    },
+    {
+      "id": "septelici",
+      "nume": "Șeptelici"
+    },
+    {
+      "id": "slobozia-noua",
+      "nume": "Slobozia Nouă"
+    },
+    {
+      "id": "slobozia-cremene",
+      "nume": "Slobozia-Cremene"
+    },
+    {
+      "id": "slobozia-varancau",
+      "nume": "Slobozia-Vărăncău"
+    },
+    {
+      "id": "sobari",
+      "nume": "Sobari"
+    },
+    {
+      "id": "solcani",
+      "nume": "Șolcani"
+    },
+    {
+      "id": "solonet",
+      "nume": "Soloneț"
+    },
+    {
+      "id": "stoicani",
+      "nume": "Stoicani"
+    },
+    {
+      "id": "tatarauca-noua",
+      "nume": "Tătărăuca Nouă"
+    },
+    {
+      "id": "tatarauca-veche",
+      "nume": "Tătărăuca Veche"
+    },
+    {
+      "id": "tepilova",
+      "nume": "Țepilova"
+    },
+    {
+      "id": "tolocanesti",
+      "nume": "Tolocănești"
+    },
+    {
+      "id": "trifauti",
+      "nume": "Trifăuți"
+    },
+    {
+      "id": "vadeni",
+      "nume": "Vădeni"
+    },
+    {
+      "id": "valea",
+      "nume": "Valea"
+    },
+    {
+      "id": "vantina",
+      "nume": "Vanțina"
+    },
+    {
+      "id": "vantina-mica",
+      "nume": "Vanțina Mică"
+    },
+    {
+      "id": "varancau",
+      "nume": "Vărăncău"
+    },
+    {
+      "id": "vasilcau",
+      "nume": "Vasilcău"
+    },
+    {
+      "id": "visoca",
+      "nume": "Visoca"
+    },
+    {
+      "id": "voloave",
+      "nume": "Voloave"
+    },
+    {
+      "id": "volovita",
+      "nume": "Volovița"
+    },
+    {
+      "id": "zastinca",
+      "nume": "Zastînca"
+    }
+  ],
+  "tip": "raion"
+}

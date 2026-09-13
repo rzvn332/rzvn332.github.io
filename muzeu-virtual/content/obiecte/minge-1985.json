@@ -1,0 +1,28 @@
+{
+  "id": "minge-1985",
+  "titlu": "Mingea finalei 1985",
+  "ordine": 14,
+  "sala": "sala-marturiilor",
+  "perioada": "Comunism",
+  "an": "1985",
+  "material": "Piele",
+  "dimensiuni": "Nr. 5",
+  "donator": "Echipa școlii",
+  "autor": "",
+  "locatie_fizica": "Sala 5, suport central",
+  "descriere_scurta": "3-2 în min. 89, din corner direct.",
+  "poveste": "Eu sunt mingea. Semnată de toată echipa, plină de petice. Golul meu din corner e legendă. Portarul advers zice și azi că a fost vântul.",
+  "imagine": "https://picsum.photos/seed/muzeu-minge/800/600",
+  "etichete": [
+    "sport"
+  ],
+  "expunere": "soclu",
+  "vedeta": false,
+  "imagini": [
+    "https://picsum.photos/seed/muzeu-minge-1/800/600",
+    "https://picsum.photos/seed/muzeu-minge-2/800/600",
+    "https://picsum.photos/seed/muzeu-minge-3/800/600"
+  ],
+  "raion": "chisinau",
+  "sat": null
+}
