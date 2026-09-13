@@ -1,0 +1,304 @@
+{
+  "id": "floresti",
+  "nume": "Florești",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "floresti",
+      "nume": "Florești"
+    },
+    {
+      "id": "ghindesti",
+      "nume": "Ghindești"
+    },
+    {
+      "id": "marculesti",
+      "nume": "Mărculești"
+    },
+    {
+      "id": "alexandrovca",
+      "nume": "Alexandrovca"
+    },
+    {
+      "id": "alexeevca",
+      "nume": "Alexeevca"
+    },
+    {
+      "id": "antonovca",
+      "nume": "Antonovca"
+    },
+    {
+      "id": "bahrinesti",
+      "nume": "Băhrinești"
+    },
+    {
+      "id": "bezeni",
+      "nume": "Bezeni"
+    },
+    {
+      "id": "bobulesti",
+      "nume": "Bobulești"
+    },
+    {
+      "id": "bursuc",
+      "nume": "Bursuc"
+    },
+    {
+      "id": "capresti",
+      "nume": "Căprești"
+    },
+    {
+      "id": "casunca",
+      "nume": "Cașunca"
+    },
+    {
+      "id": "cenusa",
+      "nume": "Cenușa"
+    },
+    {
+      "id": "cernita",
+      "nume": "Cernița"
+    },
+    {
+      "id": "chirilovca",
+      "nume": "Chirilovca"
+    },
+    {
+      "id": "ciripcau",
+      "nume": "Ciripcău"
+    },
+    {
+      "id": "ciutulesti",
+      "nume": "Ciutulești"
+    },
+    {
+      "id": "cosernita",
+      "nume": "Coșernița"
+    },
+    {
+      "id": "cuhurestii-de-jos",
+      "nume": "Cuhureștii de Jos"
+    },
+    {
+      "id": "cuhurestii-de-sus",
+      "nume": "Cuhureștii de Sus"
+    },
+    {
+      "id": "cunicea",
+      "nume": "Cunicea"
+    },
+    {
+      "id": "domulgeni",
+      "nume": "Domulgeni"
+    },
+    {
+      "id": "dumitreni",
+      "nume": "Dumitreni"
+    },
+    {
+      "id": "fagadau",
+      "nume": "Făgădău"
+    },
+    {
+      "id": "frumusica",
+      "nume": "Frumușica"
+    },
+    {
+      "id": "frumusica-noua",
+      "nume": "Frumușica Nouă"
+    },
+    {
+      "id": "frunzesti",
+      "nume": "Frunzești"
+    },
+    {
+      "id": "ghindesti-sat",
+      "nume": "Ghindești"
+    },
+    {
+      "id": "gura-cainarului",
+      "nume": "Gura Căinarului"
+    },
+    {
+      "id": "gura-camencii",
+      "nume": "Gura Camencii"
+    },
+    {
+      "id": "gvozdova",
+      "nume": "Gvozdova"
+    },
+    {
+      "id": "hirtop",
+      "nume": "Hîrtop"
+    },
+    {
+      "id": "iliciovca",
+      "nume": "Iliciovca"
+    },
+    {
+      "id": "ion-voda",
+      "nume": "Ion Vodă"
+    },
+    {
+      "id": "ivanovca",
+      "nume": "Ivanovca"
+    },
+    {
+      "id": "izvoare",
+      "nume": "Izvoare"
+    },
+    {
+      "id": "japca",
+      "nume": "Japca"
+    },
+    {
+      "id": "lunga",
+      "nume": "Lunga"
+    },
+    {
+      "id": "maiscoe",
+      "nume": "Maiscoe"
+    },
+    {
+      "id": "marculesti-sat",
+      "nume": "Mărculești"
+    },
+    {
+      "id": "marinesti",
+      "nume": "Mărinești"
+    },
+    {
+      "id": "mihailovca",
+      "nume": "Mihailovca"
+    },
+    {
+      "id": "napadova",
+      "nume": "Năpadova"
+    },
+    {
+      "id": "nicolaevca",
+      "nume": "Nicolaevca"
+    },
+    {
+      "id": "nicolaevca-cuhurestii-de-sus",
+      "nume": "Nicolaevca"
+    },
+    {
+      "id": "octeabriscoe",
+      "nume": "Octeabriscoe"
+    },
+    {
+      "id": "prajila",
+      "nume": "Prajila"
+    },
+    {
+      "id": "prodanesti",
+      "nume": "Prodănești"
+    },
+    {
+      "id": "prodanestii-vechi",
+      "nume": "Prodăneștii Vechi"
+    },
+    {
+      "id": "putinesti",
+      "nume": "Putinești"
+    },
+    {
+      "id": "radulenii-noi",
+      "nume": "Rădulenii Noi"
+    },
+    {
+      "id": "radulenii-vechi",
+      "nume": "Rădulenii Vechi"
+    },
+    {
+      "id": "rosietici",
+      "nume": "Roșietici"
+    },
+    {
+      "id": "rosieticii-vechi",
+      "nume": "Roșieticii Vechi"
+    },
+    {
+      "id": "sanatauca",
+      "nume": "Sănătăuca"
+    },
+    {
+      "id": "scaieni",
+      "nume": "Scăieni"
+    },
+    {
+      "id": "sevirova",
+      "nume": "Sevirova"
+    },
+    {
+      "id": "sirbesti",
+      "nume": "Sîrbești"
+    },
+    {
+      "id": "stefanesti",
+      "nume": "Ștefănești"
+    },
+    {
+      "id": "stirceni",
+      "nume": "Stîrceni"
+    },
+    {
+      "id": "temeleuti",
+      "nume": "Temeleuți"
+    },
+    {
+      "id": "tipordei",
+      "nume": "Țipordei"
+    },
+    {
+      "id": "tira",
+      "nume": "Țîra"
+    },
+    {
+      "id": "tira-statia-cf",
+      "nume": "Țîra (stație c.f.)"
+    },
+    {
+      "id": "tirgul-vertiujeni",
+      "nume": "Tîrgul-Vertiujeni"
+    },
+    {
+      "id": "trifanesti",
+      "nume": "Trifănești"
+    },
+    {
+      "id": "unchitesti",
+      "nume": "Unchitești"
+    },
+    {
+      "id": "unchitesti-statia-cf",
+      "nume": "Unchitești (stație c.f.)"
+    },
+    {
+      "id": "valea-radoaiei",
+      "nume": "Valea Rădoaiei"
+    },
+    {
+      "id": "varvareuca",
+      "nume": "Vărvăreuca"
+    },
+    {
+      "id": "vascauti",
+      "nume": "Văscăuți"
+    },
+    {
+      "id": "vertiujeni",
+      "nume": "Vertiujeni"
+    },
+    {
+      "id": "zaluceni",
+      "nume": "Zăluceni"
+    },
+    {
+      "id": "zarojeni",
+      "nume": "Zarojeni"
+    }
+  ],
+  "tip": "raion"
+}

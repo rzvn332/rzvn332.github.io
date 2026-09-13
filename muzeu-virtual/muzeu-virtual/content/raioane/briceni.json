@@ -1,0 +1,164 @@
+{
+  "id": "briceni",
+  "nume": "Briceni",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "briceni",
+      "nume": "Briceni"
+    },
+    {
+      "id": "lipcani",
+      "nume": "Lipcani"
+    },
+    {
+      "id": "balasinesti",
+      "nume": "Balasinești"
+    },
+    {
+      "id": "balcauti",
+      "nume": "Bălcăuți"
+    },
+    {
+      "id": "beleavinti",
+      "nume": "Beleavinți"
+    },
+    {
+      "id": "berlinti",
+      "nume": "Berlinți"
+    },
+    {
+      "id": "bezeda",
+      "nume": "Bezeda"
+    },
+    {
+      "id": "bocicauti",
+      "nume": "Bocicăuți"
+    },
+    {
+      "id": "bogdanesti",
+      "nume": "Bogdănești"
+    },
+    {
+      "id": "bulboaca",
+      "nume": "Bulboaca"
+    },
+    {
+      "id": "caracusenii-noi",
+      "nume": "Caracușenii Noi"
+    },
+    {
+      "id": "caracusenii-vechi",
+      "nume": "Caracușenii Vechi"
+    },
+    {
+      "id": "chirilovca",
+      "nume": "Chirilovca"
+    },
+    {
+      "id": "colicauti",
+      "nume": "Colicăuți"
+    },
+    {
+      "id": "corjeuti",
+      "nume": "Corjeuți"
+    },
+    {
+      "id": "coteala",
+      "nume": "Coteala"
+    },
+    {
+      "id": "cotiujeni",
+      "nume": "Cotiujeni"
+    },
+    {
+      "id": "criva",
+      "nume": "Criva"
+    },
+    {
+      "id": "drepcauti",
+      "nume": "Drepcăuți"
+    },
+    {
+      "id": "grimancauti",
+      "nume": "Grimăncăuți"
+    },
+    {
+      "id": "grimesti",
+      "nume": "Grimești"
+    },
+    {
+      "id": "groznita",
+      "nume": "Groznița"
+    },
+    {
+      "id": "halahora-de-jos",
+      "nume": "Halahora de Jos"
+    },
+    {
+      "id": "halahora-de-sus",
+      "nume": "Halahora de Sus"
+    },
+    {
+      "id": "hlina",
+      "nume": "Hlina"
+    },
+    {
+      "id": "larga",
+      "nume": "Larga"
+    },
+    {
+      "id": "marcauti",
+      "nume": "Mărcăuți"
+    },
+    {
+      "id": "marcautii-noi",
+      "nume": "Mărcăuții Noi"
+    },
+    {
+      "id": "medveja",
+      "nume": "Medveja"
+    },
+    {
+      "id": "mihaileni",
+      "nume": "Mihăileni"
+    },
+    {
+      "id": "pavlovca",
+      "nume": "Pavlovca"
+    },
+    {
+      "id": "pererita",
+      "nume": "Pererita"
+    },
+    {
+      "id": "sirauti",
+      "nume": "Șirăuți"
+    },
+    {
+      "id": "slobozia-medveja",
+      "nume": "Slobozia-Medveja"
+    },
+    {
+      "id": "slobozia-sirauti",
+      "nume": "Slobozia-Șirăuți"
+    },
+    {
+      "id": "tabani",
+      "nume": "Tabani"
+    },
+    {
+      "id": "tetcani",
+      "nume": "Tețcani"
+    },
+    {
+      "id": "trebisauti",
+      "nume": "Trebisăuți"
+    },
+    {
+      "id": "trestieni",
+      "nume": "Trestieni"
+    }
+  ],
+  "tip": "raion"
+}

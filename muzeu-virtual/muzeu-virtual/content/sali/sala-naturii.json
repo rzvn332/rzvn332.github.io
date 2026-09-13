@@ -1,0 +1,17 @@
+{
+  "id": "sala-naturii",
+  "nume": "Sala Naturii",
+  "icon": "🌿",
+  "perete": "#3d5c2a",
+  "lambriu": "#37411f",
+  "descriere": "Ierbare, pietre și microscoape. Cabinetul curioșilor.",
+  "imagine": "https://picsum.photos/seed/sala-natura/800/500",
+  "obiecte_tipice": [
+    "Ierbare și plante presate",
+    "Pietre și minerale",
+    "Microscoape și lupe",
+    "Panouri cu insecte",
+    "Hărți de relief"
+  ],
+  "invitatie": "Ai un ierbar al bunicii sau o piatră adusă din excursii? Naturii îi stau bine poveștile trăite."
+}

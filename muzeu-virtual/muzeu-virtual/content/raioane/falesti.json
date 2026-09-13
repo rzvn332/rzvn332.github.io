@@ -1,0 +1,312 @@
+{
+  "id": "falesti",
+  "nume": "Fălești",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "falesti",
+      "nume": "Fălești"
+    },
+    {
+      "id": "albinetul-nou",
+      "nume": "Albinețul Nou"
+    },
+    {
+      "id": "albinetul-vechi",
+      "nume": "Albinețul Vechi"
+    },
+    {
+      "id": "beleuti",
+      "nume": "Beleuți"
+    },
+    {
+      "id": "bocani",
+      "nume": "Bocani"
+    },
+    {
+      "id": "bocsa",
+      "nume": "Bocșa"
+    },
+    {
+      "id": "burghelea",
+      "nume": "Burghelea"
+    },
+    {
+      "id": "calinesti",
+      "nume": "Călinești"
+    },
+    {
+      "id": "calugar",
+      "nume": "Călugăr"
+    },
+    {
+      "id": "catranic",
+      "nume": "Catranîc"
+    },
+    {
+      "id": "catranic-statia-cf",
+      "nume": "Catranîc (stație c.f.)"
+    },
+    {
+      "id": "chetris",
+      "nume": "Chetriș"
+    },
+    {
+      "id": "chetrisul-nou",
+      "nume": "Chetrișul Nou"
+    },
+    {
+      "id": "ciolacu-nou",
+      "nume": "Ciolacu Nou"
+    },
+    {
+      "id": "ciolacu-vechi",
+      "nume": "Ciolacu Vechi"
+    },
+    {
+      "id": "ciuluc",
+      "nume": "Ciuluc"
+    },
+    {
+      "id": "comarovca",
+      "nume": "Comarovca"
+    },
+    {
+      "id": "cuzmenii-vechi",
+      "nume": "Cuzmenii Vechi"
+    },
+    {
+      "id": "doltu",
+      "nume": "Doltu"
+    },
+    {
+      "id": "drujineni",
+      "nume": "Drujineni"
+    },
+    {
+      "id": "egorovca",
+      "nume": "Egorovca"
+    },
+    {
+      "id": "fabrica-de-zahar",
+      "nume": "Fabrica de Zahăr"
+    },
+    {
+      "id": "fagadau",
+      "nume": "Făgădău"
+    },
+    {
+      "id": "falestii-noi",
+      "nume": "Făleștii Noi"
+    },
+    {
+      "id": "frumusica",
+      "nume": "Frumușica"
+    },
+    {
+      "id": "glinjeni",
+      "nume": "Glinjeni"
+    },
+    {
+      "id": "hiliuti",
+      "nume": "Hiliuți"
+    },
+    {
+      "id": "hincesti",
+      "nume": "Hîncești"
+    },
+    {
+      "id": "hirtop",
+      "nume": "Hîrtop"
+    },
+    {
+      "id": "hitresti",
+      "nume": "Hitrești"
+    },
+    {
+      "id": "horesti",
+      "nume": "Horești"
+    },
+    {
+      "id": "hrubna-noua",
+      "nume": "Hrubna Nouă"
+    },
+    {
+      "id": "ilenuta",
+      "nume": "Ilenuța"
+    },
+    {
+      "id": "iscalau",
+      "nume": "Ișcălău"
+    },
+    {
+      "id": "ivanovca",
+      "nume": "Ivanovca"
+    },
+    {
+      "id": "izvoare",
+      "nume": "Izvoare"
+    },
+    {
+      "id": "logofteni",
+      "nume": "Logofteni"
+    },
+    {
+      "id": "lucaceni",
+      "nume": "Lucăceni"
+    },
+    {
+      "id": "magura",
+      "nume": "Măgura"
+    },
+    {
+      "id": "magura-noua",
+      "nume": "Măgura Nouă"
+    },
+    {
+      "id": "magureanca",
+      "nume": "Măgureanca"
+    },
+    {
+      "id": "marandeni",
+      "nume": "Mărăndeni"
+    },
+    {
+      "id": "moldoveanca",
+      "nume": "Moldoveanca"
+    },
+    {
+      "id": "musteata",
+      "nume": "Musteața"
+    },
+    {
+      "id": "natalievca",
+      "nume": "Natalievca"
+    },
+    {
+      "id": "navirnet",
+      "nume": "Năvîrneț"
+    },
+    {
+      "id": "nicolaevca",
+      "nume": "Nicolaevca"
+    },
+    {
+      "id": "obreja-noua",
+      "nume": "Obreja Nouă"
+    },
+    {
+      "id": "obreja-veche",
+      "nume": "Obreja Veche"
+    },
+    {
+      "id": "pervomaisc",
+      "nume": "Pervomaisc"
+    },
+    {
+      "id": "pietrosu",
+      "nume": "Pietrosu"
+    },
+    {
+      "id": "pietrosul-nou",
+      "nume": "Pietrosul Nou"
+    },
+    {
+      "id": "pinzareni",
+      "nume": "Pînzăreni"
+    },
+    {
+      "id": "pinzarenii-noi",
+      "nume": "Pînzărenii Noi"
+    },
+    {
+      "id": "pirlita",
+      "nume": "Pîrlița"
+    },
+    {
+      "id": "pocrovca",
+      "nume": "Pocrovca"
+    },
+    {
+      "id": "pompa",
+      "nume": "Pompa"
+    },
+    {
+      "id": "popovca",
+      "nume": "Popovca"
+    },
+    {
+      "id": "pruteni",
+      "nume": "Pruteni"
+    },
+    {
+      "id": "rautel",
+      "nume": "Răuțel"
+    },
+    {
+      "id": "rautelul-nou",
+      "nume": "Răuțelul Nou"
+    },
+    {
+      "id": "rediul-de-jos",
+      "nume": "Rediul de Jos"
+    },
+    {
+      "id": "rediul-de-sus",
+      "nume": "Rediul de Sus"
+    },
+    {
+      "id": "risipeni",
+      "nume": "Risipeni"
+    },
+    {
+      "id": "sarata-noua",
+      "nume": "Sărata Nouă"
+    },
+    {
+      "id": "sarata-veche",
+      "nume": "Sărata Veche"
+    },
+    {
+      "id": "scumpia",
+      "nume": "Scumpia"
+    },
+    {
+      "id": "socii-noi",
+      "nume": "Socii Noi"
+    },
+    {
+      "id": "socii-vechi",
+      "nume": "Socii Vechi"
+    },
+    {
+      "id": "soltoaia",
+      "nume": "Șoltoaia"
+    },
+    {
+      "id": "suvorovca",
+      "nume": "Suvorovca"
+    },
+    {
+      "id": "tapoc",
+      "nume": "Țapoc"
+    },
+    {
+      "id": "taxobeni",
+      "nume": "Taxobeni"
+    },
+    {
+      "id": "unteni",
+      "nume": "Unteni"
+    },
+    {
+      "id": "valea-rusului",
+      "nume": "Valea Rusului"
+    },
+    {
+      "id": "vranesti",
+      "nume": "Vrănești"
+    }
+  ],
+  "tip": "raion"
+}

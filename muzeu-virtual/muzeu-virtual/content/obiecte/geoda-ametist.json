@@ -1,0 +1,29 @@
+{
+  "id": "geoda-ametist",
+  "titlu": "Geodă de ametist",
+  "ordine": 7,
+  "sala": "sala-naturii",
+  "perioada": "Anii 2000",
+  "an": "2005",
+  "material": "Piatră",
+  "dimensiuni": "2.3 kg",
+  "donator": "Excursie Bușteni",
+  "autor": "",
+  "locatie_fizica": "Sala 4, Vitrina C",
+  "descriere_scurta": "Gri pe-afară, violet înăuntru.",
+  "poveste": "Eu sunt geoda. Nimeni nu m-a vrut că eram urâtă. Când m-au spart, toți au zis wow. Nu judeca piatra după copertă!",
+  "imagine": "https://picsum.photos/seed/muzeu-ametist/800/600",
+  "etichete": [
+    "rocă",
+    "preferata-copiilor"
+  ],
+  "expunere": "soclu",
+  "vedeta": false,
+  "imagini": [
+    "https://picsum.photos/seed/muzeu-ametist-1/800/600",
+    "https://picsum.photos/seed/muzeu-ametist-2/800/600",
+    "https://picsum.photos/seed/muzeu-ametist-3/800/600"
+  ],
+  "raion": "chisinau",
+  "sat": null
+}
