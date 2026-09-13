@@ -1,0 +1,18 @@
+{
+  "id": "sala-gospodariei",
+  "nume": "Sala Gospodăriei",
+  "icon": "🏺",
+  "perete": "#7a5c22",
+  "lambriu": "#7a5426",
+  "descriere": "Vase, lămpi, ceasuri și aparate de odinioară. Casa bunicii.",
+  "imagine": "https://picsum.photos/seed/sala-gospodarie/800/500",
+  "obiecte_tipice": [
+    "Vase și oale de fontă",
+    "Lămpi cu petrol",
+    "Ceasuri cu cuc",
+    "Aparate radio vechi",
+    "Monede și bancnote",
+    "Fiere de călcat și samovare"
+  ],
+  "invitatie": "Casa bunicii e un muzeu întreg. Alege un obiect — lampa, ceasul, radio-ul — și spune-ne povestea lui."
+}

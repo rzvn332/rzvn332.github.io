@@ -1,0 +1,20 @@
+{
+  "id": "balti",
+  "nume": "Bălți",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "balti",
+      "nume": "Bălți"
+    },
+    {
+      "id": "elizaveta",
+      "nume": "Elizaveta"
+    },
+    {
+      "id": "sadovoe",
+      "nume": "Sadovoe"
+    }
+  ],
+  "tip": "municipiu"
+}

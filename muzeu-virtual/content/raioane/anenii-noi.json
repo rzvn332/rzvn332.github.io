@@ -1,0 +1,188 @@
+{
+  "id": "anenii-noi",
+  "nume": "Anenii Noi",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "anenii-noi",
+      "nume": "Anenii Noi"
+    },
+    {
+      "id": "albinita",
+      "nume": "Albinița"
+    },
+    {
+      "id": "balmaz",
+      "nume": "Balmaz"
+    },
+    {
+      "id": "batic",
+      "nume": "Batîc"
+    },
+    {
+      "id": "beriozchi",
+      "nume": "Beriozchi"
+    },
+    {
+      "id": "botnaresti",
+      "nume": "Botnărești"
+    },
+    {
+      "id": "botnarestii-noi",
+      "nume": "Botnăreștii Noi"
+    },
+    {
+      "id": "bulboaca",
+      "nume": "Bulboaca"
+    },
+    {
+      "id": "calfa",
+      "nume": "Calfa"
+    },
+    {
+      "id": "calfa-noua",
+      "nume": "Calfa Nouă"
+    },
+    {
+      "id": "chetrosu",
+      "nume": "Chetrosu"
+    },
+    {
+      "id": "chirca",
+      "nume": "Chirca"
+    },
+    {
+      "id": "ciobanovca",
+      "nume": "Ciobanovca"
+    },
+    {
+      "id": "cobusca-noua",
+      "nume": "Cobusca Nouă"
+    },
+    {
+      "id": "cobusca-veche",
+      "nume": "Cobusca Veche"
+    },
+    {
+      "id": "cretoaia",
+      "nume": "Crețoaia"
+    },
+    {
+      "id": "delacau",
+      "nume": "Delacău"
+    },
+    {
+      "id": "floreni",
+      "nume": "Floreni"
+    },
+    {
+      "id": "floresti",
+      "nume": "Florești"
+    },
+    {
+      "id": "geamana",
+      "nume": "Geamăna"
+    },
+    {
+      "id": "gura-bicului",
+      "nume": "Gura Bîcului"
+    },
+    {
+      "id": "hirbovat",
+      "nume": "Hîrbovăț"
+    },
+    {
+      "id": "hirbovatul-nou",
+      "nume": "Hîrbovățul Nou"
+    },
+    {
+      "id": "larga",
+      "nume": "Larga"
+    },
+    {
+      "id": "maximovca",
+      "nume": "Maximovca"
+    },
+    {
+      "id": "mereni",
+      "nume": "Mereni"
+    },
+    {
+      "id": "merenii-noi",
+      "nume": "Merenii Noi"
+    },
+    {
+      "id": "mirnoe",
+      "nume": "Mirnoe"
+    },
+    {
+      "id": "nicolaevca",
+      "nume": "Nicolaevca"
+    },
+    {
+      "id": "ochiul-ros",
+      "nume": "Ochiul Roș"
+    },
+    {
+      "id": "picus",
+      "nume": "Picus"
+    },
+    {
+      "id": "puhaceni",
+      "nume": "Puhăceni"
+    },
+    {
+      "id": "roscani",
+      "nume": "Roșcani"
+    },
+    {
+      "id": "ruseni",
+      "nume": "Ruseni"
+    },
+    {
+      "id": "salcia",
+      "nume": "Salcia"
+    },
+    {
+      "id": "serpeni",
+      "nume": "Șerpeni"
+    },
+    {
+      "id": "socoleni",
+      "nume": "Socoleni"
+    },
+    {
+      "id": "speia",
+      "nume": "Speia"
+    },
+    {
+      "id": "telita",
+      "nume": "Telița"
+    },
+    {
+      "id": "telita-noua",
+      "nume": "Telița Nouă"
+    },
+    {
+      "id": "tintareni",
+      "nume": "Țînțăreni"
+    },
+    {
+      "id": "todiresti",
+      "nume": "Todirești"
+    },
+    {
+      "id": "troita-noua",
+      "nume": "Troița Nouă"
+    },
+    {
+      "id": "varnita",
+      "nume": "Varnița"
+    },
+    {
+      "id": "zolotievca",
+      "nume": "Zolotievca"
+    }
+  ],
+  "tip": "raion"
+}

@@ -1,0 +1,136 @@
+{
+  "id": "gagauzia",
+  "nume": "Găgăuzia",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "ceadir-lunga",
+      "nume": "Ceadîr-Lunga"
+    },
+    {
+      "id": "comrat",
+      "nume": "Comrat"
+    },
+    {
+      "id": "vulcanesti",
+      "nume": "Vulcănești"
+    },
+    {
+      "id": "alexeevca",
+      "nume": "Alexeevca"
+    },
+    {
+      "id": "avdarma",
+      "nume": "Avdarma"
+    },
+    {
+      "id": "baurci",
+      "nume": "Baurci"
+    },
+    {
+      "id": "besalma",
+      "nume": "Beșalma"
+    },
+    {
+      "id": "besghioz",
+      "nume": "Beșghioz"
+    },
+    {
+      "id": "bugeac",
+      "nume": "Bugeac"
+    },
+    {
+      "id": "carbalia",
+      "nume": "Carbalia"
+    },
+    {
+      "id": "cazaclia",
+      "nume": "Cazaclia"
+    },
+    {
+      "id": "chioselia-rusa",
+      "nume": "Chioselia Rusă"
+    },
+    {
+      "id": "chiriet-lunga",
+      "nume": "Chiriet-Lunga"
+    },
+    {
+      "id": "chirsova",
+      "nume": "Chirsova"
+    },
+    {
+      "id": "cioc-maidan",
+      "nume": "Cioc-Maidan"
+    },
+    {
+      "id": "cismichioi",
+      "nume": "Cișmichioi"
+    },
+    {
+      "id": "congaz",
+      "nume": "Congaz"
+    },
+    {
+      "id": "congazcicul-de-jos",
+      "nume": "Congazcicul de Jos"
+    },
+    {
+      "id": "congazcicul-de-sus",
+      "nume": "Congazcicul de Sus"
+    },
+    {
+      "id": "copceac",
+      "nume": "Copceac"
+    },
+    {
+      "id": "cotovscoe",
+      "nume": "Cotovscoe"
+    },
+    {
+      "id": "dezghingea",
+      "nume": "Dezghingea"
+    },
+    {
+      "id": "dudulesti",
+      "nume": "Dudulești"
+    },
+    {
+      "id": "etulia",
+      "nume": "Etulia"
+    },
+    {
+      "id": "etulia-noua",
+      "nume": "Etulia Nouă"
+    },
+    {
+      "id": "etulia-statia-cf",
+      "nume": "Etulia (stație c.f.)"
+    },
+    {
+      "id": "ferapontievca",
+      "nume": "Ferapontievca"
+    },
+    {
+      "id": "gaidar",
+      "nume": "Gaidar"
+    },
+    {
+      "id": "joltai",
+      "nume": "Joltai"
+    },
+    {
+      "id": "svetlii",
+      "nume": "Svetlîi"
+    },
+    {
+      "id": "tomai",
+      "nume": "Tomai"
+    },
+    {
+      "id": "vulcanesti-statia-cf",
+      "nume": "Vulcănești (stație c.f.)"
+    }
+  ],
+  "tip": "autonomie"
+}

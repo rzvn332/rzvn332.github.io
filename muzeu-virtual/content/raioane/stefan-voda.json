@@ -1,0 +1,112 @@
+{
+  "id": "stefan-voda",
+  "nume": "Ștefan Vodă",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "stefan-voda",
+      "nume": "Ștefan Vodă"
+    },
+    {
+      "id": "alava",
+      "nume": "Alava"
+    },
+    {
+      "id": "antonesti",
+      "nume": "Antonești"
+    },
+    {
+      "id": "brezoaia",
+      "nume": "Brezoaia"
+    },
+    {
+      "id": "caplani",
+      "nume": "Căplani"
+    },
+    {
+      "id": "carahasani",
+      "nume": "Carahasani"
+    },
+    {
+      "id": "cioburciu",
+      "nume": "Cioburciu"
+    },
+    {
+      "id": "copceac",
+      "nume": "Copceac"
+    },
+    {
+      "id": "crocmaz",
+      "nume": "Crocmaz"
+    },
+    {
+      "id": "ermoclia",
+      "nume": "Ermoclia"
+    },
+    {
+      "id": "festelita",
+      "nume": "Feștelița"
+    },
+    {
+      "id": "lazo",
+      "nume": "Lazo"
+    },
+    {
+      "id": "marianca-de-jos",
+      "nume": "Marianca de Jos"
+    },
+    {
+      "id": "olanesti",
+      "nume": "Olănești"
+    },
+    {
+      "id": "palanca",
+      "nume": "Palanca"
+    },
+    {
+      "id": "popeasca",
+      "nume": "Popeasca"
+    },
+    {
+      "id": "purcari",
+      "nume": "Purcari"
+    },
+    {
+      "id": "rascaieti",
+      "nume": "Răscăieți"
+    },
+    {
+      "id": "rascaietii-noi",
+      "nume": "Răscăieții Noi"
+    },
+    {
+      "id": "semionovca",
+      "nume": "Semionovca"
+    },
+    {
+      "id": "slobozia",
+      "nume": "Slobozia"
+    },
+    {
+      "id": "stefanesti",
+      "nume": "Ștefănești"
+    },
+    {
+      "id": "talmaza",
+      "nume": "Talmaza"
+    },
+    {
+      "id": "tudora",
+      "nume": "Tudora"
+    },
+    {
+      "id": "viisoara",
+      "nume": "Viișoara"
+    },
+    {
+      "id": "volintiri",
+      "nume": "Volintiri"
+    }
+  ],
+  "tip": "raion"
+}

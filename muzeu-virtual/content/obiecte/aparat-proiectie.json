@@ -1,0 +1,28 @@
+{
+  "id": "aparat-proiectie",
+  "titlu": "Proiector diafilme",
+  "ordine": 9,
+  "sala": "sala-scolii",
+  "perioada": "Comunism",
+  "an": "1978",
+  "material": "Metal",
+  "dimensiuni": "35x25 cm",
+  "donator": "Cab. istorie",
+  "autor": "",
+  "locatie_fizica": "Sala 2, Vitrina D",
+  "descriere_scurta": "Netflix-ul anilor '80.",
+  "poveste": "Eu sunt proiectorul. Scârțâiam și pâlpâiam Capra cu trei iezi pe cearșaf alb. Toată clasa țipa de bucurie.",
+  "imagine": "https://picsum.photos/seed/muzeu-proiector/800/600",
+  "etichete": [
+    "cinema"
+  ],
+  "expunere": "soclu",
+  "vedeta": false,
+  "imagini": [
+    "https://picsum.photos/seed/muzeu-proiector-1/800/600",
+    "https://picsum.photos/seed/muzeu-proiector-2/800/600",
+    "https://picsum.photos/seed/muzeu-proiector-3/800/600"
+  ],
+  "raion": "chisinau",
+  "sat": null
+}

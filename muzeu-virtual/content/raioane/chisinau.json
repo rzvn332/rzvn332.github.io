@@ -1,0 +1,148 @@
+{
+  "id": "chisinau",
+  "nume": "Chișinău",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "chisinau",
+      "nume": "Chișinău"
+    },
+    {
+      "id": "codru",
+      "nume": "Codru"
+    },
+    {
+      "id": "cricova",
+      "nume": "Cricova"
+    },
+    {
+      "id": "durlesti",
+      "nume": "Durlești"
+    },
+    {
+      "id": "singera",
+      "nume": "Sîngera"
+    },
+    {
+      "id": "stauceni",
+      "nume": "Stăuceni"
+    },
+    {
+      "id": "vadul-lui-voda",
+      "nume": "Vadul lui Vodă"
+    },
+    {
+      "id": "vatra",
+      "nume": "Vatra"
+    },
+    {
+      "id": "bacioi",
+      "nume": "Băcioi"
+    },
+    {
+      "id": "bic",
+      "nume": "Bîc"
+    },
+    {
+      "id": "braila",
+      "nume": "Brăila"
+    },
+    {
+      "id": "bubuieci",
+      "nume": "Bubuieci"
+    },
+    {
+      "id": "budesti",
+      "nume": "Budești"
+    },
+    {
+      "id": "buneti",
+      "nume": "Buneți"
+    },
+    {
+      "id": "ceroborta",
+      "nume": "Ceroborta"
+    },
+    {
+      "id": "cheltuitori",
+      "nume": "Cheltuitori"
+    },
+    {
+      "id": "ciorescu",
+      "nume": "Ciorescu"
+    },
+    {
+      "id": "colonita",
+      "nume": "Colonița"
+    },
+    {
+      "id": "condrita",
+      "nume": "Condrița"
+    },
+    {
+      "id": "cruzesti",
+      "nume": "Cruzești"
+    },
+    {
+      "id": "dobrogea",
+      "nume": "Dobrogea"
+    },
+    {
+      "id": "dumbrava",
+      "nume": "Dumbrava"
+    },
+    {
+      "id": "fauresti",
+      "nume": "Făurești"
+    },
+    {
+      "id": "frumusica",
+      "nume": "Frumușica"
+    },
+    {
+      "id": "ghidighici",
+      "nume": "Ghidighici"
+    },
+    {
+      "id": "goian",
+      "nume": "Goian"
+    },
+    {
+      "id": "goianul-nou",
+      "nume": "Goianul Nou"
+    },
+    {
+      "id": "gratiesti",
+      "nume": "Grătiești"
+    },
+    {
+      "id": "hulboaca",
+      "nume": "Hulboaca"
+    },
+    {
+      "id": "humulesti",
+      "nume": "Humulești"
+    },
+    {
+      "id": "revaca",
+      "nume": "Revaca"
+    },
+    {
+      "id": "straisteni",
+      "nume": "Străisteni"
+    },
+    {
+      "id": "tohatin",
+      "nume": "Tohatin"
+    },
+    {
+      "id": "truseni",
+      "nume": "Trușeni"
+    },
+    {
+      "id": "vaduleni",
+      "nume": "Văduleni"
+    }
+  ],
+  "tip": "municipiu"
+}

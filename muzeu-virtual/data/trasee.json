@@ -1,0 +1,25 @@
+[
+  {
+    "id": "prima-vizita",
+    "nume": "Prima vizită — 10 minute",
+    "obiecte": [
+      "clopotel-arama",
+      "banca-lemn-1960",
+      "harta-1938",
+      "geoda-ametist",
+      "costum-oltenesc",
+      "minge-1985"
+    ]
+  },
+  {
+    "id": "comorile",
+    "nume": "Comorile ascunse",
+    "obiecte": [
+      "penar-1950",
+      "scrisoare-1944",
+      "catalog-1974",
+      "oala-horezu",
+      "microscop-1982"
+    ]
+  }
+]

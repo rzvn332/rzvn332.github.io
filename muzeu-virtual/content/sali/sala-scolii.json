@@ -1,0 +1,18 @@
+{
+  "id": "sala-scolii",
+  "nume": "Sala Școlii",
+  "icon": "🎓",
+  "perete": "#2a3a62",
+  "lambriu": "#633917",
+  "descriere": "Bănci, clopoțel și rechizite. Clasa de acum 50 de ani.",
+  "imagine": "https://picsum.photos/seed/sala-scoala/800/500",
+  "obiecte_tipice": [
+    "Clopoțel de clasă",
+    "Bănci și scaune vechi",
+    "Abac și penare",
+    "Manuale și caiete",
+    "Aparate didactice",
+    "Steme și diplome"
+  ],
+  "invitatie": "Păstrezi ceva de la școala ta — un clopoțel, un penar, o bancă? Adu-l în colecție cu povestea lui."
+}

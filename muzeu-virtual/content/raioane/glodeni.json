@@ -1,0 +1,148 @@
+{
+  "id": "glodeni",
+  "nume": "Glodeni",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "glodeni",
+      "nume": "Glodeni"
+    },
+    {
+      "id": "balatina",
+      "nume": "Balatina"
+    },
+    {
+      "id": "bisericani",
+      "nume": "Bisericani"
+    },
+    {
+      "id": "brinzeni",
+      "nume": "Brînzeni"
+    },
+    {
+      "id": "butesti",
+      "nume": "Butești"
+    },
+    {
+      "id": "cajba",
+      "nume": "Cajba"
+    },
+    {
+      "id": "camenca",
+      "nume": "Camenca"
+    },
+    {
+      "id": "camencuta",
+      "nume": "Camencuța"
+    },
+    {
+      "id": "ciuciulea",
+      "nume": "Ciuciulea"
+    },
+    {
+      "id": "clococenii-vechi",
+      "nume": "Clococenii Vechi"
+    },
+    {
+      "id": "cobani",
+      "nume": "Cobani"
+    },
+    {
+      "id": "cot",
+      "nume": "Cot"
+    },
+    {
+      "id": "cuhnesti",
+      "nume": "Cuhnești"
+    },
+    {
+      "id": "danu",
+      "nume": "Danu"
+    },
+    {
+      "id": "dusmani",
+      "nume": "Dușmani"
+    },
+    {
+      "id": "fundurii-noi",
+      "nume": "Fundurii Noi"
+    },
+    {
+      "id": "fundurii-vechi",
+      "nume": "Fundurii Vechi"
+    },
+    {
+      "id": "hijdieni",
+      "nume": "Hîjdieni"
+    },
+    {
+      "id": "iabloana",
+      "nume": "Iabloana"
+    },
+    {
+      "id": "limbenii-noi",
+      "nume": "Limbenii Noi"
+    },
+    {
+      "id": "limbenii-vechi",
+      "nume": "Limbenii Vechi"
+    },
+    {
+      "id": "lipovat",
+      "nume": "Lipovăț"
+    },
+    {
+      "id": "moara-domneasca",
+      "nume": "Moara Domnească"
+    },
+    {
+      "id": "molesti",
+      "nume": "Molești"
+    },
+    {
+      "id": "movileni",
+      "nume": "Movileni"
+    },
+    {
+      "id": "nicolaevca",
+      "nume": "Nicolaevca"
+    },
+    {
+      "id": "petrunea",
+      "nume": "Petrunea"
+    },
+    {
+      "id": "serghieni",
+      "nume": "Serghieni"
+    },
+    {
+      "id": "soroca",
+      "nume": "Soroca"
+    },
+    {
+      "id": "stircea",
+      "nume": "Stîrcea"
+    },
+    {
+      "id": "sturzovca",
+      "nume": "Sturzovca"
+    },
+    {
+      "id": "tomestii-noi",
+      "nume": "Tomeștii Noi"
+    },
+    {
+      "id": "tomestii-vechi",
+      "nume": "Tomeștii Vechi"
+    },
+    {
+      "id": "ustia",
+      "nume": "Ustia"
+    },
+    {
+      "id": "viisoara",
+      "nume": "Viișoara"
+    }
+  ],
+  "tip": "raion"
+}

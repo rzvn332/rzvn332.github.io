@@ -1,0 +1,200 @@
+{
+  "id": "causeni",
+  "nume": "Căușeni",
+  "stare": "pilot",
+  "sate": [
+    {
+      "id": "cainari",
+      "nume": "Căinari"
+    },
+    {
+      "id": "causeni",
+      "nume": "Căușeni"
+    },
+    {
+      "id": "baccealia",
+      "nume": "Baccealia"
+    },
+    {
+      "id": "baimaclia",
+      "nume": "Baimaclia"
+    },
+    {
+      "id": "baurci",
+      "nume": "Baurci"
+    },
+    {
+      "id": "cainari-statia-cf",
+      "nume": "Căinari (stație c.f.)"
+    },
+    {
+      "id": "chircaiesti",
+      "nume": "Chircăiești"
+    },
+    {
+      "id": "chircaiestii-noi",
+      "nume": "Chircăieștii Noi"
+    },
+    {
+      "id": "chitcani",
+      "nume": "Chițcani"
+    },
+    {
+      "id": "cirnateni",
+      "nume": "Cîrnățeni"
+    },
+    {
+      "id": "cirnatenii-noi",
+      "nume": "Cîrnățenii Noi"
+    },
+    {
+      "id": "ciuflesti",
+      "nume": "Ciuflești"
+    },
+    {
+      "id": "constantinovca",
+      "nume": "Constantinovca"
+    },
+    {
+      "id": "copanca",
+      "nume": "Copanca"
+    },
+    {
+      "id": "coscalia",
+      "nume": "Coșcalia"
+    },
+    {
+      "id": "cremenciug",
+      "nume": "Cremenciug"
+    },
+    {
+      "id": "firladeni",
+      "nume": "Fîrlădeni"
+    },
+    {
+      "id": "firladenii-noi",
+      "nume": "Fîrlădenii Noi"
+    },
+    {
+      "id": "florica",
+      "nume": "Florica"
+    },
+    {
+      "id": "gisca",
+      "nume": "Gîsca"
+    },
+    {
+      "id": "gradinita",
+      "nume": "Grădinița"
+    },
+    {
+      "id": "grigorievca",
+      "nume": "Grigorievca"
+    },
+    {
+      "id": "hagimus",
+      "nume": "Hagimus"
+    },
+    {
+      "id": "leuntea",
+      "nume": "Leuntea"
+    },
+    {
+      "id": "marianca-de-sus",
+      "nume": "Marianca de Sus"
+    },
+    {
+      "id": "merenesti",
+      "nume": "Merenești"
+    },
+    {
+      "id": "opaci",
+      "nume": "Opaci"
+    },
+    {
+      "id": "pervomaisc",
+      "nume": "Pervomaisc"
+    },
+    {
+      "id": "plop",
+      "nume": "Plop"
+    },
+    {
+      "id": "plop-stiubei",
+      "nume": "Plop-Știubei"
+    },
+    {
+      "id": "saiti",
+      "nume": "Săiți"
+    },
+    {
+      "id": "salcuta",
+      "nume": "Sălcuța"
+    },
+    {
+      "id": "salcuta-noua",
+      "nume": "Sălcuța Nouă"
+    },
+    {
+      "id": "stefanesti",
+      "nume": "Ștefănești"
+    },
+    {
+      "id": "surchiceni",
+      "nume": "Surchiceni"
+    },
+    {
+      "id": "tanatari",
+      "nume": "Tănătari"
+    },
+    {
+      "id": "tanatarii-noi",
+      "nume": "Tănătarii Noi"
+    },
+    {
+      "id": "taraclia",
+      "nume": "Taraclia"
+    },
+    {
+      "id": "tocuz",
+      "nume": "Tocuz"
+    },
+    {
+      "id": "tricolici",
+      "nume": "Tricolici"
+    },
+    {
+      "id": "ucrainca",
+      "nume": "Ucrainca"
+    },
+    {
+      "id": "ursoaia",
+      "nume": "Ursoaia"
+    },
+    {
+      "id": "ursoaia-noua",
+      "nume": "Ursoaia Nouă"
+    },
+    {
+      "id": "valea-verde",
+      "nume": "Valea Verde"
+    },
+    {
+      "id": "zahorna",
+      "nume": "Zahorna"
+    },
+    {
+      "id": "zaim",
+      "nume": "Zaim"
+    },
+    {
+      "id": "zaim-statia-cf",
+      "nume": "Zaim (stație c.f.)"
+    },
+    {
+      "id": "zviozdocica",
+      "nume": "Zviozdocica"
+    }
+  ],
+  "tip": "raion"
+}
