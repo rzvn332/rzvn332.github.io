@@ -1,0 +1,437 @@
+/* Muzeul Liceului Alexandru cel Bun — full istoric vibe: poartă + săli vii + dosar arhivă */
+:root{
+  --negru:#0e0b07; --aur:#c9a227; --aur-deschis:#f3e5b8;
+  --hartie:#fffdf7; --pergament:#f5ecd6; --cerneala:#2b2116;
+  --ceara:#7a1420; --ceara-inchis:#42060d; --stampila:#6d1a2b;
+  --font-titlu:'Cinzel',Georgia,serif; --font-corp:'Cormorant Garamond',Georgia,serif; --font-ui:'Inter',system-ui,sans-serif;
+  --top-h:64px; --foot-h:34px;
+  --perete:#24382b; --lambriu:#3d270f; --spot-c:rgba(255,240,200,.13); --praf-c:#ffe9b0;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:#0b0b0d;color:var(--pergament);font-family:var(--font-ui);overflow:hidden;-webkit-font-smoothing:antialiased}
+/* pereți vii: nuanța sălii colorează fundalul + spotul + praful */
+body[data-sala="sala-documentelor"]{--spot-c:rgba(180,230,220,.12);--praf-c:#d8e8d5}
+body[data-sala="sala-scolii"]{--spot-c:rgba(170,200,255,.15);--praf-c:#cfd8f0}
+body[data-sala="sala-naturii"]{--spot-c:rgba(200,255,200,.11);--praf-c:#d8f0c8}
+body[data-sala="sala-mestesugurilor"]{--spot-c:rgba(255,170,110,.16);--praf-c:#ffc890}
+body[data-sala="sala-gospodariei"]{--spot-c:rgba(255,220,150,.16);--praf-c:#ffe0a0}
+body[data-sala="sala-marturiilor"]{--spot-c:rgba(220,170,230,.13);--praf-c:#e0c8e8}
+.fundal{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(1100px 500px at 50% -10%,rgba(201,162,39,.16),transparent 60%),
+  radial-gradient(900px 600px at 85% 110%,rgba(90,30,40,.35),transparent 60%),
+  linear-gradient(180deg,color-mix(in srgb,var(--perete) 55%,#0b0b0d),#0b0b0d 70%),
+  linear-gradient(180deg,#141416,#0b0b0d);
+  transition:background .6s}
+.fundal::after{content:'';position:absolute;inset:0;opacity:.6;
+  background:
+  linear-gradient(180deg,transparent 0 68%,rgba(201,162,39,.6) 68%,rgba(201,162,39,.6) calc(68% + 2px),rgba(0,0,0,.55) calc(68% + 2px),rgba(0,0,0,.55) calc(68% + 5px),transparent calc(68% + 5px)),
+  repeating-linear-gradient(90deg,rgba(0,0,0,.12) 0 2px,transparent 2px 34px,transparent 0 68px,rgba(0,0,0,.5) 68px 71px),
+  linear-gradient(180deg,transparent 68%,color-mix(in srgb,var(--lambriu) 85%,#000) 68.6%)}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E")}
+.praf{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5}
+body.usor .praf{opacity:.3}
+body.usor .grain{display:none}
+
+/* ===== SISTEM COMUN DE BUTOANE — plăcuțe de arhivă =====
+   ADN: pătrat 2px, Cinzel, focus auriu, hover ridicare+glow, apăsat engravat */
+button{border-radius:2px;font-family:var(--font-titlu);font-weight:700;
+  transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease,opacity .2s ease}
+button:focus-visible{outline:2px solid rgba(201,162,39,.75);outline-offset:2px}
+button:active{transform:translateY(1px)!important;box-shadow:0 4px 10px rgba(0,0,0,.3)!important}
+
+/* ===== POARTA MUZEULUI ===== */
+.poarta{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;text-align:center;
+  background:radial-gradient(720px 440px at 50% 46%,rgba(0,0,0,.5),transparent 70%);
+  transition:opacity .7s ease,visibility .7s}
+.poarta-usi{position:absolute;inset:0;display:flex;pointer-events:none}
+.poarta-usi span{flex:1;background:
+  repeating-linear-gradient(90deg,rgba(0,0,0,.35) 0 2px,transparent 2px 26px),
+  linear-gradient(180deg,#2b1d0e,#17100a);
+  border-right:1px solid rgba(201,162,39,.4);
+  transition:transform 1.2s cubic-bezier(.6,0,.25,1),filter 1.2s ease;will-change:transform}
+.poarta-usi span:first-child{transform-origin:right center;box-shadow:inset -30px 0 50px rgba(0,0,0,.6)}
+.poarta-usi span:last-child{border-right:0;border-left:1px solid rgba(201,162,39,.4);transform-origin:left center;box-shadow:inset 30px 0 50px rgba(0,0,0,.6)}
+body.usile-deschise .poarta-usi span:first-child{transform:translateX(-102%);filter:brightness(.7)}
+body.usile-deschise .poarta-usi span:last-child{transform:translateX(102%);filter:brightness(.7);transition-delay:.08s}
+/* harta liberă pe uși — mare, fără chenar, fără scroll */
+.harta-libera{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  height:calc(100svh - 16px);max-height:calc(100svh - 16px);
+  transition:opacity .45s ease,transform .45s ease}
+/* titlu — plăcuță de alamă, identică cu cartușul din muzeu */
+.harta-sigiliu-titlu{font-family:var(--font-titlu);font-size:clamp(11px,2.2vw,15px);font-weight:800;letter-spacing:.2em;
+  color:#2b2116;margin:0 0 10px;padding:10px 26px;text-align:center;flex:0 0 auto;align-self:center;border-radius:2px;
+  background:linear-gradient(180deg,#f3e6c6,#ddc89e);border:1px solid #8a6d1f;
+  outline:1px solid rgba(138,109,31,.5);outline-offset:2px;
+  box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.harta-nota{font-family:var(--font-corp);font-style:italic;font-size:13px;color:var(--aur-deschis);opacity:.65;margin:8px 0 0;
+  text-shadow:0 1px 8px rgba(0,0,0,.8);flex:0 0 auto}
+#harta-svg{display:block;flex:0 1 auto;min-height:0;width:min(96vw,max(200px,calc((100svh - 150px) * 0.799)));height:auto;cursor:default;
+  touch-action:manipulation;
+  filter:drop-shadow(0 18px 40px rgba(0,0,0,.6)) drop-shadow(0 0 12px rgba(91,58,26,.55))}
+/* contribuie — buton secundar bronz, sub notiță */
+.btn-contribuie{background:#3d270f;color:#f3e5b8;border:1px solid var(--aur);padding:9px 20px;font-weight:700;font-size:12px;
+  letter-spacing:.1em;cursor:pointer;margin:10px 0 0;flex:0 0 auto;
+  white-space:nowrap;line-height:1.35;text-align:center}
+.toast-poarta{position:absolute;left:50%;bottom:14px;transform:translate(-50%,10px);max-width:88vw;
+  background:linear-gradient(180deg,#f7eed6,#e9d9b4);color:#2b2116;border:1px solid #8a6d1f;border-radius:2px;
+  font-family:var(--font-corp);font-style:italic;font-size:16px;padding:8px 20px;opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .3s;text-align:center}
+.toast-poarta.arata{opacity:1;transform:translate(-50%,0)}
+/* raioane pergament ars: hașură aurie la hover (fără mișcare de geometrie) */
+.raion path{fill:#f1e3c2;stroke:#4a3418;stroke-width:1;stroke-linejoin:round;cursor:pointer;transition:stroke-width .25s}
+.raion:hover path,.raion:focus-visible path{fill:url(#hasura);stroke-width:2}
+.raion:focus-visible{outline:none}
+.raion.curand{cursor:not-allowed}
+#harta-svg{background:transparent;cursor:default}
+#harta-svg:focus{outline:none}
+.harta-placuta{position:absolute;z-index:5;pointer-events:none;opacity:0;transform:translate(-50%,-115%) scale(.9);
+  transition:opacity .2s,transform .2s;white-space:nowrap;
+  font-family:var(--font-titlu);font-weight:800;font-size:16px;letter-spacing:.1em;color:#2b2116;
+  background:linear-gradient(180deg,#f7eed6,#e9d9b4);border:1px solid #8a6d1f;outline:1px solid rgba(138,109,31,.6);outline-offset:2px;
+  border-radius:2px;padding:8px 20px;box-shadow:0 10px 26px rgba(0,0,0,.55)}
+.harta-placuta.arata{opacity:1;transform:translate(-50%,-115%) scale(1)}
+body.poarta-pleaca .harta-libera{opacity:0;transform:translateY(10px);pointer-events:none}
+/* plasă anti-flicker: harta din poartă nu mai poate reveni cât overlay-ul se stinge */
+body.poarta-deschisa .harta-libera{opacity:0!important;visibility:hidden}
+body.poarta-deschisa .poarta{opacity:0;visibility:hidden;pointer-events:none}
+/* ușile glisează și dezvăluie muzeul aprins din spatele lor */
+@media(prefers-reduced-motion:reduce){.poarta,.poarta-usi span,.harta-libera{transition:none}.car-pista[data-dir] .cadru-card{animation:none}}
+/* muzeul e aprins din prima încărcare — ușile doar îl dezvăluie */
+
+/* ===== SUS: logo + stepper săli ===== */
+.top{position:fixed;top:0;left:0;right:0;z-index:40;background:rgba(10,7,4,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,162,39,.25)}
+.stepper{display:flex;gap:10px;overflow-x:auto;padding:12px 16px;scrollbar-width:none}
+.stepper::-webkit-scrollbar{display:none}
+.stepper a{flex:0 0 auto;text-decoration:none;font-family:var(--font-titlu);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--aur-deschis);padding:9px 16px;border:1px solid rgba(201,162,39,.55);border-radius:2px;white-space:nowrap;background:rgba(201,162,39,.05)}
+.stepper a:hover{background:rgba(201,162,39,.14);border-color:var(--aur)}
+.stepper a.on{background:#f5edd6;color:#1a1408;border:1px solid var(--aur);box-shadow:0 2px 14px rgba(201,162,39,.35)}
+@media(min-width:861px){.stepper{justify-content:center}}
+
+/* ===== CENTRU: salonul ===== */
+.salon{position:relative;height:100svh;padding-top:var(--top-h);padding-bottom:var(--foot-h);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow:hidden;overflow:clip}
+.spot{position:absolute;top:0;left:50%;transform:translateX(-50%);width:640px;height:420px;background:radial-gradient(ellipse,var(--spot-c),transparent 70%);pointer-events:none;transition:background .6s}
+/* cartușul sălii — plăcuță de alamă în flux normal, sub header (fără suprapuneri) */
+.cartus-sala{position:static;transform:none;z-index:20;margin:12px auto 0;
+  display:flex;align-items:center;gap:14px;max-width:min(640px,calc(100vw - 24px));padding:8px 18px 8px 10px;
+  background:linear-gradient(180deg,#f3e6c6,#ddc89e);color:#2b2116;border:1px solid #8a6d1f;outline:1px solid rgba(138,109,31,.5);outline-offset:2px;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);border-radius:2px;text-align:left;flex:0 0 auto}
+.cartus-stema{flex:0 0 auto;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:24px;
+  background:radial-gradient(circle at 35% 30%,#3d270f,#1a1005);border:1px solid var(--aur);border-radius:50%;color:var(--aur-deschis)}
+.cartus-text h1{font-family:var(--font-titlu);font-size:15px;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.cartus-text p{font-family:var(--font-corp);font-style:italic;font-size:15px;line-height:1.3;margin:2px 0 0;opacity:.85}
+.cartus-pecete{margin-left:6px;flex:0 0 auto;font-family:var(--font-titlu);font-size:11px;font-weight:800;letter-spacing:.12em;
+  color:var(--stampila);border:2px solid var(--stampila);border-radius:3px;padding:5px 8px;transform:rotate(6deg);opacity:.85;background:rgba(109,26,43,.06)}
+/* cartușul e apăsabil: chip discret + hover discret (nu buton) */
+.cartus-sala{cursor:pointer}
+.cartus-sala:hover{transform:translateY(-1px);box-shadow:0 14px 36px rgba(0,0,0,.55)}
+.cartus-detalii{flex:0 0 auto;align-self:center;font-family:var(--font-titlu);font-size:9px;font-weight:800;letter-spacing:.14em;
+  color:#5b3a1a;border:1px solid rgba(138,109,31,.55);border-radius:2px;padding:4px 8px;opacity:.75;background:rgba(255,255,255,.4)}
+.cartus-sala:hover .cartus-detalii{opacity:1;border-color:var(--aur)}
+/* ===== MODAL SALA — detaliile sălii, centrat ===== */
+.modal-sala-fundal{position:fixed;inset:0;z-index:80;background:rgba(5,3,1,.66);backdrop-filter:blur(6px);
+  opacity:0;transition:opacity .3s ease}
+body.modal-sala-deschis .modal-sala-fundal{opacity:1}
+.modal-sala{position:fixed;left:50%;top:50%;transform:translate(-50%,-46%) scale(.96);z-index:85;
+  width:min(92vw,560px);max-height:86svh;overflow-y:auto;padding:22px 24px 26px;opacity:0;
+  transition:opacity .3s ease,transform .3s cubic-bezier(.2,.9,.25,1);
+  color:var(--cerneala);border-radius:2px;
+  background:
+    radial-gradient(260px 160px at 85% 10%,rgba(120,70,10,.12),transparent 70%),
+    linear-gradient(180deg,#f8efdb,#efdfbd 60%,#e7d3a8);
+  border:1px solid var(--aur);outline:1px solid rgba(138,109,31,.5);outline-offset:3px;
+  box-shadow:0 40px 100px rgba(0,0,0,.7)}
+body.modal-sala-deschis .modal-sala{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.ms-antet{display:flex;align-items:center;gap:14px;margin:0 72px 12px 0}
+.ms-antet .cartus-stema{width:48px;height:48px;font-size:26px}
+.ms-eticheta{font-family:var(--font-titlu);font-size:10px;font-weight:800;letter-spacing:.24em;color:#7a5c14;margin:0}
+.ms-antet h2{font-family:var(--font-titlu);font-size:24px;margin:2px 0 0;color:#241a0c;line-height:1.1}
+.ms-antet .cartus-pecete{margin-left:auto}
+.ms-descriere{font-family:var(--font-corp);font-style:italic;font-size:19px;line-height:1.45;margin:0 0 14px;
+  border-left:4px solid var(--aur);background:rgba(253,246,227,.8);padding:10px 14px;border-radius:0 2px 2px 0}
+.ms-titlu-sec{font-family:var(--font-titlu);font-size:11px;font-weight:800;letter-spacing:.2em;color:#7a5c14;margin:16px 0 8px;
+  border-bottom:1px solid rgba(138,109,31,.35);padding-bottom:5px}
+.ms-tipice{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.ms-tipice li{font-family:var(--font-titlu);font-size:12px;font-weight:700;color:#2b2116;
+  background:rgba(255,255,255,.55);border:1px solid #c9b98a;border-radius:2px;padding:7px 12px}
+.ms-contor{font-family:var(--font-corp);font-style:italic;font-size:16px;margin:0 0 8px;opacity:.8}
+.ms-acum{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.ms-acum li{font-family:var(--font-titlu);font-size:13px;font-weight:700;color:#2b2116;text-align:left;cursor:pointer;
+  background:rgba(255,255,255,.55);border:1px solid #c9b98a;border-radius:2px;padding:9px 12px;transition:border-color .2s,transform .2s,box-shadow .2s}
+.ms-acum li:hover{border-color:var(--aur);background:#fff8e2;transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.28)}
+.ms-gol{font-family:var(--font-corp);font-style:italic;font-size:16px;opacity:.7;margin:0}
+.ms-invitatie{font-family:var(--font-corp);font-style:italic;font-size:16px;line-height:1.45;margin:16px 0 0;
+  color:#2b2116;border:1px dashed #8a6d1f;border-radius:2px;padding:10px 14px;background:rgba(253,246,227,.7)}
+@media(max-width:640px){
+  .modal-sala{padding:16px 14px 20px}
+  .ms-antet{margin-right:48px}
+  .ms-antet h2{font-size:19px}
+  .cartus-detalii{display:none}
+}
+@media(prefers-reduced-motion:reduce){.modal-sala,.modal-sala-fundal{transition:none}}
+.zona-rama{transition:transform .3s cubic-bezier(.2,.9,.25,1),opacity .7s ease;text-align:center;padding:16px 16px 0;max-width:100%;width:100%;
+  flex:1;min-height:0;align-self:center;display:flex;flex-direction:column;justify-content:flex-start}
+.salon.deschis .zona-rama{transform:translateX(-13%) scale(.97)}
+.salon.deschis .cartus-sala{transform:translateX(-13vw) scale(.97)}
+.salon.sate-deschis .cartus-sala{transform:translateX(13vw) scale(.97)}
+.carusel{display:flex;align-items:center;justify-content:center;gap:14px;flex:1 1 auto;min-height:0}
+.car-pista{display:flex;align-items:center;gap:26px;min-height:0;touch-action:pan-y;padding-top:16px}
+.car-sageata{flex:0 0 auto;background:rgba(20,12,4,.7);border:1px solid var(--aur);border-radius:0;color:var(--aur-deschis);width:48px;height:48px;font-size:20px;cursor:pointer}
+.car-sageata:hover{background:rgba(60,40,10,.85);transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.28)}
+/* bară navigare mobilă (sub carusel, în locul săgeților laterale) */
+.nav-mobil{display:none;align-items:stretch;gap:10px;max-width:340px;margin:0 auto 14px}
+.nav-mobil button{flex:1;min-height:48px;background:rgba(201,162,39,.07);border:1px solid rgba(201,162,39,.55);color:var(--aur-deschis);font-size:20px;cursor:pointer}
+.nav-mobil button:hover{background:rgba(201,162,39,.2);transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.28)}
+.nav-mobil button:active{background:rgba(201,162,39,.22)}
+.nav-mobil span{align-self:center;min-width:110px;font-family:var(--font-titlu);font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--aur-deschis)}
+.cadru-card{transition:transform .35s,filter .35s,opacity .35s;cursor:pointer}
+.cadru-card.lat{filter:blur(3px) brightness(.55);transform:scale(.8);opacity:.65}
+.cadru-card.lat:hover{filter:blur(2px) brightness(.75);opacity:.9}
+/* swipe: alunecare + balans de pendul, direcțional */
+@keyframes intra-stanga{0%{transform:translateX(70px) rotate(2.2deg);opacity:0;filter:blur(8px)}55%{opacity:1;filter:blur(2px)}100%{transform:none;opacity:1;filter:blur(0)}}
+@keyframes intra-dreapta{0%{transform:translateX(-70px) rotate(-2.2deg);opacity:0;filter:blur(8px)}55%{opacity:1;filter:blur(2px)}100%{transform:none;opacity:1;filter:blur(0)}}
+@keyframes intra-lat{from{opacity:0}to{opacity:.65}}
+.car-pista[data-dir="stanga"] .cadru-card.centru{animation:intra-stanga .38s cubic-bezier(.2,.9,.25,1)}
+.car-pista[data-dir="dreapta"] .cadru-card.centru{animation:intra-dreapta .38s cubic-bezier(.2,.9,.25,1)}
+.car-pista[data-dir] .cadru-card.lat{animation:intra-lat .38s ease}
+@media(prefers-reduced-motion:reduce){.car-pista[data-dir] .cadru-card{animation:none}}
+.sub-rama{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:6px;min-height:0;padding-bottom:22px}
+.btn-descopera{background:#f5edd6;color:#1a1408;font-weight:700;letter-spacing:.18em;font-size:13px;padding:11px 30px;border:1px solid #8a6d1f;outline:2px double rgba(138,109,31,.6);outline-offset:3px;cursor:pointer}
+.btn-descopera:hover{background:#fff8e2;transform:translateY(-2px);box-shadow:0 12px 28px rgba(201,162,39,.32)}
+.car-titlu{font-family:var(--font-titlu);color:#fff;font-size:clamp(18px,2.8vw,26px);margin:0 0 6px;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.car-badge{position:absolute;top:-13px;left:-13px;z-index:3;background:rgba(20,12,4,.9);border:1px solid var(--aur);color:var(--aur-deschis);padding:4px 11px;font-family:var(--font-titlu);font-size:11px;font-weight:700;border-radius:2px;letter-spacing:.12em;white-space:nowrap}
+
+/* ===== RAME REALISTE: profil multistrat + tilt 3D + glare mobil ===== */
+.car-pista{perspective:1300px}
+.car-gol{margin:0 auto;max-width:min(560px,88vw);padding:14px;border-radius:2px;
+  background:linear-gradient(135deg,#8a6d1f,#d8b45a 30%,#8a6d1f 55%,#d8b45a 80%,#8a6d1f);
+  border:1px solid #5b3a1a;outline:1px solid rgba(216,180,90,.6);outline-offset:3px;
+  box-shadow:0 14px 28px rgba(0,0,0,.55),0 3px 10px rgba(0,0,0,.45)}
+.car-gol-paspartu{background:#f5ecd6;border-radius:2px;padding:26px 30px;text-align:center;
+  box-shadow:inset 0 2px 10px rgba(60,40,10,.4),inset 0 -1px 0 rgba(255,255,255,.5)}
+.car-gol-rand1{margin:0 0 8px;font-family:var(--font-titlu);font-weight:700;font-size:clamp(15px,2.4vw,19px);letter-spacing:.12em;text-transform:uppercase;color:#2b2116}
+.car-gol-rand2{margin:0;font-family:var(--font-corp);font-style:italic;font-size:clamp(16px,2.6vw,20px);color:#5b3a1a}
+.cadru-card.centru{transform-style:preserve-3d}
+.cadru{position:relative;padding:22px;border-radius:2px;transform-style:preserve-3d;transform-origin:center;will-change:transform;
+  box-shadow:0 14px 28px rgba(0,0,0,.55),0 3px 10px rgba(0,0,0,.45),
+  inset 0 2px 2px rgba(255,255,255,.45),inset 0 -4px 7px rgba(0,0,0,.55),
+  inset 4px 0 7px rgba(0,0,0,.28),inset -4px 0 7px rgba(0,0,0,.28)}
+.cadru::before{content:'';position:absolute;inset:0;border-radius:2px;pointer-events:none;
+  background:repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 2px,transparent 2px 5px)}
+.cadru .paspartu{position:relative;background:#f5ecd6;padding:12px;border-radius:2px;transform-style:preserve-3d;
+  box-shadow:inset 0 2px 10px rgba(60,40,10,.4),inset 0 -1px 0 rgba(255,255,255,.5);
+  transform:translateZ(8px)}
+.cadru .paspartu::after{content:'';position:absolute;inset:12px;pointer-events:none;
+  box-shadow:inset 0 0 24px rgba(0,0,0,.5)}
+.cadru .paspartu img{display:block;width:min(46vw,460px);height:min(440px,44svh,max(160px,calc(100svh - 390px)));object-fit:cover;background:#1c1c1e;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;
+  filter:sepia(.32) contrast(1.03) brightness(.98);transition:filter .5s}
+.cadru-card.centru .paspartu img{filter:sepia(.18) contrast(1.04)}
+.cadru .sticla{position:absolute;inset:12px;background:linear-gradient(112deg,transparent 42%,rgba(255,255,255,.10) 47%,rgba(255,255,255,.03) 52%,transparent 58%);pointer-events:none}
+.cadru .glare{position:absolute;inset:0;border-radius:2px;pointer-events:none;z-index:6;mix-blend-mode:screen;opacity:0;transition:opacity .35s;
+  background:radial-gradient(560px circle at var(--gx,50%) var(--gy,28%),rgba(255,250,230,.34),rgba(255,250,230,.06) 45%,transparent 65%)}
+.car-badge{transform:translateZ(24px)}
+.rama-1{background:linear-gradient(145deg,#6b5320,#e8d189 28%,#8a6d1f 50%,#f7ecc0 72%,#5e4a10)}
+.rama-2{background:linear-gradient(145deg,#3f2f0e,#b3922e 22%,#5e4a10 45%,#e8d189 68%,#3f2f0e);padding:26px}
+.rama-2::before{content:'⋄ ⋄ ⋄';position:absolute;top:6px;left:0;right:0;text-align:center;font-size:10px;letter-spacing:.5em;color:rgba(247,236,192,.7);background:none}
+.rama-3{background:linear-gradient(145deg,#241407,#6b4423 30%,#3a2410 55%,#7a5230 80%,#241407)}
+.rama-3 .paspartu{background:#efe4cb}
+.rama-4{background:#0c0c0e;padding:12px;box-shadow:0 14px 28px rgba(0,0,0,.55),0 3px 10px rgba(0,0,0,.45),inset 0 0 0 2px #2c2c30,inset 0 1px 0 rgba(255,255,255,.18)}
+.rama-4 .paspartu{background:#fff;padding:16px}
+.rama-5{background:linear-gradient(145deg,#2a0d18,#7a1f3a 30%,#4a1226 55%,#96506a 80%,#2a0d18)}
+.rama-6{background:linear-gradient(145deg,#4a2c10,#d08a4a 28%,#7a4a1e 52%,#f0c090 74%,#4a2c10)}
+.rama-7{background:linear-gradient(145deg,#3c3c40,#c9c9d2 28%,#6a6a72 52%,#ececf2 74%,#3c3c40)}
+.rama-8{background:linear-gradient(145deg,#8a6a3a,#e5c88f 30%,#a37f47 55%,#f2e2b8 78%,#8a6a3a)}
+.rama-8 .paspartu{background:#faf3df}
+.cadru-card.lat .cadru .paspartu img{width:min(30vw,260px);height:min(260px,32svh,max(120px,calc(100svh - 440px)))}
+/* ===== DOSAR DE ARHIVĂ (fereastra) ===== */
+.fereastra{position:fixed;top:var(--top-h);right:0;bottom:var(--foot-h);width:min(450px,45vw);z-index:30;
+  color:var(--cerneala);border-left:3px solid var(--aur);box-shadow:-30px 0 70px rgba(0,0,0,.55);overflow-y:auto;padding:20px 22px 26px;
+  transform:translateX(105%);transition:transform .3s cubic-bezier(.2,.9,.25,1);
+  background:
+    radial-gradient(220px 140px at 85% 12%,rgba(120,70,10,.12),transparent 70%),
+    radial-gradient(300px 200px at 10% 90%,rgba(90,50,10,.10),transparent 70%),
+    linear-gradient(180deg,#f8efdb,#efdfbd 60%,#e7d3a8);
+  border-top:1px solid #8a6d1f;border-bottom:1px solid #8a6d1f;border-right:1px solid #8a6d1f}
+.fereastra::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='h'%3E%3CfeTurbulence baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23h)' opacity='0.18'/%3E%3C/svg%3E")}
+body.deschis .fereastra{transform:none}
+.f-inchide{position:sticky;top:0;float:right;width:42px;height:42px;cursor:pointer;font-size:15px;font-weight:800;
+  color:#f5edd6;border:2px solid #d8b45a;background:radial-gradient(circle at 35% 30%,#a32432,#5c0d16 65%,#2e0409);
+  box-shadow:0 6px 16px rgba(0,0,0,.4),inset 0 2px 3px rgba(255,255,255,.4)}
+.f-inchide:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(163,36,50,.45),inset 0 2px 3px rgba(255,255,255,.4)}
+/* în panourile cu scroll (dosar + sate) butonul ✕ se mișcă odată cu conținutul */
+#f-inchide,#sate-inchide{position:absolute;top:18px;right:18px;float:none;margin:0}
+#f-mareste{position:absolute;top:18px;right:68px;float:none;margin:0}
+.fereastra-fundal{position:fixed;inset:0;z-index:25;background:rgba(5,3,1,.66);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transition:opacity .3s ease}
+body.dosar-mare .fereastra-fundal{opacity:1}
+body.deschis.dosar-mare .fereastra{position:fixed;left:50%;right:auto;top:4svh;bottom:auto;transform:translate(-50%,0);width:min(880px,94vw);max-height:92svh;z-index:45;
+  border:1px solid var(--aur);outline:1px solid rgba(138,109,31,.5);outline-offset:3px;box-shadow:0 40px 100px rgba(0,0,0,.7)}
+body.dosar-mare .fereastra-fundal{z-index:44}
+body.deschis.dosar-mare .galerie-mare-cadru{height:min(38svh,360px)}
+body.deschis.dosar-mare .mini{height:78px}
+.f-dosar-antet{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:2px 112px 0 0}
+.f-badge{display:inline-block;font-family:var(--font-titlu);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 12px;color:var(--stampila);border:2px solid var(--stampila);border-radius:2px;transform:rotate(-3deg);
+  background:rgba(109,26,43,.06);box-shadow:inset 0 0 8px rgba(109,26,43,.15)}
+.f-inv{font-family:var(--font-titlu);font-size:11px;letter-spacing:.1em;color:#5b3a1a;border-bottom:1px solid #8a6d1f}
+.fereastra h2{font-family:var(--font-titlu);font-size:28px;margin:10px 40px 4px 0;line-height:1.15;color:#241a0c}
+.f-stampila{font-family:var(--font-titlu);font-size:12px;font-weight:700;letter-spacing:.18em;color:rgba(109,26,43,.75);margin:0 0 10px;text-transform:uppercase}
+.galerie-mare-cadru{position:relative;overflow:hidden;height:230px;border-radius:2px;background:#e7d3a8;border:6px solid #fdf6e3;outline:1px solid #8a6d1f;cursor:zoom-in}
+.galerie-mare-cadru:focus-visible{outline:2px solid var(--aur);outline-offset:2px}
+.galerie-mare-cadru #f-mare{transition:transform .25s ease}
+.galerie-mare-cadru:hover #f-mare,.galerie-mare-cadru:focus-visible #f-mare{transform:scale(1.03)}
+.mare-hint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);width:56px;height:56px;display:flex;align-items:center;justify-content:center;font-size:30px;color:#f5edd6;background:rgba(20,12,4,.55);border:1px solid rgba(216,180,90,.8);border-radius:50%;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none}
+.galerie-mare-cadru:hover .mare-hint,.galerie-mare-cadru:focus-visible .mare-hint{opacity:1;transform:translate(-50%,-50%) scale(1)}
+@media(hover:none){.mare-hint{opacity:.9;left:auto;top:auto;right:10px;bottom:10px;transform:none;width:40px;height:40px;font-size:20px}}
+.vizor-fundal{position:fixed;inset:0;z-index:190;background:rgba(5,3,1,.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;transition:opacity .3s ease}
+body.vizor-deschis .vizor-fundal{opacity:1}
+.vizor{position:fixed;inset:0;z-index:195;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s ease;pointer-events:none}
+body.vizor-deschis .vizor{opacity:1}
+#vizor-img{max-width:min(94vw,1200px);max-height:84svh;object-fit:contain;border:6px solid #fdf6e3;outline:1px solid var(--aur);box-shadow:0 40px 120px rgba(0,0,0,.8);pointer-events:auto}
+.vizor-sag{position:fixed;top:50%;transform:translateY(-50%);width:48px;height:72px;font-size:22px;font-weight:800;background:rgba(20,12,4,.7);color:var(--aur-deschis);border:1px solid var(--aur);cursor:pointer;pointer-events:auto;z-index:196}
+.vizor-sag:hover{background:rgba(60,40,10,.85)}
+#vizor-prev{left:12px}
+#vizor-next{right:12px}
+#vizor-inchide{position:fixed;top:18px;right:18px;float:none;margin:0}
+.vizor-caption{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);margin:0;font-family:var(--font-titlu);font-size:12px;letter-spacing:.1em;color:var(--aur-deschis);background:rgba(20,12,4,.7);border:1px solid rgba(201,162,39,.5);border-radius:999px;padding:7px 18px;white-space:nowrap;max-width:92vw;overflow:hidden;text-overflow:ellipsis}
+.galerie-mare-fundal{position:absolute;inset:-24px;background-size:cover;background-position:center;filter:blur(18px) brightness(.72) saturate(1.25) sepia(.25)}
+.galerie #f-mare{position:relative;width:100%;height:100%;object-fit:contain;display:block;filter:sepia(.25) contrast(1.03)}
+.miniaturi{display:flex;gap:8px;margin-top:8px}
+.mini{display:block;position:relative;overflow:hidden;flex:1 1 0;min-width:0;height:64px;background:#e7d3a8;border-radius:2px;cursor:pointer;border:2px solid #c9b98a;opacity:.8}
+.mini-fundal{position:absolute;inset:-8px;background-size:cover;background-position:center;filter:blur(8px) brightness(.72) saturate(1.25) sepia(.3)}
+.mini img{position:relative;width:100%;height:100%;object-fit:contain;display:block;filter:sepia(.3)}
+.mini.on{border-color:var(--ceara);opacity:1}
+.mini.on img{filter:sepia(.1)}
+.mini.on .mini-fundal{filter:blur(8px) brightness(.8) saturate(1.25) sepia(.1)}
+.f-poveste{font-family:var(--font-corp);font-size:20px;font-style:italic;line-height:1.5;border-left:4px solid var(--aur);background:rgba(253,246,227,.8);padding:12px 14px 30px;border-radius:0 2px 2px 0;margin:14px 0;color:#2b2116;position:relative}
+#f-poveste-text::before{content:'Descriere — ';font-style:normal;font-family:var(--font-titlu);font-size:12px;letter-spacing:.18em;color:#7a5c14}
+#f-poveste-text{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.f-mai-mult{position:absolute;right:14px;bottom:8px;margin:0;background:linear-gradient(90deg,rgba(253,246,227,0),rgba(253,246,227,.94) 30%);border:none;padding:2px 0 2px 28px;cursor:pointer;white-space:nowrap;
+  font-family:var(--font-titlu);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7a5c14;
+  text-decoration:underline;text-decoration-color:#8a6d1f;text-underline-offset:4px}
+.f-poveste.deschis{padding-bottom:12px}
+.f-poveste.deschis #f-poveste-text{display:block}
+.f-poveste.deschis .f-mai-mult{position:static;display:block;margin:10px 0 0 auto;background:none;padding:2px 0}
+.f-fisa{font-size:14px;background:rgba(255,255,255,.6);border:1px solid #c9b98a;border-radius:2px;padding:12px 14px;margin:0;display:grid;grid-template-columns:auto 1fr;gap:0 10px;
+  background-image:repeating-linear-gradient(180deg,transparent 0 23px,rgba(90,60,15,.08) 23px 24px);background-position:0 11px}
+.f-fisa dt{font-weight:800;color:#5b3a1a;font-family:var(--font-titlu);font-size:12px;letter-spacing:.06em;text-transform:uppercase;line-height:24px;white-space:nowrap}
+.f-fisa dd{margin:0;font-family:var(--font-corp);font-size:17px;line-height:24px}
+.btn-mic{background:#3d270f;color:#f3e5b8;border:1px solid var(--aur);padding:9px 16px;font-weight:700;font-size:12px;letter-spacing:.08em;cursor:pointer;margin-top:6px;min-height:40px}
+.btn-mic:hover{background:#5b3a1a;transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.3)}
+.f-nav{display:flex;gap:8px;margin-top:12px}
+
+/* ===== JOS: footer mic ===== */
+.footer-mic{position:fixed;left:0;right:0;bottom:0;min-height:var(--foot-h);z-index:40;display:flex;align-items:center;justify-content:space-between;gap:8px;background:rgba(10,7,4,.92);border-top:1px solid rgba(201,162,39,.25);font-family:var(--font-titlu);font-size:12px;color:var(--aur-deschis);padding:4px 14px}
+.footer-mic .anno{font-style:normal;opacity:.6;letter-spacing:.2em}
+.footer-dreapta{display:flex;align-items:center;gap:12px}
+.footer-mic .dreapta{font-family:var(--font-ui);font-size:11px;color:#8a8172;letter-spacing:.06em;white-space:nowrap}
+.btn-sunet{background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.5);color:var(--aur-deschis);
+  font-size:10px;letter-spacing:.12em;padding:5px 10px;cursor:pointer}
+.btn-sunet:hover{background:rgba(201,162,39,.2);transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.28)}
+.btn-sunet[aria-pressed="false"]{opacity:.55}
+
+/* lateralele blurate doar unde încap fizic (același prag ca în JS) */
+@media(max-width:1099px){
+  .cadru-card.lat{display:none}
+}
+/* ===== MOBIL: stacked ===== */
+@media(max-width:860px){
+  :root{--top-h:60px}
+  body{overflow:auto}
+  .top{backdrop-filter:none;padding-top:env(safe-area-inset-top)}
+  .stepper{justify-content:flex-start;scroll-padding:0 16px;
+    -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  .stepper a{padding:12px 18px;font-size:11px}
+  .car-sageata{display:none}
+  .nav-mobil{display:flex}
+  .carusel{gap:0;margin-top:10px}
+  .salon{padding-top:var(--top-h)}
+  .cartus-sala{margin:8px 12px 0;max-width:calc(100vw - 24px);padding:6px 12px 6px 8px;gap:10px}
+  .cartus-text h1{font-size:12px}
+  .cartus-text p{display:none}
+  .cartus-stema{width:34px;height:34px;font-size:18px}
+  .cartus-pecete{font-size:10px;padding:4px 6px}
+  .cadru .paspartu img{width:min(72vw,320px);height:auto;aspect-ratio:4/3;max-height:32vh}
+  .car-titlu{font-size:clamp(18px,5.4vw,24px)}
+  .btn-descopera{width:100%;max-width:340px;padding:14px 24px;font-size:12px}
+  .salon{flex-direction:column;height:auto;min-height:100svh;justify-content:flex-start}
+  .salon.deschis .zona-rama{transform:none}
+  .salon.deschis .cartus-sala,.salon.sate-deschis .cartus-sala{transform:none}
+  .zona-rama{display:block;align-self:auto}
+  .sub-rama{display:block;margin:12px -16px 0;padding:14px 16px 22px;
+    background:linear-gradient(180deg,rgba(201,162,39,.35) 0,rgba(201,162,39,.35) 2px,rgba(0,0,0,.35) 2px,rgba(0,0,0,.35) 5px,color-mix(in srgb,var(--lambriu) 70%,#000) 5px);
+    border-radius:2px}
+  .fereastra{position:relative;width:auto;margin:10px 12px 16px;border:2px solid #8a6d1f;border-radius:2px;transform:none;max-height:none}
+  .fereastra h2{font-size:clamp(22px,6vw,28px)}
+  .footer-mic{position:static;margin:10px 0 0;padding-bottom:env(safe-area-inset-bottom)}
+  .harta-sigiliu-titlu{font-size:10px;padding:7px 14px;letter-spacing:.14em}
+  #harta-svg{width:min(96vw,max(180px,calc((100svh - 185px) * 0.799)))}
+  .harta-placuta{font-size:13px}
+  .btn-contribuie{padding:8px 16px;font-size:11px;white-space:normal;max-width:min(92vw,420px)}
+}
+/* ecrane foarte înguste */
+@media(max-width:380px){
+  .stepper a{font-size:10px;padding:11px 14px}
+  .btn-descopera{letter-spacing:.1em}
+}
+/* laptopuri scunde: cartuș compact + rama se strânge singură (fără scroll) */
+@media(min-width:861px) and (max-height:760px){
+  .cartus-sala{margin-top:8px;padding:5px 14px 5px 8px;gap:10px}
+  .cartus-text p{display:none}
+  .cartus-stema{width:34px;height:34px;font-size:18px}
+  .zona-rama{padding-top:10px}
+  .sub-rama{gap:4px;padding-bottom:14px}
+  .car-titlu{font-size:clamp(16px,2.2vw,20px);margin:0 0 4px}
+  .btn-descopera{padding:9px 26px;font-size:12px}
+  .cadru .paspartu img{height:min(360px,36svh,max(140px,calc(100svh - 360px)))}
+}
+/* landscape jos: layout compact */
+@media(max-height:520px) and (min-width:861px){
+  .cartus-sala{display:none}
+  .zona-rama{padding-top:8px}
+  .cadru .paspartu img{height:min(300px,34svh)}
+  .sub-rama{gap:4px}
+  .car-titlu{font-size:18px;margin:0 0 4px}
+  .btn-descopera{padding:9px 26px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important}
+  .praf{display:none}
+  .poarta{transition:none}
+}
+@media print{
+  .top,.zona-rama,.footer-mic,.grain,.praf,.f-nav,.f-inchide,.poarta,.cartus-sala,.sate,.btn-sate,.fereastra-fundal,.galerie-mare-fundal,.mini-fundal,.vizor,.vizor-fundal,.mare-hint{display:none!important}
+  body{overflow:visible;background:#fff}
+  .fereastra{position:static;width:auto;transform:none;border:1px solid #000;box-shadow:none}
+}
+
+/* ===== PANOU SATE (stânga, oglinda dosarului) ===== */
+.sate{position:fixed;top:var(--top-h);left:0;bottom:var(--foot-h);width:min(340px,80vw);z-index:30;
+  color:var(--cerneala);border-right:3px solid var(--aur);box-shadow:30px 0 70px rgba(0,0,0,.55);overflow-y:auto;padding:20px 20px 26px;
+  transform:translateX(-105%);transition:transform .3s cubic-bezier(.2,.9,.25,1);
+  background:
+    radial-gradient(220px 140px at 15% 12%,rgba(120,70,10,.12),transparent 70%),
+    linear-gradient(180deg,#f8efdb,#efdfbd 60%,#e7d3a8);
+  border-top:1px solid #8a6d1f;border-bottom:1px solid #8a6d1f;border-left:1px solid #8a6d1f}
+body.sate-deschis .sate{transform:none}
+.salon.sate-deschis .zona-rama{transform:translateX(13%) scale(.97)}
+.sate-eticheta{font-family:var(--font-titlu);font-size:11px;letter-spacing:.24em;color:#7a5c14;margin:2px 44px 0 0}
+.sate h2{font-family:var(--font-titlu);font-size:24px;margin:6px 40px 12px 0;color:#241a0c;line-height:1.15}
+.sate-lista{display:flex;flex-direction:column;gap:6px}
+.sat{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;cursor:pointer;
+  font-family:var(--font-titlu);font-size:13px;font-weight:700;letter-spacing:.04em;color:#2b2116;
+  background:rgba(255,255,255,.55);border:1px solid #c9b98a;border-radius:2px;padding:10px 12px}
+.sat:hover{border-color:var(--aur);background:#fff8e2;transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.28)}
+.sat.on{background:#3d270f;color:var(--aur-deschis);border-color:var(--aur)}
+.sat-nr{flex:0 0 auto;font-size:11px;opacity:.7;border:1px solid currentColor;border-radius:999px;padding:1px 8px}
+.btn-sate{background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.5);color:var(--aur-deschis);
+  font-size:10px;letter-spacing:.08em;padding:4px 10px;cursor:pointer;vertical-align:middle;margin:0 4px;text-transform:none}
+.btn-sate:hover{background:rgba(201,162,39,.2);transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.28)}
+.stepper .inapoi{background:#3d270f;color:var(--aur-deschis);border:1px solid var(--aur);cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;white-space:nowrap;flex:0 0 auto}
+.stepper .inapoi:hover{background:#5b3a1a;transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,39,.3)}
+@media(max-width:860px){
+  .sate{position:relative;width:auto;margin:10px 12px 0;border:2px solid #8a6d1f;border-radius:2px;transform:none;max-height:300px}
+  .salon.sate-deschis .zona-rama{transform:none}
+  .salon.sate-deschis .cartus-sala{transform:none}
+}
