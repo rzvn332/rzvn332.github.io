@@ -6,7 +6,7 @@
 (function () {
   'use strict';
   /* Sursă unică: window.DEPLOY_URL din <head> (dacă există), altfel constanta locală. */
-  var CMS_API_URL = window.DEPLOY_URL || 'PASTE_AICI_LINK_EXEC'; // ex: https://script.google.com/macros/s/AKfy.../exec
+  var CMS_API_URL = window.DEPLOY_URL || 'https://script.google.com/macros/s/AKfycbyE0kWKxc1VZ5j5oWseXkEK8-2Xsyw4hjHpxwUttr1c4dLf3ow5vPcXW1OAPWyWc5X7wA/exec'; // ex: https://script.google.com/macros/s/AKfy.../exec
   var TIMEOUT_MS = 8000;
   var LS_VER = 'muzeu-cms-ver-v1';
   var LS_IDX = 'muzeu-cms-index-v1';
